@@ -1,0 +1,3143 @@
+CNTY_FIPS	CNTY_NAME	ST_NAME	MKT2015	CNTY_CWIFTEST	CNTY_CWIFTSE
+01001	Autauga County	Alabama	01051	0.784	0.044
+01003	Baldwin County	Alabama	01003	0.836	0.03
+01005	Barbour County	Alabama	01109	0.895	0.034
+01007	Bibb County	Alabama	01065	0.785	0.044
+01009	Blount County	Alabama	01115	0.763	0.034
+01011	Bullock County	Alabama	01113	0.842	0.038
+01013	Butler County	Alabama	01041	0.857	0.032
+01015	Calhoun County	Alabama	01015	0.831	0.03
+01017	Chambers County	Alabama	01027	0.832	0.04
+01019	Cherokee County	Alabama	01027	0.832	0.04
+01021	Chilton County	Alabama	01027	0.832	0.04
+01023	Choctaw County	Alabama	01119	0.87	0.053
+01025	Clarke County	Alabama	01119	0.87	0.053
+01027	Clay County	Alabama	01027	0.832	0.04
+01029	Cleburne County	Alabama	01027	0.832	0.04
+01031	Coffee County	Alabama	01031	0.726	0.038
+01033	Colbert County	Alabama	01033	0.799	0.037
+01035	Conecuh County	Alabama	01039	0.739	0.049
+01037	Coosa County	Alabama	01027	0.832	0.04
+01039	Covington County	Alabama	01039	0.739	0.049
+01041	Crenshaw County	Alabama	01041	0.857	0.032
+01043	Cullman County	Alabama	01043	0.887	0.042
+01045	Dale County	Alabama	01045	0.879	0.029
+01047	Dallas County	Alabama	01047	0.793	0.05
+01049	DeKalb County	Alabama	01049	0.73	0.036
+01051	Elmore County	Alabama	01051	0.784	0.044
+01053	Escambia County	Alabama	01041	0.857	0.032
+01055	Etowah County	Alabama	01055	0.76	0.026
+01057	Fayette County	Alabama	01065	0.785	0.044
+01059	Franklin County	Alabama	01093	0.83	0.049
+01061	Geneva County	Alabama	01039	0.739	0.049
+01063	Greene County	Alabama	01065	0.785	0.044
+01065	Hale County	Alabama	01065	0.785	0.044
+01067	Henry County	Alabama	01045	0.879	0.029
+01069	Houston County	Alabama	01069	0.865	0.019
+01071	Jackson County	Alabama	01049	0.73	0.036
+01073	Jefferson County	Alabama	01073	0.926	0.009
+01075	Lamar County	Alabama	01065	0.785	0.044
+01077	Lauderdale County	Alabama	01077	0.791	0.032
+01079	Lawrence County	Alabama	01093	0.83	0.049
+01081	Lee County	Alabama	01081	0.82	0.024
+01083	Limestone County	Alabama	01083	0.843	0.034
+01085	Lowndes County	Alabama	01047	0.793	0.05
+01087	Macon County	Alabama	01113	0.842	0.038
+01089	Madison County	Alabama	01089	0.976	0.01
+01091	Marengo County	Alabama	01065	0.785	0.044
+01093	Marion County	Alabama	01093	0.83	0.049
+01095	Marshall County	Alabama	01095	0.855	0.039
+01097	Mobile County	Alabama	01097	0.863	0.013
+01099	Monroe County	Alabama	01041	0.857	0.032
+01101	Montgomery County	Alabama	01101	0.886	0.015
+01103	Morgan County	Alabama	01103	0.879	0.028
+01105	Perry County	Alabama	01065	0.785	0.044
+01107	Pickens County	Alabama	01065	0.785	0.044
+01109	Pike County	Alabama	01109	0.895	0.034
+01111	Randolph County	Alabama	01027	0.832	0.04
+01113	Russell County	Alabama	01113	0.842	0.038
+01115	St. Clair County	Alabama	01115	0.763	0.034
+01117	Shelby County	Alabama	01117	0.909	0.018
+01119	Sumter County	Alabama	01119	0.87	0.053
+01121	Talladega County	Alabama	01121	0.762	0.043
+01123	Tallapoosa County	Alabama	01113	0.842	0.038
+01125	Tuscaloosa County	Alabama	01125	0.892	0.017
+01127	Walker County	Alabama	01115	0.763	0.034
+01129	Washington County	Alabama	01119	0.87	0.053
+01131	Wilcox County	Alabama	01047	0.793	0.05
+01133	Winston County	Alabama	01093	0.83	0.049
+02013	Aleutians East Borough	Alaska	02013	0.833	0.047
+02016	Aleutians West Census Area	Alaska	02013	0.833	0.047
+02020	Anchorage Municipality	Alaska	02020	1.088	0.014
+02050	Bethel Census Area	Alaska	02013	0.833	0.047
+02060	Bristol Bay Borough	Alaska	02013	0.833	0.047
+02068	Denali Borough	Alaska	02261	0.914	0.091
+02070	Dillingham Census Area	Alaska	02013	0.833	0.047
+02090	Fairbanks North Star Borough	Alaska	02090	1.025	0.026
+02100	Haines Borough	Alaska	99999	0.902	0.065
+02105	Hoonah-Angoon Census Area	Alaska	99999	0.902	0.065
+02110	Juneau City and Borough	Alaska	02110	1.06	0.023
+02122	Kenai Peninsula Borough	Alaska	02122	0.997	0.043
+02130	Ketchikan Gateway Borough	Alaska	02130	0.91	0.04
+02150	Kodiak Island Borough	Alaska	02013	0.833	0.047
+02158	Kusilvak Census Area	Alaska	02013	0.833	0.047
+02164	Lake and Peninsula Borough	Alaska	02013	0.833	0.047
+02170	Matanuska-Susitna Borough	Alaska	02170	0.919	0.044
+02180	Nome Census Area	Alaska	02185	1.031	0.055
+02185	North Slope Borough	Alaska	02185	1.031	0.055
+02188	Northwest Arctic Borough	Alaska	02185	1.031	0.055
+02195	Petersburg Borough	Alaska	99999	0.902	0.065
+02198	Prince of Wales-Hyder Census Area	Alaska	99999	0.902	0.065
+02220	Sitka City and Borough	Alaska	02220	0.89	0.049
+02230	Skagway Municipality	Alaska	99999	0.902	0.065
+02240	Southeast Fairbanks Census Area	Alaska	02261	0.914	0.091
+02261	Valdez-Cordova Census Area	Alaska	02261	0.914	0.091
+02275	Wrangell City and Borough	Alaska	02130	0.91	0.04
+02282	Yakutat City and Borough	Alaska	02261	0.914	0.091
+02290	Yukon-Koyukuk Census Area	Alaska	02261	0.914	0.091
+04001	Apache County	Arizona	04017	0.809	0.031
+04003	Cochise County	Arizona	04003	0.862	0.023
+04005	Coconino County	Arizona	04005	0.888	0.032
+04007	Gila County	Arizona	04009	0.802	0.034
+04009	Graham County	Arizona	04009	0.802	0.034
+04011	Greenlee County	Arizona	04009	0.802	0.034
+04012	La Paz County	Arizona	04015	0.896	0.034
+04013	Maricopa County	Arizona	04013	0.978	0.005
+04015	Mohave County	Arizona	04015	0.896	0.034
+04017	Navajo County	Arizona	04017	0.809	0.031
+04019	Pima County	Arizona	04019	0.899	0.008
+04021	Pinal County	Arizona	04021	0.89	0.029
+04023	Santa Cruz County	Arizona	04003	0.862	0.023
+04025	Yavapai County	Arizona	04025	0.824	0.027
+04027	Yuma County	Arizona	04027	0.915	0.025
+05001	Arkansas County	Arkansas	05001	0.834	0.049
+05003	Ashley County	Arkansas	05013	0.917	0.072
+05005	Baxter County	Arkansas	05005	0.733	0.04
+05007	Benton County	Arkansas	05007	1.101	0.022
+05009	Boone County	Arkansas	05101	0.763	0.036
+05011	Bradley County	Arkansas	05013	0.917	0.072
+05013	Calhoun County	Arkansas	05013	0.917	0.072
+05015	Carroll County	Arkansas	05101	0.763	0.036
+05017	Chicot County	Arkansas	05117	0.809	0.032
+05019	Clark County	Arkansas	05029	0.749	0.032
+05021	Clay County	Arkansas	05075	0.751	0.031
+05023	Cleburne County	Arkansas	05063	0.785	0.049
+05025	Cleveland County	Arkansas	05001	0.834	0.049
+05027	Columbia County	Arkansas	05103	0.825	0.042
+05029	Conway County	Arkansas	05029	0.749	0.032
+05031	Craighead County	Arkansas	05031	0.834	0.03
+05033	Crawford County	Arkansas	05101	0.763	0.036
+05035	Crittenden County	Arkansas	05035	0.887	0.036
+05037	Cross County	Arkansas	05035	0.887	0.036
+05039	Dallas County	Arkansas	05013	0.917	0.072
+05041	Desha County	Arkansas	05117	0.809	0.032
+05043	Drew County	Arkansas	05117	0.809	0.032
+05045	Faulkner County	Arkansas	05045	0.884	0.023
+05047	Franklin County	Arkansas	05101	0.763	0.036
+05049	Fulton County	Arkansas	05005	0.733	0.04
+05051	Garland County	Arkansas	05051	0.809	0.04
+05053	Grant County	Arkansas	05013	0.917	0.072
+05055	Greene County	Arkansas	05075	0.751	0.031
+05057	Hempstead County	Arkansas	05091	0.81	0.041
+05059	Hot Spring County	Arkansas	05013	0.917	0.072
+05061	Howard County	Arkansas	05103	0.825	0.042
+05063	Independence County	Arkansas	05063	0.785	0.049
+05065	Izard County	Arkansas	05005	0.733	0.04
+05067	Jackson County	Arkansas	05075	0.751	0.031
+05069	Jefferson County	Arkansas	05069	0.923	0.036
+05071	Johnson County	Arkansas	05115	0.788	0.034
+05073	Lafayette County	Arkansas	05091	0.81	0.041
+05075	Lawrence County	Arkansas	05075	0.751	0.031
+05077	Lee County	Arkansas	05117	0.809	0.032
+05079	Lincoln County	Arkansas	05001	0.834	0.049
+05081	Little River County	Arkansas	05091	0.81	0.041
+05083	Logan County	Arkansas	05029	0.749	0.032
+05085	Lonoke County	Arkansas	05001	0.834	0.049
+05087	Madison County	Arkansas	05101	0.763	0.036
+05089	Marion County	Arkansas	05101	0.763	0.036
+05091	Miller County	Arkansas	05091	0.81	0.041
+05093	Mississippi County	Arkansas	05035	0.887	0.036
+05095	Monroe County	Arkansas	05117	0.809	0.032
+05097	Montgomery County	Arkansas	05029	0.749	0.032
+05099	Nevada County	Arkansas	05103	0.825	0.042
+05101	Newton County	Arkansas	05101	0.763	0.036
+05103	Ouachita County	Arkansas	05103	0.825	0.042
+05105	Perry County	Arkansas	05029	0.749	0.032
+05107	Phillips County	Arkansas	05117	0.809	0.032
+05109	Pike County	Arkansas	05103	0.825	0.042
+05111	Poinsett County	Arkansas	05035	0.887	0.036
+05113	Polk County	Arkansas	05091	0.81	0.041
+05115	Pope County	Arkansas	05115	0.788	0.034
+05117	Prairie County	Arkansas	05117	0.809	0.032
+05119	Pulaski County	Arkansas	05119	0.892	0.01
+05121	Randolph County	Arkansas	05075	0.751	0.031
+05123	St. Francis County	Arkansas	05117	0.809	0.032
+05125	Saline County	Arkansas	05125	0.867	0.054
+05127	Scott County	Arkansas	05029	0.749	0.032
+05129	Searcy County	Arkansas	05101	0.763	0.036
+05131	Sebastian County	Arkansas	05131	0.846	0.022
+05133	Sevier County	Arkansas	05091	0.81	0.041
+05135	Sharp County	Arkansas	05075	0.751	0.031
+05137	Stone County	Arkansas	05005	0.733	0.04
+05139	Union County	Arkansas	05139	0.833	0.034
+05141	Van Buren County	Arkansas	05029	0.749	0.032
+05143	Washington County	Arkansas	05143	0.881	0.018
+05145	White County	Arkansas	05145	0.827	0.03
+05147	Woodruff County	Arkansas	05117	0.809	0.032
+05149	Yell County	Arkansas	05029	0.749	0.032
+06001	Alameda County	California	06001	1.19	0.008
+06003	Alpine County	California	06027	0.969	0.042
+06005	Amador County	California	06017	1.039	0.035
+06007	Butte County	California	06007	0.95	0.024
+06009	Calaveras County	California	06027	0.969	0.042
+06011	Colusa County	California	06021	1.056	0.047
+06013	Contra Costa County	California	06013	1.205	0.013
+06015	Del Norte County	California	06093	0.884	0.047
+06017	El Dorado County	California	06017	1.039	0.035
+06019	Fresno County	California	06019	1.023	0.014
+06021	Glenn County	California	06021	1.056	0.047
+06023	Humboldt County	California	06023	0.82	0.027
+06025	Imperial County	California	06025	0.987	0.045
+06027	Inyo County	California	06027	0.969	0.042
+06029	Kern County	California	06029	1.047	0.018
+06031	Kings County	California	06031	1.043	0.045
+06033	Lake County	California	06021	1.056	0.047
+06035	Lassen County	California	06035	0.987	0.044
+06037	Los Angeles County	California	06037	1.131	0.003
+06039	Madera County	California	06039	1.015	0.045
+06041	Marin County	California	06041	1.172	0.023
+06043	Mariposa County	California	06109	0.958	0.043
+06045	Mendocino County	California	06045	0.95	0.046
+06047	Merced County	California	06047	1.05	0.029
+06049	Modoc County	California	06035	0.987	0.044
+06051	Mono County	California	06027	0.969	0.042
+06053	Monterey County	California	06053	1.112	0.017
+06055	Napa County	California	06055	1.142	0.029
+06057	Nevada County	California	06057	0.991	0.031
+06059	Orange County	California	06059	1.119	0.005
+06061	Placer County	California	06061	1.076	0.016
+06063	Plumas County	California	06035	0.987	0.044
+06065	Riverside County	California	06065	1.014	0.01
+06067	Sacramento County	California	06067	1.073	0.007
+06069	San Benito County	California	06047	1.05	0.029
+06071	San Bernardino County	California	06071	1.022	0.011
+06073	San Diego County	California	06073	1.072	0.005
+06075	San Francisco County	California	06075	1.404	0.008
+06077	San Joaquin County	California	06077	1.085	0.021
+06079	San Luis Obispo County	California	06079	1.018	0.021
+06081	San Mateo County	California	06081	1.329	0.009
+06083	Santa Barbara County	California	06083	1.054	0.019
+06085	Santa Clara County	California	06085	1.335	0.007
+06087	Santa Cruz County	California	06087	1.082	0.027
+06089	Shasta County	California	06089	0.95	0.028
+06091	Sierra County	California	06035	0.987	0.044
+06093	Siskiyou County	California	06093	0.884	0.047
+06095	Solano County	California	06095	1.092	0.019
+06097	Sonoma County	California	06097	1.101	0.015
+06099	Stanislaus County	California	06099	1.093	0.025
+06101	Sutter County	California	06101	1.045	0.044
+06103	Tehama County	California	06103	0.914	0.059
+06105	Trinity County	California	06103	0.914	0.059
+06107	Tulare County	California	06107	0.981	0.028
+06109	Tuolumne County	California	06109	0.958	0.043
+06111	Ventura County	California	06111	1.08	0.014
+06113	Yolo County	California	06113	1.006	0.017
+06115	Yuba County	California	06115	1.014	0.054
+08001	Adams County	Colorado	08001	0.984	0.012
+08003	Alamosa County	Colorado	08109	0.789	0.033
+08005	Arapahoe County	Colorado	08005	1.009	0.01
+08007	Archuleta County	Colorado	08109	0.789	0.033
+08009	Baca County	Colorado	08009	0.76	0.036
+08011	Bent County	Colorado	08009	0.76	0.036
+08013	Boulder County	Colorado	08013	0.994	0.009
+08014	Broomfield County	Colorado	08014	1.059	0.022
+08015	Chaffee County	Colorado	08051	0.806	0.034
+08017	Cheyenne County	Colorado	08009	0.76	0.036
+08019	Clear Creek County	Colorado	08019	0.815	0.053
+08021	Conejos County	Colorado	08109	0.789	0.033
+08023	Costilla County	Colorado	08109	0.789	0.033
+08025	Crowley County	Colorado	08073	0.827	0.043
+08027	Custer County	Colorado	08109	0.789	0.033
+08029	Delta County	Colorado	08051	0.806	0.034
+08031	Denver County	Colorado	08031	1.034	0.006
+08033	Dolores County	Colorado	08113	0.814	0.032
+08035	Douglas County	Colorado	08035	1.018	0.013
+08037	Eagle County	Colorado	08037	1.005	0.04
+08039	Elbert County	Colorado	08073	0.827	0.043
+08041	El Paso County	Colorado	08041	0.921	0.01
+08043	Fremont County	Colorado	08043	0.824	0.041
+08045	Garfield County	Colorado	08045	0.978	0.034
+08047	Gilpin County	Colorado	08019	0.815	0.053
+08049	Grand County	Colorado	08019	0.815	0.053
+08051	Gunnison County	Colorado	08051	0.806	0.034
+08053	Hinsdale County	Colorado	08109	0.789	0.033
+08055	Huerfano County	Colorado	08109	0.789	0.033
+08057	Jackson County	Colorado	08107	0.881	0.031
+08059	Jefferson County	Colorado	08059	1.009	0.009
+08061	Kiowa County	Colorado	08009	0.76	0.036
+08063	Kit Carson County	Colorado	08073	0.827	0.043
+08065	Lake County	Colorado	08117	0.79	0.061
+08067	La Plata County	Colorado	08067	0.845	0.024
+08069	Larimer County	Colorado	08069	0.9	0.01
+08071	Las Animas County	Colorado	08109	0.789	0.033
+08073	Lincoln County	Colorado	08073	0.827	0.043
+08075	Logan County	Colorado	08087	0.748	0.03
+08077	Mesa County	Colorado	08077	0.823	0.019
+08079	Mineral County	Colorado	08109	0.789	0.033
+08081	Moffat County	Colorado	08107	0.881	0.031
+08083	Montezuma County	Colorado	08067	0.845	0.024
+08085	Montrose County	Colorado	08113	0.814	0.032
+08087	Morgan County	Colorado	08087	0.748	0.03
+08089	Otero County	Colorado	08009	0.76	0.036
+08091	Ouray County	Colorado	08113	0.814	0.032
+08093	Park County	Colorado	08019	0.815	0.053
+08095	Phillips County	Colorado	08087	0.748	0.03
+08097	Pitkin County	Colorado	08097	1.049	0.063
+08099	Prowers County	Colorado	08009	0.76	0.036
+08101	Pueblo County	Colorado	08101	0.866	0.021
+08103	Rio Blanco County	Colorado	08107	0.881	0.031
+08105	Rio Grande County	Colorado	08109	0.789	0.033
+08107	Routt County	Colorado	08107	0.881	0.031
+08109	Saguache County	Colorado	08109	0.789	0.033
+08111	San Juan County	Colorado	08113	0.814	0.032
+08113	San Miguel County	Colorado	08113	0.814	0.032
+08115	Sedgwick County	Colorado	08087	0.748	0.03
+08117	Summit County	Colorado	08117	0.79	0.061
+08119	Teller County	Colorado	08043	0.824	0.041
+08121	Washington County	Colorado	08087	0.748	0.03
+08123	Weld County	Colorado	08123	0.904	0.016
+08125	Yuma County	Colorado	08087	0.748	0.03
+09001	Fairfield County	Connecticut	09001	1.186	0.01
+09003	Hartford County	Connecticut	09003	1.056	0.007
+09005	Litchfield County	Connecticut	09005	1.01	0.023
+09007	Middlesex County	Connecticut	09007	0.985	0.021
+09009	New Haven County	Connecticut	09009	1.032	0.01
+09011	New London County	Connecticut	09011	1.001	0.013
+09013	Tolland County	Connecticut	09013	0.969	0.028
+09015	Windham County	Connecticut	09015	0.974	0.027
+10001	Kent County	Delaware	10001	0.882	0.024
+10003	New Castle County	Delaware	10003	1.019	0.009
+10005	Sussex County	Delaware	10005	0.91	0.029
+11001	District of Columbia	District of Columbia	11001	1.289	0.006
+12001	Alachua County	Florida	12001	0.861	0.015
+12003	Baker County	Florida	12023	0.87	0.056
+12005	Bay County	Florida	12005	0.879	0.02
+12007	Bradford County	Florida	12023	0.87	0.056
+12009	Brevard County	Florida	12009	0.882	0.013
+12011	Broward County	Florida	12011	0.943	0.009
+12013	Calhoun County	Florida	12037	0.75	0.039
+12015	Charlotte County	Florida	12015	0.744	0.028
+12017	Citrus County	Florida	12017	0.838	0.065
+12019	Clay County	Florida	12019	0.837	0.051
+12021	Collier County	Florida	12021	0.927	0.019
+12023	Columbia County	Florida	12023	0.87	0.056
+12027	DeSoto County	Florida	12055	0.822	0.029
+12029	Dixie County	Florida	12079	0.869	0.053
+12031	Duval County	Florida	12031	0.924	0.007
+12033	Escambia County	Florida	12033	0.822	0.014
+12035	Flagler County	Florida	12035	0.864	0.041
+12037	Franklin County	Florida	12037	0.75	0.039
+12039	Gadsden County	Florida	12037	0.75	0.039
+12041	Gilchrist County	Florida	12079	0.869	0.053
+12043	Glades County	Florida	12055	0.822	0.029
+12045	Gulf County	Florida	12037	0.75	0.039
+12047	Hamilton County	Florida	12079	0.869	0.053
+12049	Hardee County	Florida	12055	0.822	0.029
+12051	Hendry County	Florida	12055	0.822	0.029
+12053	Hernando County	Florida	12053	0.8	0.034
+12055	Highlands County	Florida	12055	0.822	0.029
+12057	Hillsborough County	Florida	12057	0.934	0.006
+12059	Holmes County	Florida	12063	0.854	0.046
+12061	Indian River County	Florida	12061	0.907	0.032
+12063	Jackson County	Florida	12063	0.854	0.046
+12065	Jefferson County	Florida	12079	0.869	0.053
+12067	Lafayette County	Florida	12079	0.869	0.053
+12069	Lake County	Florida	12069	0.82	0.027
+12071	Lee County	Florida	12071	0.878	0.015
+12073	Leon County	Florida	12073	0.86	0.012
+12075	Levy County	Florida	12079	0.869	0.053
+12077	Liberty County	Florida	12037	0.75	0.039
+12079	Madison County	Florida	12079	0.869	0.053
+12081	Manatee County	Florida	12081	0.851	0.018
+12083	Marion County	Florida	12083	0.809	0.029
+12085	Martin County	Florida	12085	0.932	0.036
+12086	Miami-Dade County	Florida	12086	0.929	0.006
+12087	Monroe County	Florida	12087	0.871	0.028
+12089	Nassau County	Florida	12031	0.924	0.007
+12091	Okaloosa County	Florida	12091	0.89	0.017
+12093	Okeechobee County	Florida	12055	0.822	0.029
+12095	Orange County	Florida	12095	0.94	0.008
+12097	Osceola County	Florida	12097	0.913	0.024
+12099	Palm Beach County	Florida	12099	0.955	0.008
+12101	Pasco County	Florida	12101	0.843	0.014
+12103	Pinellas County	Florida	12103	0.875	0.009
+12105	Polk County	Florida	12105	0.865	0.014
+12107	Putnam County	Florida	12035	0.864	0.041
+12109	St. Johns County	Florida	12109	0.885	0.027
+12111	St. Lucie County	Florida	12111	0.829	0.028
+12113	Santa Rosa County	Florida	12113	0.83	0.036
+12115	Sarasota County	Florida	12115	0.873	0.015
+12117	Seminole County	Florida	12117	0.888	0.014
+12119	Sumter County	Florida	12119	0.779	0.047
+12121	Suwannee County	Florida	12079	0.869	0.053
+12123	Taylor County	Florida	12079	0.869	0.053
+12125	Union County	Florida	12023	0.87	0.056
+12127	Volusia County	Florida	12127	0.819	0.019
+12129	Wakulla County	Florida	12037	0.75	0.039
+12131	Walton County	Florida	12131	0.938	0.052
+12133	Washington County	Florida	12063	0.854	0.046
+13001	Appling County	Georgia	13161	0.733	0.052
+13003	Atkinson County	Georgia	13019	0.808	0.032
+13005	Bacon County	Georgia	13305	0.831	0.047
+13007	Baker County	Georgia	13087	0.823	0.053
+13009	Baldwin County	Georgia	13009	0.857	0.048
+13011	Banks County	Georgia	13137	0.788	0.042
+13013	Barrow County	Georgia	13157	0.868	0.05
+13015	Bartow County	Georgia	13015	0.903	0.044
+13017	Ben Hill County	Georgia	13315	0.807	0.054
+13019	Berrien County	Georgia	13019	0.808	0.032
+13021	Bibb County	Georgia	13021	0.88	0.021
+13023	Bleckley County	Georgia	13235	0.835	0.052
+13025	Brantley County	Georgia	13305	0.831	0.047
+13027	Brooks County	Georgia	13019	0.808	0.032
+13029	Bryan County	Georgia	13103	0.801	0.039
+13031	Bulloch County	Georgia	13031	0.859	0.042
+13033	Burke County	Georgia	13301	0.955	0.062
+13035	Butts County	Georgia	13159	0.875	0.046
+13037	Calhoun County	Georgia	13273	0.826	0.043
+13039	Camden County	Georgia	13039	0.901	0.058
+13043	Candler County	Georgia	13103	0.801	0.039
+13045	Carroll County	Georgia	13045	0.898	0.032
+13047	Catoosa County	Georgia	13295	0.797	0.033
+13049	Charlton County	Georgia	13039	0.901	0.058
+13051	Chatham County	Georgia	13051	0.894	0.014
+13053	Chattahoochee County	Georgia	13053	0.874	0.058
+13055	Chattooga County	Georgia	13295	0.797	0.033
+13057	Cherokee County	Georgia	13057	0.886	0.026
+13059	Clarke County	Georgia	13059	0.859	0.019
+13061	Clay County	Georgia	13273	0.826	0.043
+13063	Clayton County	Georgia	13063	0.951	0.027
+13065	Clinch County	Georgia	13019	0.808	0.032
+13067	Cobb County	Georgia	13067	1.01	0.009
+13069	Coffee County	Georgia	13305	0.831	0.047
+13071	Colquitt County	Georgia	13315	0.807	0.054
+13073	Columbia County	Georgia	13073	0.877	0.038
+13075	Cook County	Georgia	13019	0.808	0.032
+13077	Coweta County	Georgia	13077	0.912	0.036
+13079	Crawford County	Georgia	13293	0.864	0.035
+13081	Crisp County	Georgia	13273	0.826	0.043
+13083	Dade County	Georgia	13295	0.797	0.033
+13085	Dawson County	Georgia	13085	0.732	0.048
+13087	Decatur County	Georgia	13087	0.823	0.053
+13089	DeKalb County	Georgia	13089	1.01	0.007
+13091	Dodge County	Georgia	13161	0.733	0.052
+13093	Dooly County	Georgia	13235	0.835	0.052
+13095	Dougherty County	Georgia	13095	0.854	0.023
+13097	Douglas County	Georgia	13097	0.893	0.041
+13099	Early County	Georgia	13087	0.823	0.053
+13101	Echols County	Georgia	13019	0.808	0.032
+13103	Effingham County	Georgia	13103	0.801	0.039
+13105	Elbert County	Georgia	13257	0.774	0.032
+13107	Emanuel County	Georgia	13103	0.801	0.039
+13109	Evans County	Georgia	13279	0.807	0.04
+13111	Fannin County	Georgia	13085	0.732	0.048
+13113	Fayette County	Georgia	13113	0.916	0.038
+13115	Floyd County	Georgia	13115	0.85	0.032
+13117	Forsyth County	Georgia	13117	0.958	0.018
+13119	Franklin County	Georgia	13257	0.774	0.032
+13121	Fulton County	Georgia	13121	1.075	0.006
+13123	Gilmer County	Georgia	13129	0.919	0.059
+13125	Glascock County	Georgia	13301	0.955	0.062
+13127	Glynn County	Georgia	13127	0.918	0.049
+13129	Gordon County	Georgia	13129	0.919	0.059
+13131	Grady County	Georgia	13087	0.823	0.053
+13133	Greene County	Georgia	13301	0.955	0.062
+13135	Gwinnett County	Georgia	13135	0.929	0.011
+13137	Habersham County	Georgia	13137	0.788	0.042
+13139	Hall County	Georgia	13139	0.916	0.027
+13141	Hancock County	Georgia	13301	0.955	0.062
+13143	Haralson County	Georgia	13223	0.824	0.034
+13145	Harris County	Georgia	13285	0.806	0.026
+13147	Hart County	Georgia	13257	0.774	0.032
+13149	Heard County	Georgia	13285	0.806	0.026
+13151	Henry County	Georgia	13151	0.827	0.035
+13153	Houston County	Georgia	13153	0.858	0.025
+13155	Irwin County	Georgia	13019	0.808	0.032
+13157	Jackson County	Georgia	13157	0.868	0.05
+13159	Jasper County	Georgia	13159	0.875	0.046
+13161	Jeff Davis County	Georgia	13161	0.733	0.052
+13163	Jefferson County	Georgia	13301	0.955	0.062
+13165	Jenkins County	Georgia	13103	0.801	0.039
+13167	Johnson County	Georgia	13301	0.955	0.062
+13169	Jones County	Georgia	13159	0.875	0.046
+13171	Lamar County	Georgia	13293	0.864	0.035
+13173	Lanier County	Georgia	13019	0.808	0.032
+13175	Laurens County	Georgia	13175	0.875	0.041
+13177	Lee County	Georgia	13273	0.826	0.043
+13179	Liberty County	Georgia	13179	0.81	0.033
+13181	Lincoln County	Georgia	13073	0.877	0.038
+13183	Long County	Georgia	13305	0.831	0.047
+13185	Lowndes County	Georgia	13185	0.834	0.023
+13187	Lumpkin County	Georgia	13187	0.813	0.031
+13189	McDuffie County	Georgia	13257	0.774	0.032
+13191	McIntosh County	Georgia	13305	0.831	0.047
+13193	Macon County	Georgia	13235	0.835	0.052
+13195	Madison County	Georgia	13137	0.788	0.042
+13197	Marion County	Georgia	13273	0.826	0.043
+13199	Meriwether County	Georgia	13273	0.826	0.043
+13201	Miller County	Georgia	13087	0.823	0.053
+13205	Mitchell County	Georgia	13315	0.807	0.054
+13207	Monroe County	Georgia	13159	0.875	0.046
+13209	Montgomery County	Georgia	13279	0.807	0.04
+13211	Morgan County	Georgia	13297	0.826	0.052
+13213	Murray County	Georgia	13085	0.732	0.048
+13215	Muscogee County	Georgia	13215	0.852	0.017
+13217	Newton County	Georgia	13217	0.879	0.051
+13219	Oconee County	Georgia	13219	0.883	0.043
+13221	Oglethorpe County	Georgia	13301	0.955	0.062
+13223	Paulding County	Georgia	13223	0.824	0.034
+13225	Peach County	Georgia	13293	0.864	0.035
+13227	Pickens County	Georgia	13085	0.732	0.048
+13229	Pierce County	Georgia	13305	0.831	0.047
+13231	Pike County	Georgia	13293	0.864	0.035
+13233	Polk County	Georgia	13223	0.824	0.034
+13235	Pulaski County	Georgia	13235	0.835	0.052
+13237	Putnam County	Georgia	13159	0.875	0.046
+13239	Quitman County	Georgia	13273	0.826	0.043
+13241	Rabun County	Georgia	13137	0.788	0.042
+13243	Randolph County	Georgia	13273	0.826	0.043
+13245	Richmond County	Georgia	13245	0.859	0.017
+13247	Rockdale County	Georgia	13247	0.919	0.035
+13249	Schley County	Georgia	13273	0.826	0.043
+13251	Screven County	Georgia	13103	0.801	0.039
+13253	Seminole County	Georgia	13087	0.823	0.053
+13255	Spalding County	Georgia	13159	0.875	0.046
+13257	Stephens County	Georgia	13257	0.774	0.032
+13259	Stewart County	Georgia	13273	0.826	0.043
+13261	Sumter County	Georgia	13273	0.826	0.043
+13263	Talbot County	Georgia	13273	0.826	0.043
+13265	Taliaferro County	Georgia	13301	0.955	0.062
+13267	Tattnall County	Georgia	13279	0.807	0.04
+13269	Taylor County	Georgia	13293	0.864	0.035
+13271	Telfair County	Georgia	13161	0.733	0.052
+13273	Terrell County	Georgia	13273	0.826	0.043
+13275	Thomas County	Georgia	13275	0.835	0.04
+13277	Tift County	Georgia	13019	0.808	0.032
+13279	Toombs County	Georgia	13279	0.807	0.04
+13281	Towns County	Georgia	13187	0.813	0.031
+13283	Treutlen County	Georgia	13161	0.733	0.052
+13285	Troup County	Georgia	13285	0.806	0.026
+13287	Turner County	Georgia	13315	0.807	0.054
+13289	Twiggs County	Georgia	13235	0.835	0.052
+13291	Union County	Georgia	13187	0.813	0.031
+13293	Upson County	Georgia	13293	0.864	0.035
+13295	Walker County	Georgia	13295	0.797	0.033
+13297	Walton County	Georgia	13297	0.826	0.052
+13299	Ware County	Georgia	13019	0.808	0.032
+13301	Warren County	Georgia	13301	0.955	0.062
+13303	Washington County	Georgia	13235	0.835	0.052
+13305	Wayne County	Georgia	13305	0.831	0.047
+13307	Webster County	Georgia	13273	0.826	0.043
+13309	Wheeler County	Georgia	13161	0.733	0.052
+13311	White County	Georgia	13187	0.813	0.031
+13313	Whitfield County	Georgia	13313	0.906	0.035
+13315	Wilcox County	Georgia	13315	0.807	0.054
+13317	Wilkes County	Georgia	13257	0.774	0.032
+13319	Wilkinson County	Georgia	13235	0.835	0.052
+13321	Worth County	Georgia	13315	0.807	0.054
+15001	Hawaii County	Hawaii	15001	0.913	0.028
+15003	Honolulu County	Hawaii	15003	1.03	0.008
+15005	Kalawao County	Hawaii	15009	1.013	0.03
+15007	Kauai County	Hawaii	15007	0.987	0.046
+15009	Maui County	Hawaii	15009	1.013	0.03
+16001	Ada County	Idaho	16001	0.877	0.01
+16003	Adams County	Idaho	16085	0.691	0.042
+16005	Bannock County	Idaho	16005	0.787	0.032
+16007	Bear Lake County	Idaho	16005	0.787	0.032
+16009	Benewah County	Idaho	16057	0.821	0.023
+16011	Bingham County	Idaho	16011	0.741	0.035
+16013	Blaine County	Idaho	16013	0.888	0.046
+16015	Boise County	Idaho	16085	0.691	0.042
+16017	Bonner County	Idaho	16017	0.753	0.039
+16019	Bonneville County	Idaho	16019	0.879	0.025
+16021	Boundary County	Idaho	16017	0.753	0.039
+16023	Butte County	Idaho	16013	0.888	0.046
+16025	Camas County	Idaho	16039	0.775	0.041
+16027	Canyon County	Idaho	16027	0.833	0.03
+16029	Caribou County	Idaho	16011	0.741	0.035
+16031	Cassia County	Idaho	16031	0.782	0.041
+16033	Clark County	Idaho	16013	0.888	0.046
+16035	Clearwater County	Idaho	16017	0.753	0.039
+16037	Custer County	Idaho	16085	0.691	0.042
+16039	Elmore County	Idaho	16039	0.775	0.041
+16041	Franklin County	Idaho	16005	0.787	0.032
+16043	Fremont County	Idaho	16013	0.888	0.046
+16045	Gem County	Idaho	16085	0.691	0.042
+16047	Gooding County	Idaho	16039	0.775	0.041
+16049	Idaho County	Idaho	16085	0.691	0.042
+16051	Jefferson County	Idaho	16011	0.741	0.035
+16053	Jerome County	Idaho	16039	0.775	0.041
+16055	Kootenai County	Idaho	16055	0.815	0.029
+16057	Latah County	Idaho	16057	0.821	0.023
+16059	Lemhi County	Idaho	16085	0.691	0.042
+16061	Lewis County	Idaho	16069	0.835	0.041
+16063	Lincoln County	Idaho	16039	0.775	0.041
+16065	Madison County	Idaho	16065	0.807	0.034
+16067	Minidoka County	Idaho	16031	0.782	0.041
+16069	Nez Perce County	Idaho	16069	0.835	0.041
+16071	Oneida County	Idaho	16031	0.782	0.041
+16073	Owyhee County	Idaho	16039	0.775	0.041
+16075	Payette County	Idaho	16027	0.833	0.03
+16077	Power County	Idaho	16031	0.782	0.041
+16079	Shoshone County	Idaho	16017	0.753	0.039
+16081	Teton County	Idaho	16065	0.807	0.034
+16083	Twin Falls County	Idaho	16083	0.747	0.038
+16085	Valley County	Idaho	16085	0.691	0.042
+16087	Washington County	Idaho	16027	0.833	0.03
+17001	Adams County	Illinois	17001	0.871	0.032
+17003	Alexander County	Illinois	17181	0.827	0.03
+17005	Bond County	Illinois	17027	0.888	0.032
+17007	Boone County	Illinois	17037	0.871	0.024
+17009	Brown County	Illinois	17009	0.854	0.029
+17011	Bureau County	Illinois	17011	0.897	0.041
+17013	Calhoun County	Illinois	17009	0.854	0.029
+17015	Carroll County	Illinois	17085	0.852	0.04
+17017	Cass County	Illinois	17137	0.78	0.035
+17019	Champaign County	Illinois	17019	0.9	0.016
+17021	Christian County	Illinois	17117	0.789	0.026
+17023	Clark County	Illinois	17045	0.97	0.06
+17025	Clay County	Illinois	17079	0.857	0.036
+17027	Clinton County	Illinois	17027	0.888	0.032
+17029	Coles County	Illinois	17029	0.852	0.031
+17031	Cook County	Illinois	17031	1.091	0.004
+17033	Crawford County	Illinois	17079	0.857	0.036
+17035	Cumberland County	Illinois	17079	0.857	0.036
+17037	DeKalb County	Illinois	17037	0.871	0.024
+17039	De Witt County	Illinois	17139	0.846	0.052
+17041	Douglas County	Illinois	17045	0.97	0.06
+17043	DuPage County	Illinois	17043	1.034	0.006
+17045	Edgar County	Illinois	17045	0.97	0.06
+17047	Edwards County	Illinois	17191	0.866	0.054
+17049	Effingham County	Illinois	17049	0.863	0.039
+17051	Fayette County	Illinois	17121	0.782	0.03
+17053	Ford County	Illinois	17075	0.824	0.051
+17055	Franklin County	Illinois	17055	0.841	0.038
+17057	Fulton County	Illinois	17057	0.875	0.028
+17059	Gallatin County	Illinois	17191	0.866	0.054
+17061	Greene County	Illinois	17117	0.789	0.026
+17063	Grundy County	Illinois	17063	0.93	0.051
+17065	Hamilton County	Illinois	17191	0.866	0.054
+17067	Hancock County	Illinois	17009	0.854	0.029
+17069	Hardin County	Illinois	17191	0.866	0.054
+17071	Henderson County	Illinois	17009	0.854	0.029
+17073	Henry County	Illinois	17073	0.8	0.036
+17075	Iroquois County	Illinois	17075	0.824	0.051
+17077	Jackson County	Illinois	17077	0.799	0.033
+17079	Jasper County	Illinois	17079	0.857	0.036
+17081	Jefferson County	Illinois	17081	0.851	0.028
+17083	Jersey County	Illinois	17009	0.854	0.029
+17085	Jo Daviess County	Illinois	17085	0.852	0.04
+17087	Johnson County	Illinois	17181	0.827	0.03
+17089	Kane County	Illinois	17089	0.945	0.014
+17091	Kankakee County	Illinois	17091	0.889	0.026
+17093	Kendall County	Illinois	17093	1.045	0.044
+17095	Knox County	Illinois	17095	0.868	0.047
+17097	Lake County	Illinois	17097	1.046	0.009
+17099	LaSalle County	Illinois	17099	0.891	0.025
+17101	Lawrence County	Illinois	17159	0.797	0.035
+17103	Lee County	Illinois	17103	0.897	0.051
+17105	Livingston County	Illinois	17105	0.87	0.033
+17107	Logan County	Illinois	17107	0.861	0.035
+17109	McDonough County	Illinois	17109	0.809	0.039
+17111	McHenry County	Illinois	17111	0.949	0.018
+17113	McLean County	Illinois	17113	0.981	0.015
+17115	Macon County	Illinois	17115	0.932	0.019
+17117	Macoupin County	Illinois	17117	0.789	0.026
+17119	Madison County	Illinois	17119	0.916	0.016
+17121	Marion County	Illinois	17121	0.782	0.03
+17123	Marshall County	Illinois	17203	0.858	0.054
+17125	Mason County	Illinois	17057	0.875	0.028
+17127	Massac County	Illinois	17181	0.827	0.03
+17129	Menard County	Illinois	17107	0.861	0.035
+17131	Mercer County	Illinois	17073	0.8	0.036
+17133	Monroe County	Illinois	17157	0.872	0.027
+17135	Montgomery County	Illinois	17117	0.789	0.026
+17137	Morgan County	Illinois	17137	0.78	0.035
+17139	Moultrie County	Illinois	17139	0.846	0.052
+17141	Ogle County	Illinois	17141	0.868	0.056
+17143	Peoria County	Illinois	17143	0.926	0.014
+17145	Perry County	Illinois	17055	0.841	0.038
+17147	Piatt County	Illinois	17139	0.846	0.052
+17149	Pike County	Illinois	17009	0.854	0.029
+17151	Pope County	Illinois	17181	0.827	0.03
+17153	Pulaski County	Illinois	17181	0.827	0.03
+17155	Putnam County	Illinois	17011	0.897	0.041
+17157	Randolph County	Illinois	17157	0.872	0.027
+17159	Richland County	Illinois	17159	0.797	0.035
+17161	Rock Island County	Illinois	17161	0.949	0.02
+17163	St. Clair County	Illinois	17163	0.898	0.017
+17165	Saline County	Illinois	17181	0.827	0.03
+17167	Sangamon County	Illinois	17167	0.942	0.012
+17169	Schuyler County	Illinois	17009	0.854	0.029
+17171	Scott County	Illinois	17009	0.854	0.029
+17173	Shelby County	Illinois	17079	0.857	0.036
+17175	Stark County	Illinois	17073	0.8	0.036
+17177	Stephenson County	Illinois	17177	0.797	0.032
+17179	Tazewell County	Illinois	17179	0.955	0.027
+17181	Union County	Illinois	17181	0.827	0.03
+17183	Vermilion County	Illinois	17183	0.814	0.033
+17185	Wabash County	Illinois	17159	0.797	0.035
+17187	Warren County	Illinois	17057	0.875	0.028
+17189	Washington County	Illinois	17055	0.841	0.038
+17191	Wayne County	Illinois	17191	0.866	0.054
+17193	White County	Illinois	17191	0.866	0.054
+17195	Whiteside County	Illinois	17195	0.894	0.04
+17197	Will County	Illinois	17197	0.96	0.012
+17199	Williamson County	Illinois	17199	0.905	0.036
+17201	Winnebago County	Illinois	17201	0.89	0.014
+17203	Woodford County	Illinois	17203	0.858	0.054
+18001	Adams County	Indiana	18179	0.777	0.032
+18003	Allen County	Indiana	18003	0.845	0.012
+18005	Bartholomew County	Indiana	18005	0.917	0.018
+18007	Benton County	Indiana	18007	0.832	0.035
+18009	Blackford County	Indiana	18075	0.741	0.029
+18011	Boone County	Indiana	18011	0.92	0.041
+18013	Brown County	Indiana	18109	0.813	0.023
+18015	Carroll County	Indiana	18181	0.79	0.035
+18017	Cass County	Indiana	18017	0.774	0.032
+18019	Clark County	Indiana	18019	0.811	0.024
+18021	Clay County	Indiana	18109	0.813	0.023
+18023	Clinton County	Indiana	18023	0.74	0.047
+18025	Crawford County	Indiana	18117	0.776	0.023
+18027	Daviess County	Indiana	18101	0.845	0.033
+18029	Dearborn County	Indiana	18137	0.875	0.027
+18031	Decatur County	Indiana	18031	0.837	0.026
+18033	DeKalb County	Indiana	18033	0.84	0.035
+18035	Delaware County	Indiana	18035	0.859	0.026
+18037	Dubois County	Indiana	18037	0.857	0.032
+18039	Elkhart County	Indiana	18039	0.858	0.022
+18041	Fayette County	Indiana	18047	0.712	0.038
+18043	Floyd County	Indiana	18043	0.842	0.032
+18045	Fountain County	Indiana	18007	0.832	0.035
+18047	Franklin County	Indiana	18047	0.712	0.038
+18049	Fulton County	Indiana	18169	0.807	0.036
+18051	Gibson County	Indiana	18051	0.872	0.031
+18053	Grant County	Indiana	18053	0.818	0.03
+18055	Greene County	Indiana	18055	0.812	0.025
+18057	Hamilton County	Indiana	18057	0.985	0.014
+18059	Hancock County	Indiana	18059	0.93	0.044
+18061	Harrison County	Indiana	18117	0.776	0.023
+18063	Hendricks County	Indiana	18063	0.861	0.035
+18065	Henry County	Indiana	18075	0.741	0.029
+18067	Howard County	Indiana	18067	0.873	0.024
+18069	Huntington County	Indiana	18069	0.806	0.026
+18071	Jackson County	Indiana	18071	0.879	0.03
+18073	Jasper County	Indiana	18181	0.79	0.035
+18075	Jay County	Indiana	18075	0.741	0.029
+18077	Jefferson County	Indiana	18117	0.776	0.023
+18079	Jennings County	Indiana	18031	0.837	0.026
+18081	Johnson County	Indiana	18081	0.828	0.025
+18083	Knox County	Indiana	18083	0.756	0.041
+18085	Kosciusko County	Indiana	18085	0.864	0.025
+18087	LaGrange County	Indiana	18151	0.784	0.037
+18089	Lake County	Indiana	18089	0.913	0.015
+18091	LaPorte County	Indiana	18091	0.857	0.029
+18093	Lawrence County	Indiana	18055	0.812	0.025
+18095	Madison County	Indiana	18095	0.831	0.023
+18097	Marion County	Indiana	18097	0.931	0.006
+18099	Marshall County	Indiana	18099	0.766	0.031
+18101	Martin County	Indiana	18101	0.845	0.033
+18103	Miami County	Indiana	18017	0.774	0.032
+18105	Monroe County	Indiana	18105	0.865	0.014
+18107	Montgomery County	Indiana	18107	0.778	0.031
+18109	Morgan County	Indiana	18109	0.813	0.023
+18111	Newton County	Indiana	18007	0.832	0.035
+18113	Noble County	Indiana	18113	0.768	0.039
+18115	Ohio County	Indiana	18137	0.875	0.027
+18117	Orange County	Indiana	18117	0.776	0.023
+18119	Owen County	Indiana	18055	0.812	0.025
+18121	Parke County	Indiana	18107	0.778	0.031
+18123	Perry County	Indiana	18117	0.776	0.023
+18125	Pike County	Indiana	18083	0.756	0.041
+18127	Porter County	Indiana	18127	0.915	0.025
+18129	Posey County	Indiana	18051	0.872	0.031
+18131	Pulaski County	Indiana	18099	0.766	0.031
+18133	Putnam County	Indiana	18109	0.813	0.023
+18135	Randolph County	Indiana	18075	0.741	0.029
+18137	Ripley County	Indiana	18137	0.875	0.027
+18139	Rush County	Indiana	18047	0.712	0.038
+18141	St. Joseph County	Indiana	18141	0.85	0.013
+18143	Scott County	Indiana	18117	0.776	0.023
+18145	Shelby County	Indiana	18031	0.837	0.026
+18147	Spencer County	Indiana	18173	0.91	0.032
+18149	Starke County	Indiana	18099	0.766	0.031
+18151	Steuben County	Indiana	18151	0.784	0.037
+18153	Sullivan County	Indiana	18055	0.812	0.025
+18155	Switzerland County	Indiana	18137	0.875	0.027
+18157	Tippecanoe County	Indiana	18157	0.866	0.015
+18159	Tipton County	Indiana	18023	0.74	0.047
+18161	Union County	Indiana	18047	0.712	0.038
+18163	Vanderburgh County	Indiana	18163	0.821	0.013
+18165	Vermillion County	Indiana	18007	0.832	0.035
+18167	Vigo County	Indiana	18167	0.827	0.02
+18169	Wabash County	Indiana	18169	0.807	0.036
+18171	Warren County	Indiana	18007	0.832	0.035
+18173	Warrick County	Indiana	18173	0.91	0.032
+18175	Washington County	Indiana	18117	0.776	0.023
+18177	Wayne County	Indiana	18177	0.831	0.031
+18179	Wells County	Indiana	18179	0.777	0.032
+18181	White County	Indiana	18181	0.79	0.035
+18183	Whitley County	Indiana	18069	0.806	0.026
+19001	Adair County	Iowa	19077	0.807	0.036
+19003	Adams County	Iowa	19137	0.721	0.066
+19005	Allamakee County	Iowa	19043	0.753	0.034
+19007	Appanoose County	Iowa	19007	0.728	0.03
+19009	Audubon County	Iowa	19077	0.807	0.036
+19011	Benton County	Iowa	19011	0.881	0.047
+19013	Black Hawk County	Iowa	19013	0.908	0.022
+19015	Boone County	Iowa	19015	0.859	0.032
+19017	Bremer County	Iowa	19017	0.828	0.043
+19019	Buchanan County	Iowa	19011	0.881	0.047
+19021	Buena Vista County	Iowa	19021	0.794	0.04
+19023	Butler County	Iowa	19075	0.867	0.039
+19025	Calhoun County	Iowa	19025	0.78	0.04
+19027	Carroll County	Iowa	19027	0.858	0.044
+19029	Cass County	Iowa	19077	0.807	0.036
+19031	Cedar County	Iowa	19105	0.823	0.03
+19033	Cerro Gordo County	Iowa	19033	0.811	0.026
+19035	Cherokee County	Iowa	19093	0.886	0.033
+19037	Chickasaw County	Iowa	19067	0.709	0.077
+19039	Clarke County	Iowa	19053	0.805	0.042
+19041	Clay County	Iowa	19041	0.706	0.047
+19043	Clayton County	Iowa	19043	0.753	0.034
+19045	Clinton County	Iowa	19045	0.843	0.044
+19047	Crawford County	Iowa	19047	0.677	0.068
+19049	Dallas County	Iowa	19049	0.937	0.029
+19051	Davis County	Iowa	19007	0.728	0.03
+19053	Decatur County	Iowa	19053	0.805	0.042
+19055	Delaware County	Iowa	19105	0.823	0.03
+19057	Des Moines County	Iowa	19057	0.814	0.03
+19059	Dickinson County	Iowa	19059	0.784	0.034
+19061	Dubuque County	Iowa	19061	0.881	0.017
+19063	Emmet County	Iowa	19147	0.746	0.035
+19065	Fayette County	Iowa	19065	0.867	0.073
+19067	Floyd County	Iowa	19067	0.709	0.077
+19069	Franklin County	Iowa	19083	0.802	0.045
+19071	Fremont County	Iowa	19129	0.823	0.051
+19073	Greene County	Iowa	19025	0.78	0.04
+19075	Grundy County	Iowa	19075	0.867	0.039
+19077	Guthrie County	Iowa	19077	0.807	0.036
+19079	Hamilton County	Iowa	19015	0.859	0.032
+19081	Hancock County	Iowa	19197	0.812	0.034
+19083	Hardin County	Iowa	19083	0.802	0.045
+19085	Harrison County	Iowa	19085	0.801	0.035
+19087	Henry County	Iowa	19007	0.728	0.03
+19089	Howard County	Iowa	19131	0.801	0.032
+19091	Humboldt County	Iowa	19197	0.812	0.034
+19093	Ida County	Iowa	19093	0.886	0.033
+19095	Iowa County	Iowa	19183	0.824	0.048
+19097	Jackson County	Iowa	19105	0.823	0.03
+19099	Jasper County	Iowa	19157	0.864	0.039
+19101	Jefferson County	Iowa	19101	0.709	0.049
+19103	Johnson County	Iowa	19103	0.878	0.012
+19105	Jones County	Iowa	19105	0.823	0.03
+19107	Keokuk County	Iowa	19123	0.826	0.035
+19109	Kossuth County	Iowa	19109	0.808	0.04
+19111	Lee County	Iowa	19111	0.814	0.031
+19113	Linn County	Iowa	19113	0.892	0.013
+19115	Louisa County	Iowa	19183	0.824	0.048
+19117	Lucas County	Iowa	19117	0.794	0.048
+19119	Lyon County	Iowa	19119	0.829	0.025
+19121	Madison County	Iowa	19181	0.904	0.038
+19123	Mahaska County	Iowa	19123	0.826	0.035
+19125	Marion County	Iowa	19125	0.848	0.031
+19127	Marshall County	Iowa	19127	0.873	0.039
+19129	Mills County	Iowa	19129	0.823	0.051
+19131	Mitchell County	Iowa	19131	0.801	0.032
+19133	Monona County	Iowa	19085	0.801	0.035
+19135	Monroe County	Iowa	19117	0.794	0.048
+19137	Montgomery County	Iowa	19137	0.721	0.066
+19139	Muscatine County	Iowa	19139	0.873	0.033
+19141	O'Brien County	Iowa	19119	0.829	0.025
+19143	Osceola County	Iowa	19119	0.829	0.025
+19145	Page County	Iowa	19129	0.823	0.051
+19147	Palo Alto County	Iowa	19147	0.746	0.035
+19149	Plymouth County	Iowa	19093	0.886	0.033
+19151	Pocahontas County	Iowa	19025	0.78	0.04
+19153	Polk County	Iowa	19153	0.963	0.008
+19155	Pottawattamie County	Iowa	19155	0.867	0.025
+19157	Poweshiek County	Iowa	19157	0.864	0.039
+19159	Ringgold County	Iowa	19053	0.805	0.042
+19161	Sac County	Iowa	19047	0.677	0.068
+19163	Scott County	Iowa	19163	0.86	0.018
+19165	Shelby County	Iowa	19085	0.801	0.035
+19167	Sioux County	Iowa	19167	0.85	0.027
+19169	Story County	Iowa	19169	0.894	0.027
+19171	Tama County	Iowa	19075	0.867	0.039
+19173	Taylor County	Iowa	19053	0.805	0.042
+19175	Union County	Iowa	19137	0.721	0.066
+19177	Van Buren County	Iowa	19007	0.728	0.03
+19179	Wapello County	Iowa	19179	0.875	0.044
+19181	Warren County	Iowa	19181	0.904	0.038
+19183	Washington County	Iowa	19183	0.824	0.048
+19185	Wayne County	Iowa	19117	0.794	0.048
+19187	Webster County	Iowa	19187	0.857	0.041
+19189	Winnebago County	Iowa	19131	0.801	0.032
+19191	Winneshiek County	Iowa	19191	0.832	0.031
+19193	Woodbury County	Iowa	19193	0.877	0.03
+19195	Worth County	Iowa	19131	0.801	0.032
+19197	Wright County	Iowa	19197	0.812	0.034
+20001	Allen County	Kansas	20001	0.702	0.04
+20003	Anderson County	Kansas	20001	0.702	0.04
+20005	Atchison County	Kansas	20085	0.769	0.037
+20007	Barber County	Kansas	20007	0.699	0.038
+20009	Barton County	Kansas	20009	0.73	0.041
+20011	Bourbon County	Kansas	20001	0.702	0.04
+20013	Brown County	Kansas	20085	0.769	0.037
+20015	Butler County	Kansas	20015	0.784	0.051
+20017	Chase County	Kansas	20205	0.829	0.049
+20019	Chautauqua County	Kansas	20125	0.8	0.038
+20021	Cherokee County	Kansas	20099	0.801	0.031
+20023	Cheyenne County	Kansas	20193	0.758	0.032
+20025	Clark County	Kansas	20057	0.774	0.054
+20027	Clay County	Kansas	20041	0.726	0.051
+20029	Cloud County	Kansas	20029	0.744	0.033
+20031	Coffey County	Kansas	20031	0.837	0.05
+20033	Comanche County	Kansas	20151	0.726	0.033
+20035	Cowley County	Kansas	20035	0.823	0.043
+20037	Crawford County	Kansas	20037	0.781	0.023
+20039	Decatur County	Kansas	20193	0.758	0.032
+20041	Dickinson County	Kansas	20041	0.726	0.051
+20043	Doniphan County	Kansas	20085	0.769	0.037
+20045	Douglas County	Kansas	20045	0.868	0.017
+20047	Edwards County	Kansas	20047	0.791	0.039
+20049	Elk County	Kansas	20205	0.829	0.049
+20051	Ellis County	Kansas	20051	0.795	0.03
+20053	Ellsworth County	Kansas	20053	0.681	0.042
+20055	Finney County	Kansas	20055	0.928	0.046
+20057	Ford County	Kansas	20057	0.774	0.054
+20059	Franklin County	Kansas	20059	0.795	0.029
+20061	Geary County	Kansas	20061	0.815	0.025
+20063	Gove County	Kansas	20063	0.744	0.055
+20065	Graham County	Kansas	20063	0.744	0.055
+20067	Grant County	Kansas	20129	0.776	0.043
+20069	Gray County	Kansas	20047	0.791	0.039
+20071	Greeley County	Kansas	20129	0.776	0.043
+20073	Greenwood County	Kansas	20205	0.829	0.049
+20075	Hamilton County	Kansas	20129	0.776	0.043
+20077	Harper County	Kansas	20007	0.699	0.038
+20079	Harvey County	Kansas	20079	0.81	0.034
+20081	Haskell County	Kansas	20047	0.791	0.039
+20083	Hodgeman County	Kansas	20047	0.791	0.039
+20085	Jackson County	Kansas	20085	0.769	0.037
+20087	Jefferson County	Kansas	20085	0.769	0.037
+20089	Jewell County	Kansas	20163	0.69	0.059
+20091	Johnson County	Kansas	20091	0.945	0.007
+20093	Kearny County	Kansas	20129	0.776	0.043
+20095	Kingman County	Kansas	20007	0.699	0.038
+20097	Kiowa County	Kansas	20151	0.726	0.033
+20099	Labette County	Kansas	20099	0.801	0.031
+20101	Lane County	Kansas	20063	0.744	0.055
+20103	Leavenworth County	Kansas	20103	0.896	0.026
+20105	Lincoln County	Kansas	20053	0.681	0.042
+20107	Linn County	Kansas	20001	0.702	0.04
+20109	Logan County	Kansas	20193	0.758	0.032
+20111	Lyon County	Kansas	20111	0.776	0.032
+20113	McPherson County	Kansas	20113	0.699	0.049
+20115	Marion County	Kansas	20041	0.726	0.051
+20117	Marshall County	Kansas	20131	0.823	0.033
+20119	Meade County	Kansas	20047	0.791	0.039
+20121	Miami County	Kansas	20059	0.795	0.029
+20123	Mitchell County	Kansas	20029	0.744	0.033
+20125	Montgomery County	Kansas	20125	0.8	0.038
+20127	Morris County	Kansas	20205	0.829	0.049
+20129	Morton County	Kansas	20129	0.776	0.043
+20131	Nemaha County	Kansas	20131	0.823	0.033
+20133	Neosho County	Kansas	20001	0.702	0.04
+20135	Ness County	Kansas	20063	0.744	0.055
+20137	Norton County	Kansas	20193	0.758	0.032
+20139	Osage County	Kansas	20031	0.837	0.05
+20141	Osborne County	Kansas	20163	0.69	0.059
+20143	Ottawa County	Kansas	20029	0.744	0.033
+20145	Pawnee County	Kansas	20047	0.791	0.039
+20147	Phillips County	Kansas	20163	0.69	0.059
+20149	Pottawatomie County	Kansas	20131	0.823	0.033
+20151	Pratt County	Kansas	20151	0.726	0.033
+20153	Rawlins County	Kansas	20193	0.758	0.032
+20155	Reno County	Kansas	20155	0.815	0.027
+20157	Republic County	Kansas	20029	0.744	0.033
+20159	Rice County	Kansas	20053	0.681	0.042
+20161	Riley County	Kansas	20161	0.877	0.026
+20163	Rooks County	Kansas	20163	0.69	0.059
+20165	Rush County	Kansas	20047	0.791	0.039
+20167	Russell County	Kansas	20009	0.73	0.041
+20169	Saline County	Kansas	20169	0.836	0.033
+20171	Scott County	Kansas	20063	0.744	0.055
+20173	Sedgwick County	Kansas	20173	0.846	0.01
+20175	Seward County	Kansas	20129	0.776	0.043
+20177	Shawnee County	Kansas	20177	0.843	0.015
+20179	Sheridan County	Kansas	20063	0.744	0.055
+20181	Sherman County	Kansas	20193	0.758	0.032
+20183	Smith County	Kansas	20163	0.69	0.059
+20185	Stafford County	Kansas	20047	0.791	0.039
+20187	Stanton County	Kansas	20129	0.776	0.043
+20189	Stevens County	Kansas	20129	0.776	0.043
+20191	Sumner County	Kansas	20007	0.699	0.038
+20193	Thomas County	Kansas	20193	0.758	0.032
+20195	Trego County	Kansas	20063	0.744	0.055
+20197	Wabaunsee County	Kansas	20031	0.837	0.05
+20199	Wallace County	Kansas	20129	0.776	0.043
+20201	Washington County	Kansas	20131	0.823	0.033
+20203	Wichita County	Kansas	20063	0.744	0.055
+20205	Wilson County	Kansas	20205	0.829	0.049
+20207	Woodson County	Kansas	20205	0.829	0.049
+20209	Wyandotte County	Kansas	20209	0.926	0.015
+21001	Adair County	Kentucky	21001	0.732	0.037
+21003	Allen County	Kentucky	21009	0.809	0.035
+21005	Anderson County	Kentucky	21179	0.827	0.032
+21007	Ballard County	Kentucky	21145	0.855	0.032
+21009	Barren County	Kentucky	21009	0.809	0.035
+21011	Bath County	Kentucky	21069	0.827	0.03
+21013	Bell County	Kentucky	21121	0.752	0.037
+21015	Boone County	Kentucky	21015	0.913	0.029
+21017	Bourbon County	Kentucky	21173	0.767	0.051
+21019	Boyd County	Kentucky	21019	0.846	0.029
+21021	Boyle County	Kentucky	21021	0.856	0.034
+21023	Bracken County	Kentucky	21069	0.827	0.03
+21025	Breathitt County	Kentucky	21109	0.736	0.048
+21027	Breckinridge County	Kentucky	21085	0.847	0.055
+21029	Bullitt County	Kentucky	21179	0.827	0.032
+21031	Butler County	Kentucky	21123	0.753	0.04
+21033	Caldwell County	Kentucky	21139	0.733	0.026
+21035	Calloway County	Kentucky	21035	0.794	0.029
+21037	Campbell County	Kentucky	21037	0.884	0.03
+21039	Carlisle County	Kentucky	21083	0.865	0.033
+21041	Carroll County	Kentucky	21041	0.806	0.039
+21043	Carter County	Kentucky	21205	0.754	0.035
+21045	Casey County	Kentucky	21001	0.732	0.037
+21047	Christian County	Kentucky	21047	0.858	0.029
+21049	Clark County	Kentucky	21049	0.793	0.037
+21051	Clay County	Kentucky	21121	0.752	0.037
+21053	Clinton County	Kentucky	21001	0.732	0.037
+21055	Crittenden County	Kentucky	21139	0.733	0.026
+21057	Cumberland County	Kentucky	21001	0.732	0.037
+21059	Daviess County	Kentucky	21059	0.828	0.031
+21061	Edmonson County	Kentucky	21123	0.753	0.04
+21063	Elliott County	Kentucky	21205	0.754	0.035
+21065	Estill County	Kentucky	21109	0.736	0.048
+21067	Fayette County	Kentucky	21067	0.86	0.008
+21069	Fleming County	Kentucky	21069	0.827	0.03
+21071	Floyd County	Kentucky	21115	0.718	0.036
+21073	Franklin County	Kentucky	21073	0.794	0.015
+21075	Fulton County	Kentucky	21083	0.865	0.033
+21077	Gallatin County	Kentucky	21041	0.806	0.039
+21079	Garrard County	Kentucky	21109	0.736	0.048
+21081	Grant County	Kentucky	21041	0.806	0.039
+21083	Graves County	Kentucky	21083	0.865	0.033
+21085	Grayson County	Kentucky	21085	0.847	0.055
+21087	Green County	Kentucky	21123	0.753	0.04
+21089	Greenup County	Kentucky	21069	0.827	0.03
+21091	Hancock County	Kentucky	21085	0.847	0.055
+21093	Hardin County	Kentucky	21093	0.834	0.023
+21095	Harlan County	Kentucky	21193	0.785	0.041
+21097	Harrison County	Kentucky	21069	0.827	0.03
+21099	Hart County	Kentucky	21123	0.753	0.04
+21101	Henderson County	Kentucky	21101	0.749	0.052
+21103	Henry County	Kentucky	21041	0.806	0.039
+21105	Hickman County	Kentucky	21083	0.865	0.033
+21107	Hopkins County	Kentucky	21139	0.733	0.026
+21109	Jackson County	Kentucky	21109	0.736	0.048
+21111	Jefferson County	Kentucky	21111	0.925	0.006
+21113	Jessamine County	Kentucky	21113	0.785	0.042
+21115	Johnson County	Kentucky	21115	0.718	0.036
+21117	Kenton County	Kentucky	21117	0.901	0.021
+21119	Knott County	Kentucky	21115	0.718	0.036
+21121	Knox County	Kentucky	21121	0.752	0.037
+21123	Larue County	Kentucky	21123	0.753	0.04
+21125	Laurel County	Kentucky	21125	0.761	0.033
+21127	Lawrence County	Kentucky	21205	0.754	0.035
+21129	Lee County	Kentucky	21049	0.793	0.037
+21131	Leslie County	Kentucky	21121	0.752	0.037
+21133	Letcher County	Kentucky	21115	0.718	0.036
+21135	Lewis County	Kentucky	21069	0.827	0.03
+21137	Lincoln County	Kentucky	21109	0.736	0.048
+21139	Livingston County	Kentucky	21139	0.733	0.026
+21141	Logan County	Kentucky	21177	0.805	0.035
+21143	Lyon County	Kentucky	21139	0.733	0.026
+21145	McCracken County	Kentucky	21145	0.855	0.032
+21147	McCreary County	Kentucky	21199	0.771	0.026
+21149	McLean County	Kentucky	21177	0.805	0.035
+21151	Madison County	Kentucky	21151	0.797	0.02
+21153	Magoffin County	Kentucky	21115	0.718	0.036
+21155	Marion County	Kentucky	21123	0.753	0.04
+21157	Marshall County	Kentucky	21083	0.865	0.033
+21159	Martin County	Kentucky	21195	0.779	0.043
+21161	Mason County	Kentucky	21069	0.827	0.03
+21163	Meade County	Kentucky	21085	0.847	0.055
+21165	Menifee County	Kentucky	21109	0.736	0.048
+21167	Mercer County	Kentucky	21239	0.8	0.042
+21169	Metcalfe County	Kentucky	21001	0.732	0.037
+21171	Monroe County	Kentucky	21009	0.809	0.035
+21173	Montgomery County	Kentucky	21173	0.767	0.051
+21175	Morgan County	Kentucky	21205	0.754	0.035
+21177	Muhlenberg County	Kentucky	21177	0.805	0.035
+21179	Nelson County	Kentucky	21179	0.827	0.032
+21181	Nicholas County	Kentucky	21069	0.827	0.03
+21183	Ohio County	Kentucky	21123	0.753	0.04
+21185	Oldham County	Kentucky	21185	0.837	0.05
+21187	Owen County	Kentucky	21041	0.806	0.039
+21189	Owsley County	Kentucky	21109	0.736	0.048
+21191	Pendleton County	Kentucky	21041	0.806	0.039
+21193	Perry County	Kentucky	21193	0.785	0.041
+21195	Pike County	Kentucky	21195	0.779	0.043
+21197	Powell County	Kentucky	21049	0.793	0.037
+21199	Pulaski County	Kentucky	21199	0.771	0.026
+21201	Robertson County	Kentucky	21069	0.827	0.03
+21203	Rockcastle County	Kentucky	21109	0.736	0.048
+21205	Rowan County	Kentucky	21205	0.754	0.035
+21207	Russell County	Kentucky	21199	0.771	0.026
+21209	Scott County	Kentucky	21209	0.937	0.031
+21211	Shelby County	Kentucky	21041	0.806	0.039
+21213	Simpson County	Kentucky	21177	0.805	0.035
+21215	Spencer County	Kentucky	21179	0.827	0.032
+21217	Taylor County	Kentucky	21001	0.732	0.037
+21219	Todd County	Kentucky	21177	0.805	0.035
+21221	Trigg County	Kentucky	21139	0.733	0.026
+21223	Trimble County	Kentucky	21041	0.806	0.039
+21225	Union County	Kentucky	21139	0.733	0.026
+21227	Warren County	Kentucky	21227	0.825	0.022
+21229	Washington County	Kentucky	21179	0.827	0.032
+21231	Wayne County	Kentucky	21199	0.771	0.026
+21233	Webster County	Kentucky	21139	0.733	0.026
+21235	Whitley County	Kentucky	21125	0.761	0.033
+21237	Wolfe County	Kentucky	21109	0.736	0.048
+21239	Woodford County	Kentucky	21239	0.8	0.042
+22001	Acadia Parish	Louisiana	22001	0.836	0.029
+22003	Allen Parish	Louisiana	22001	0.836	0.029
+22005	Ascension Parish	Louisiana	22005	0.959	0.037
+22007	Assumption Parish	Louisiana	22099	0.885	0.023
+22009	Avoyelles Parish	Louisiana	22021	0.838	0.047
+22011	Beauregard Parish	Louisiana	22001	0.836	0.029
+22013	Bienville Parish	Louisiana	22111	0.743	0.052
+22015	Bossier Parish	Louisiana	22015	0.82	0.035
+22017	Caddo Parish	Louisiana	22017	0.825	0.024
+22019	Calcasieu Parish	Louisiana	22019	0.89	0.026
+22021	Caldwell Parish	Louisiana	22021	0.838	0.047
+22023	Cameron Parish	Louisiana	22001	0.836	0.029
+22025	Catahoula Parish	Louisiana	22021	0.838	0.047
+22027	Claiborne Parish	Louisiana	22111	0.743	0.052
+22029	Concordia Parish	Louisiana	22077	0.867	0.046
+22031	De Soto Parish	Louisiana	22069	0.88	0.04
+22033	East Baton Rouge Parish	Louisiana	22033	0.943	0.014
+22035	East Carroll Parish	Louisiana	22021	0.838	0.047
+22037	East Feliciana Parish	Louisiana	22033	0.943	0.014
+22039	Evangeline Parish	Louisiana	22001	0.836	0.029
+22041	Franklin Parish	Louisiana	22021	0.838	0.047
+22043	Grant Parish	Louisiana	22069	0.88	0.04
+22045	Iberia Parish	Louisiana	22045	0.993	0.038
+22047	Iberville Parish	Louisiana	22045	0.993	0.038
+22049	Jackson Parish	Louisiana	22021	0.838	0.047
+22051	Jefferson Parish	Louisiana	22051	0.926	0.015
+22053	Jefferson Davis Parish	Louisiana	22001	0.836	0.029
+22055	Lafayette Parish	Louisiana	22055	0.868	0.021
+22057	Lafourche Parish	Louisiana	22057	0.901	0.04
+22059	LaSalle Parish	Louisiana	22069	0.88	0.04
+22061	Lincoln Parish	Louisiana	22061	0.866	0.038
+22063	Livingston Parish	Louisiana	22095	0.904	0.045
+22065	Madison Parish	Louisiana	22021	0.838	0.047
+22067	Morehouse Parish	Louisiana	22021	0.838	0.047
+22069	Natchitoches Parish	Louisiana	22069	0.88	0.04
+22071	Orleans Parish	Louisiana	22071	0.942	0.012
+22073	Ouachita Parish	Louisiana	22073	0.841	0.024
+22075	Plaquemines Parish	Louisiana	22075	0.809	0.049
+22077	Pointe Coupee Parish	Louisiana	22077	0.867	0.046
+22079	Rapides Parish	Louisiana	22079	0.94	0.031
+22081	Red River Parish	Louisiana	22111	0.743	0.052
+22083	Richland Parish	Louisiana	22021	0.838	0.047
+22085	Sabine Parish	Louisiana	22069	0.88	0.04
+22087	St. Bernard Parish	Louisiana	22075	0.809	0.049
+22089	St. Charles Parish	Louisiana	22089	1.03	0.049
+22091	St. Helena Parish	Louisiana	22105	0.861	0.036
+22093	St. James Parish	Louisiana	22099	0.885	0.023
+22095	St. John the Baptist Parish	Louisiana	22095	0.904	0.045
+22097	St. Landry Parish	Louisiana	22099	0.885	0.023
+22099	St. Martin Parish	Louisiana	22099	0.885	0.023
+22101	St. Mary Parish	Louisiana	22099	0.885	0.023
+22103	St. Tammany Parish	Louisiana	22103	0.932	0.024
+22105	Tangipahoa Parish	Louisiana	22105	0.861	0.036
+22107	Tensas Parish	Louisiana	22021	0.838	0.047
+22109	Terrebonne Parish	Louisiana	22109	0.863	0.043
+22111	Union Parish	Louisiana	22111	0.743	0.052
+22113	Vermilion Parish	Louisiana	22001	0.836	0.029
+22115	Vernon Parish	Louisiana	22115	0.84	0.029
+22117	Washington Parish	Louisiana	22105	0.861	0.036
+22119	Webster Parish	Louisiana	22111	0.743	0.052
+22121	West Baton Rouge Parish	Louisiana	22077	0.867	0.046
+22123	West Carroll Parish	Louisiana	22021	0.838	0.047
+22125	West Feliciana Parish	Louisiana	22077	0.867	0.046
+22127	Winn Parish	Louisiana	22111	0.743	0.052
+23001	Androscoggin County	Maine	23001	0.811	0.018
+23003	Aroostook County	Maine	23003	0.789	0.029
+23005	Cumberland County	Maine	23005	0.915	0.01
+23007	Franklin County	Maine	23007	0.845	0.046
+23009	Hancock County	Maine	23009	0.805	0.034
+23011	Kennebec County	Maine	23011	0.831	0.015
+23013	Knox County	Maine	23013	0.806	0.034
+23015	Lincoln County	Maine	23015	0.807	0.037
+23017	Oxford County	Maine	23017	0.782	0.056
+23019	Penobscot County	Maine	23019	0.857	0.015
+23021	Piscataquis County	Maine	23025	0.837	0.028
+23023	Sagadahoc County	Maine	23023	0.863	0.03
+23025	Somerset County	Maine	23025	0.837	0.028
+23027	Waldo County	Maine	23027	0.789	0.03
+23029	Washington County	Maine	23029	0.777	0.03
+23031	York County	Maine	23031	0.924	0.021
+24001	Allegany County	Maryland	24001	0.802	0.026
+24003	Anne Arundel County	Maryland	24003	1.12	0.011
+24005	Baltimore County	Maryland	24005	1.046	0.008
+24009	Calvert County	Maryland	24009	1.055	0.046
+24011	Caroline County	Maryland	24019	0.85	0.034
+24013	Carroll County	Maryland	24013	0.93	0.027
+24015	Cecil County	Maryland	24015	0.984	0.028
+24017	Charles County	Maryland	24017	1.089	0.038
+24019	Dorchester County	Maryland	24019	0.85	0.034
+24021	Frederick County	Maryland	24021	1.033	0.017
+24023	Garrett County	Maryland	24001	0.802	0.026
+24025	Harford County	Maryland	24025	1.069	0.015
+24027	Howard County	Maryland	24027	1.111	0.012
+24029	Kent County	Maryland	24035	0.865	0.035
+24031	Montgomery County	Maryland	24031	1.156	0.007
+24033	Prince George's County	Maryland	24033	1.14	0.01
+24035	Queen Anne's County	Maryland	24035	0.865	0.035
+24037	St. Mary's County	Maryland	24037	1.076	0.021
+24039	Somerset County	Maryland	24019	0.85	0.034
+24041	Talbot County	Maryland	24041	0.889	0.033
+24043	Washington County	Maryland	24043	0.894	0.021
+24045	Wicomico County	Maryland	24045	0.855	0.021
+24047	Worcester County	Maryland	24047	0.868	0.041
+24510	Baltimore city	Maryland	24510	1.047	0.009
+25001	Barnstable County	Massachusetts	25001	0.967	0.019
+25003	Berkshire County	Massachusetts	25003	0.96	0.024
+25005	Bristol County	Massachusetts	25005	1	0.014
+25007	Dukes County	Massachusetts	25019	1.146	0.055
+25009	Essex County	Massachusetts	25009	1.038	0.011
+25011	Franklin County	Massachusetts	25011	0.896	0.025
+25013	Hampden County	Massachusetts	25013	0.976	0.011
+25015	Hampshire County	Massachusetts	25015	0.985	0.02
+25017	Middlesex County	Massachusetts	25017	1.119	0.006
+25019	Nantucket County	Massachusetts	25019	1.146	0.055
+25021	Norfolk County	Massachusetts	25021	1.076	0.011
+25023	Plymouth County	Massachusetts	25023	1.031	0.017
+25025	Suffolk County	Massachusetts	25025	1.167	0.007
+25027	Worcester County	Massachusetts	25027	1.016	0.008
+26001	Alcona County	Michigan	26119	0.731	0.031
+26003	Alger County	Michigan	26003	0.902	0.046
+26005	Allegan County	Michigan	26005	0.833	0.02
+26007	Alpena County	Michigan	26007	0.764	0.029
+26009	Antrim County	Michigan	26089	0.83	0.057
+26011	Arenac County	Michigan	26011	0.75	0.025
+26013	Baraga County	Michigan	26071	0.763	0.039
+26015	Barry County	Michigan	26067	0.853	0.033
+26017	Bay County	Michigan	26017	0.884	0.025
+26019	Benzie County	Michigan	26101	0.747	0.029
+26021	Berrien County	Michigan	26021	0.918	0.018
+26023	Branch County	Michigan	26023	0.858	0.04
+26025	Calhoun County	Michigan	26025	0.922	0.021
+26027	Cass County	Michigan	26149	0.915	0.037
+26029	Charlevoix County	Michigan	26029	0.814	0.044
+26031	Cheboygan County	Michigan	26097	0.789	0.029
+26033	Chippewa County	Michigan	26033	0.809	0.032
+26035	Clare County	Michigan	26113	0.753	0.024
+26037	Clinton County	Michigan	26037	0.86	0.028
+26039	Crawford County	Michigan	26143	0.838	0.039
+26041	Delta County	Michigan	26041	0.778	0.026
+26043	Dickinson County	Michigan	26043	0.83	0.039
+26045	Eaton County	Michigan	26045	0.888	0.016
+26047	Emmet County	Michigan	26047	0.841	0.021
+26049	Genesee County	Michigan	26049	0.847	0.016
+26051	Gladwin County	Michigan	26011	0.75	0.025
+26053	Gogebic County	Michigan	26071	0.763	0.039
+26055	Grand Traverse County	Michigan	26055	0.81	0.022
+26057	Gratiot County	Michigan	26057	0.762	0.047
+26059	Hillsdale County	Michigan	26059	0.817	0.033
+26061	Houghton County	Michigan	26061	0.845	0.041
+26063	Huron County	Michigan	26063	0.839	0.033
+26065	Ingham County	Michigan	26065	0.92	0.009
+26067	Ionia County	Michigan	26067	0.853	0.033
+26069	Iosco County	Michigan	26119	0.731	0.031
+26071	Iron County	Michigan	26071	0.763	0.039
+26073	Isabella County	Michigan	26073	0.842	0.022
+26075	Jackson County	Michigan	26075	0.857	0.016
+26077	Kalamazoo County	Michigan	26077	0.885	0.014
+26079	Kalkaska County	Michigan	26113	0.753	0.024
+26081	Kent County	Michigan	26081	0.916	0.006
+26083	Keweenaw County	Michigan	26003	0.902	0.046
+26085	Lake County	Michigan	26123	0.831	0.029
+26087	Lapeer County	Michigan	26087	0.767	0.032
+26089	Leelanau County	Michigan	26089	0.83	0.057
+26091	Lenawee County	Michigan	26091	0.84	0.036
+26093	Livingston County	Michigan	26093	0.901	0.018
+26095	Luce County	Michigan	26003	0.902	0.046
+26097	Mackinac County	Michigan	26097	0.789	0.029
+26099	Macomb County	Michigan	26099	0.944	0.008
+26101	Manistee County	Michigan	26101	0.747	0.029
+26103	Marquette County	Michigan	26103	0.799	0.02
+26105	Mason County	Michigan	26105	0.791	0.028
+26107	Mecosta County	Michigan	26107	0.939	0.037
+26109	Menominee County	Michigan	26041	0.778	0.026
+26111	Midland County	Michigan	26111	0.956	0.022
+26113	Missaukee County	Michigan	26113	0.753	0.024
+26115	Monroe County	Michigan	26115	0.92	0.028
+26117	Montcalm County	Michigan	26117	0.779	0.044
+26119	Montmorency County	Michigan	26119	0.731	0.031
+26121	Muskegon County	Michigan	26121	0.889	0.023
+26123	Newaygo County	Michigan	26123	0.831	0.029
+26125	Oakland County	Michigan	26125	0.96	0.005
+26127	Oceana County	Michigan	26105	0.791	0.028
+26129	Ogemaw County	Michigan	26011	0.75	0.025
+26131	Ontonagon County	Michigan	26071	0.763	0.039
+26133	Osceola County	Michigan	26113	0.753	0.024
+26135	Oscoda County	Michigan	26119	0.731	0.031
+26137	Otsego County	Michigan	26137	0.819	0.034
+26139	Ottawa County	Michigan	26139	0.869	0.014
+26141	Presque Isle County	Michigan	26119	0.731	0.031
+26143	Roscommon County	Michigan	26143	0.838	0.039
+26145	Saginaw County	Michigan	26145	0.866	0.015
+26147	St. Clair County	Michigan	26147	0.856	0.024
+26149	St. Joseph County	Michigan	26149	0.915	0.037
+26151	Sanilac County	Michigan	26151	0.814	0.029
+26153	Schoolcraft County	Michigan	26097	0.789	0.029
+26155	Shiawassee County	Michigan	26155	0.81	0.041
+26157	Tuscola County	Michigan	26157	0.745	0.035
+26159	Van Buren County	Michigan	26159	0.802	0.025
+26161	Washtenaw County	Michigan	26161	0.935	0.008
+26163	Wayne County	Michigan	26163	0.961	0.005
+26165	Wexford County	Michigan	26165	0.768	0.029
+27001	Aitkin County	Minnesota	27001	0.935	0.029
+27003	Anoka County	Minnesota	27003	1.004	0.014
+27005	Becker County	Minnesota	27005	0.873	0.036
+27007	Beltrami County	Minnesota	27007	0.826	0.032
+27009	Benton County	Minnesota	27009	0.877	0.037
+27011	Big Stone County	Minnesota	27073	0.838	0.031
+27013	Blue Earth County	Minnesota	27013	0.94	0.021
+27015	Brown County	Minnesota	27015	0.874	0.03
+27017	Carlton County	Minnesota	27017	0.891	0.028
+27019	Carver County	Minnesota	27019	0.984	0.021
+27021	Cass County	Minnesota	27021	0.854	0.031
+27023	Chippewa County	Minnesota	27023	1.036	0.102
+27025	Chisago County	Minnesota	27025	1.02	0.072
+27027	Clay County	Minnesota	27027	0.931	0.043
+27029	Clearwater County	Minnesota	27087	0.848	0.04
+27031	Cook County	Minnesota	27075	0.893	0.044
+27033	Cottonwood County	Minnesota	27033	0.846	0.039
+27035	Crow Wing County	Minnesota	27035	0.869	0.023
+27037	Dakota County	Minnesota	27037	0.989	0.01
+27039	Dodge County	Minnesota	27099	0.949	0.028
+27041	Douglas County	Minnesota	27041	0.909	0.032
+27043	Faribault County	Minnesota	27161	0.859	0.039
+27045	Fillmore County	Minnesota	27045	0.827	0.04
+27047	Freeborn County	Minnesota	27047	0.984	0.055
+27049	Goodhue County	Minnesota	27049	0.941	0.027
+27051	Grant County	Minnesota	27155	0.884	0.059
+27053	Hennepin County	Minnesota	27053	1.056	0.005
+27055	Houston County	Minnesota	27045	0.827	0.04
+27057	Hubbard County	Minnesota	27057	0.838	0.038
+27059	Isanti County	Minnesota	27059	0.958	0.054
+27061	Itasca County	Minnesota	27061	0.807	0.04
+27063	Jackson County	Minnesota	27063	0.936	0.061
+27065	Kanabec County	Minnesota	27001	0.935	0.029
+27067	Kandiyohi County	Minnesota	27067	0.873	0.028
+27069	Kittson County	Minnesota	27135	0.874	0.03
+27071	Koochiching County	Minnesota	27135	0.874	0.03
+27073	Lac qui Parle County	Minnesota	27073	0.838	0.031
+27075	Lake County	Minnesota	27075	0.893	0.044
+27077	Lake of the Woods County	Minnesota	27135	0.874	0.03
+27079	Le Sueur County	Minnesota	27079	0.866	0.037
+27081	Lincoln County	Minnesota	27173	0.838	0.032
+27083	Lyon County	Minnesota	27083	0.846	0.025
+27085	McLeod County	Minnesota	27085	0.945	0.027
+27087	Mahnomen County	Minnesota	27087	0.848	0.04
+27089	Marshall County	Minnesota	27113	0.897	0.029
+27091	Martin County	Minnesota	27091	0.802	0.059
+27093	Meeker County	Minnesota	27093	0.774	0.063
+27095	Mille Lacs County	Minnesota	27095	0.873	0.052
+27097	Morrison County	Minnesota	27097	0.808	0.063
+27099	Mower County	Minnesota	27099	0.949	0.028
+27101	Murray County	Minnesota	27117	0.853	0.039
+27103	Nicollet County	Minnesota	27103	0.882	0.029
+27105	Nobles County	Minnesota	27105	0.903	0.048
+27107	Norman County	Minnesota	27087	0.848	0.04
+27109	Olmsted County	Minnesota	27109	0.972	0.012
+27111	Otter Tail County	Minnesota	27111	0.887	0.026
+27113	Pennington County	Minnesota	27113	0.897	0.029
+27115	Pine County	Minnesota	27115	0.904	0.036
+27117	Pipestone County	Minnesota	27117	0.853	0.039
+27119	Polk County	Minnesota	27119	0.927	0.041
+27121	Pope County	Minnesota	27121	0.784	0.069
+27123	Ramsey County	Minnesota	27123	1.019	0.008
+27125	Red Lake County	Minnesota	27113	0.897	0.029
+27127	Redwood County	Minnesota	27127	0.885	0.028
+27129	Renville County	Minnesota	27129	0.921	0.061
+27131	Rice County	Minnesota	27131	0.931	0.026
+27133	Rock County	Minnesota	27117	0.853	0.039
+27135	Roseau County	Minnesota	27135	0.874	0.03
+27137	St. Louis County	Minnesota	27137	0.908	0.012
+27139	Scott County	Minnesota	27139	1.037	0.026
+27141	Sherburne County	Minnesota	27141	0.949	0.04
+27143	Sibley County	Minnesota	27079	0.866	0.037
+27145	Stearns County	Minnesota	27145	0.913	0.018
+27147	Steele County	Minnesota	27147	0.924	0.024
+27149	Stevens County	Minnesota	27149	0.907	0.029
+27151	Swift County	Minnesota	27073	0.838	0.031
+27153	Todd County	Minnesota	27153	0.942	0.059
+27155	Traverse County	Minnesota	27155	0.884	0.059
+27157	Wabasha County	Minnesota	27157	0.908	0.038
+27159	Wadena County	Minnesota	27159	0.904	0.044
+27161	Waseca County	Minnesota	27161	0.859	0.039
+27163	Washington County	Minnesota	27163	1.002	0.017
+27165	Watonwan County	Minnesota	27033	0.846	0.039
+27167	Wilkin County	Minnesota	27155	0.884	0.059
+27169	Winona County	Minnesota	27169	0.826	0.018
+27171	Wright County	Minnesota	27171	1.032	0.033
+27173	Yellow Medicine County	Minnesota	27173	0.838	0.032
+28001	Adams County	Mississippi	28085	0.762	0.04
+28003	Alcorn County	Mississippi	28057	0.772	0.033
+28005	Amite County	Mississippi	28085	0.762	0.04
+28007	Attala County	Mississippi	28161	0.782	0.036
+28009	Benton County	Mississippi	28145	0.783	0.039
+28011	Bolivar County	Mississippi	28027	0.822	0.031
+28013	Calhoun County	Mississippi	28145	0.783	0.039
+28015	Carroll County	Mississippi	28161	0.782	0.036
+28017	Chickasaw County	Mississippi	28145	0.783	0.039
+28019	Choctaw County	Mississippi	28161	0.782	0.036
+28021	Claiborne County	Mississippi	28149	0.875	0.041
+28023	Clarke County	Mississippi	28061	0.814	0.036
+28025	Clay County	Mississippi	28057	0.772	0.033
+28027	Coahoma County	Mississippi	28027	0.822	0.031
+28029	Copiah County	Mississippi	28149	0.875	0.041
+28031	Covington County	Mississippi	28091	0.832	0.038
+28033	DeSoto County	Mississippi	28033	0.852	0.034
+28035	Forrest County	Mississippi	28035	0.78	0.025
+28037	Franklin County	Mississippi	28085	0.762	0.04
+28039	George County	Mississippi	28059	0.855	0.022
+28041	Greene County	Mississippi	28059	0.855	0.022
+28043	Grenada County	Mississippi	28161	0.782	0.036
+28045	Hancock County	Mississippi	28045	0.949	0.04
+28047	Harrison County	Mississippi	28047	0.809	0.02
+28049	Hinds County	Mississippi	28049	0.885	0.017
+28051	Holmes County	Mississippi	28051	0.773	0.041
+28053	Humphreys County	Mississippi	28051	0.773	0.041
+28055	Issaquena County	Mississippi	28051	0.773	0.041
+28057	Itawamba County	Mississippi	28057	0.772	0.033
+28059	Jackson County	Mississippi	28059	0.855	0.022
+28061	Jasper County	Mississippi	28061	0.814	0.036
+28063	Jefferson County	Mississippi	28085	0.762	0.04
+28065	Jefferson Davis County	Mississippi	28091	0.832	0.038
+28067	Jones County	Mississippi	28061	0.814	0.036
+28069	Kemper County	Mississippi	28099	0.907	0.046
+28071	Lafayette County	Mississippi	28071	0.888	0.041
+28073	Lamar County	Mississippi	28091	0.832	0.038
+28075	Lauderdale County	Mississippi	28075	0.801	0.031
+28077	Lawrence County	Mississippi	28085	0.762	0.04
+28079	Leake County	Mississippi	28099	0.907	0.046
+28081	Lee County	Mississippi	28081	0.838	0.027
+28083	Leflore County	Mississippi	28051	0.773	0.041
+28085	Lincoln County	Mississippi	28085	0.762	0.04
+28087	Lowndes County	Mississippi	28087	0.817	0.032
+28089	Madison County	Mississippi	28089	0.877	0.034
+28091	Marion County	Mississippi	28091	0.832	0.038
+28093	Marshall County	Mississippi	28145	0.783	0.039
+28095	Monroe County	Mississippi	28057	0.772	0.033
+28097	Montgomery County	Mississippi	28161	0.782	0.036
+28099	Neshoba County	Mississippi	28099	0.907	0.046
+28101	Newton County	Mississippi	28061	0.814	0.036
+28103	Noxubee County	Mississippi	28099	0.907	0.046
+28105	Oktibbeha County	Mississippi	28105	0.799	0.034
+28107	Panola County	Mississippi	28161	0.782	0.036
+28109	Pearl River County	Mississippi	28091	0.832	0.038
+28111	Perry County	Mississippi	28061	0.814	0.036
+28113	Pike County	Mississippi	28085	0.762	0.04
+28115	Pontotoc County	Mississippi	28145	0.783	0.039
+28117	Prentiss County	Mississippi	28145	0.783	0.039
+28119	Quitman County	Mississippi	28161	0.782	0.036
+28121	Rankin County	Mississippi	28121	0.879	0.033
+28123	Scott County	Mississippi	28099	0.907	0.046
+28125	Sharkey County	Mississippi	28051	0.773	0.041
+28127	Simpson County	Mississippi	28061	0.814	0.036
+28129	Smith County	Mississippi	28061	0.814	0.036
+28131	Stone County	Mississippi	28091	0.832	0.038
+28133	Sunflower County	Mississippi	28027	0.822	0.031
+28135	Tallahatchie County	Mississippi	28161	0.782	0.036
+28137	Tate County	Mississippi	28071	0.888	0.041
+28139	Tippah County	Mississippi	28145	0.783	0.039
+28141	Tishomingo County	Mississippi	28057	0.772	0.033
+28143	Tunica County	Mississippi	28161	0.782	0.036
+28145	Union County	Mississippi	28145	0.783	0.039
+28147	Walthall County	Mississippi	28091	0.832	0.038
+28149	Warren County	Mississippi	28149	0.875	0.041
+28151	Washington County	Mississippi	28151	0.745	0.049
+28153	Wayne County	Mississippi	28061	0.814	0.036
+28155	Webster County	Mississippi	28057	0.772	0.033
+28157	Wilkinson County	Mississippi	28085	0.762	0.04
+28159	Winston County	Mississippi	28099	0.907	0.046
+28161	Yalobusha County	Mississippi	28161	0.782	0.036
+28163	Yazoo County	Mississippi	28051	0.773	0.041
+29001	Adair County	Missouri	29001	0.77	0.04
+29003	Andrew County	Missouri	29049	0.801	0.036
+29005	Atchison County	Missouri	29147	0.821	0.046
+29007	Audrain County	Missouri	29113	0.8	0.029
+29009	Barry County	Missouri	29209	0.769	0.036
+29011	Barton County	Missouri	29039	0.753	0.023
+29013	Bates County	Missouri	29039	0.753	0.023
+29015	Benton County	Missouri	29015	0.693	0.031
+29017	Bollinger County	Missouri	29203	0.753	0.033
+29019	Boone County	Missouri	29019	0.815	0.015
+29021	Buchanan County	Missouri	29021	0.873	0.021
+29023	Butler County	Missouri	29023	0.923	0.05
+29025	Caldwell County	Missouri	29075	0.763	0.04
+29027	Callaway County	Missouri	29073	0.789	0.032
+29029	Camden County	Missouri	29015	0.693	0.031
+29031	Cape Girardeau County	Missouri	29031	0.813	0.024
+29033	Carroll County	Missouri	29041	0.724	0.038
+29035	Carter County	Missouri	29203	0.753	0.033
+29037	Cass County	Missouri	29037	0.835	0.042
+29039	Cedar County	Missouri	29039	0.753	0.023
+29041	Chariton County	Missouri	29041	0.724	0.038
+29043	Christian County	Missouri	29043	0.727	0.046
+29045	Clark County	Missouri	29001	0.77	0.04
+29047	Clay County	Missouri	29047	0.905	0.017
+29049	Clinton County	Missouri	29049	0.801	0.036
+29051	Cole County	Missouri	29051	0.791	0.017
+29053	Cooper County	Missouri	29195	0.828	0.057
+29055	Crawford County	Missouri	29203	0.753	0.033
+29057	Dade County	Missouri	29209	0.769	0.036
+29059	Dallas County	Missouri	29167	0.831	0.053
+29061	Daviess County	Missouri	29075	0.763	0.04
+29063	DeKalb County	Missouri	29049	0.801	0.036
+29065	Dent County	Missouri	29203	0.753	0.033
+29067	Douglas County	Missouri	29091	0.694	0.035
+29069	Dunklin County	Missouri	29023	0.923	0.05
+29071	Franklin County	Missouri	29071	0.768	0.029
+29073	Gasconade County	Missouri	29073	0.789	0.032
+29075	Gentry County	Missouri	29075	0.763	0.04
+29077	Greene County	Missouri	29077	0.796	0.012
+29079	Grundy County	Missouri	29079	0.738	0.04
+29081	Harrison County	Missouri	29075	0.763	0.04
+29083	Henry County	Missouri	29039	0.753	0.023
+29085	Hickory County	Missouri	29015	0.693	0.031
+29087	Holt County	Missouri	29147	0.821	0.046
+29089	Howard County	Missouri	29041	0.724	0.038
+29091	Howell County	Missouri	29091	0.694	0.035
+29093	Iron County	Missouri	29187	0.736	0.024
+29095	Jackson County	Missouri	29095	0.943	0.007
+29097	Jasper County	Missouri	29097	0.785	0.022
+29099	Jefferson County	Missouri	29099	0.836	0.023
+29101	Johnson County	Missouri	29101	0.807	0.03
+29103	Knox County	Missouri	29041	0.724	0.038
+29105	Laclede County	Missouri	29167	0.831	0.053
+29107	Lafayette County	Missouri	29049	0.801	0.036
+29109	Lawrence County	Missouri	29209	0.769	0.036
+29111	Lewis County	Missouri	29205	0.85	0.046
+29113	Lincoln County	Missouri	29113	0.8	0.029
+29115	Linn County	Missouri	29079	0.738	0.04
+29117	Livingston County	Missouri	29075	0.763	0.04
+29119	McDonald County	Missouri	29145	0.844	0.037
+29121	Macon County	Missouri	29041	0.724	0.038
+29123	Madison County	Missouri	29203	0.753	0.033
+29125	Maries County	Missouri	29073	0.789	0.032
+29127	Marion County	Missouri	29127	0.747	0.037
+29129	Mercer County	Missouri	29079	0.738	0.04
+29131	Miller County	Missouri	29015	0.693	0.031
+29133	Mississippi County	Missouri	29143	0.791	0.026
+29135	Moniteau County	Missouri	29015	0.693	0.031
+29137	Monroe County	Missouri	29205	0.85	0.046
+29139	Montgomery County	Missouri	29073	0.789	0.032
+29141	Morgan County	Missouri	29015	0.693	0.031
+29143	New Madrid County	Missouri	29143	0.791	0.026
+29145	Newton County	Missouri	29145	0.844	0.037
+29147	Nodaway County	Missouri	29147	0.821	0.046
+29149	Oregon County	Missouri	29203	0.753	0.033
+29151	Osage County	Missouri	29073	0.789	0.032
+29153	Ozark County	Missouri	29091	0.694	0.035
+29155	Pemiscot County	Missouri	29143	0.791	0.026
+29157	Perry County	Missouri	29203	0.753	0.033
+29159	Pettis County	Missouri	29159	0.706	0.027
+29161	Phelps County	Missouri	29161	0.874	0.03
+29163	Pike County	Missouri	29113	0.8	0.029
+29165	Platte County	Missouri	29165	0.908	0.02
+29167	Polk County	Missouri	29167	0.831	0.053
+29169	Pulaski County	Missouri	29169	0.88	0.045
+29171	Putnam County	Missouri	29079	0.738	0.04
+29173	Ralls County	Missouri	29205	0.85	0.046
+29175	Randolph County	Missouri	29205	0.85	0.046
+29177	Ray County	Missouri	29049	0.801	0.036
+29179	Reynolds County	Missouri	29203	0.753	0.033
+29181	Ripley County	Missouri	29203	0.753	0.033
+29183	St. Charles County	Missouri	29183	0.923	0.014
+29185	St. Clair County	Missouri	29039	0.753	0.023
+29186	Ste. Genevieve County	Missouri	29187	0.736	0.024
+29187	St. Francois County	Missouri	29187	0.736	0.024
+29189	St. Louis County	Missouri	29189	0.954	0.006
+29195	Saline County	Missouri	29195	0.828	0.057
+29197	Schuyler County	Missouri	29001	0.77	0.04
+29199	Scotland County	Missouri	29001	0.77	0.04
+29201	Scott County	Missouri	29143	0.791	0.026
+29203	Shannon County	Missouri	29203	0.753	0.033
+29205	Shelby County	Missouri	29205	0.85	0.046
+29207	Stoddard County	Missouri	29143	0.791	0.026
+29209	Stone County	Missouri	29209	0.769	0.036
+29211	Sullivan County	Missouri	29079	0.738	0.04
+29213	Taney County	Missouri	29213	0.685	0.044
+29215	Texas County	Missouri	29091	0.694	0.035
+29217	Vernon County	Missouri	29039	0.753	0.023
+29219	Warren County	Missouri	29073	0.789	0.032
+29221	Washington County	Missouri	29187	0.736	0.024
+29223	Wayne County	Missouri	29203	0.753	0.033
+29225	Webster County	Missouri	29043	0.727	0.046
+29227	Worth County	Missouri	29075	0.763	0.04
+29229	Wright County	Missouri	29167	0.831	0.053
+29510	St. Louis city	Missouri	29510	0.924	0.01
+30001	Beaverhead County	Montana	30001	0.78	0.033
+30003	Big Horn County	Montana	30075	0.827	0.04
+30005	Blaine County	Montana	30041	0.726	0.049
+30007	Broadwater County	Montana	30045	0.691	0.045
+30009	Carbon County	Montana	30095	0.779	0.054
+30011	Carter County	Montana	30075	0.827	0.04
+30013	Cascade County	Montana	30013	0.802	0.025
+30015	Chouteau County	Montana	30101	0.768	0.039
+30017	Custer County	Montana	30075	0.827	0.04
+30019	Daniels County	Montana	30033	0.839	0.029
+30021	Dawson County	Montana	30033	0.839	0.029
+30023	Deer Lodge County	Montana	30001	0.78	0.033
+30025	Fallon County	Montana	30075	0.827	0.04
+30027	Fergus County	Montana	30045	0.691	0.045
+30029	Flathead County	Montana	30029	0.787	0.03
+30031	Gallatin County	Montana	30031	0.829	0.018
+30033	Garfield County	Montana	30033	0.839	0.029
+30035	Glacier County	Montana	30101	0.768	0.039
+30037	Golden Valley County	Montana	30045	0.691	0.045
+30039	Granite County	Montana	30001	0.78	0.033
+30041	Hill County	Montana	30041	0.726	0.049
+30043	Jefferson County	Montana	30045	0.691	0.045
+30045	Judith Basin County	Montana	30045	0.691	0.045
+30047	Lake County	Montana	30047	0.711	0.057
+30049	Lewis and Clark County	Montana	30049	0.821	0.021
+30051	Liberty County	Montana	30101	0.768	0.039
+30053	Lincoln County	Montana	30029	0.787	0.03
+30055	McCone County	Montana	30033	0.839	0.029
+30057	Madison County	Montana	30001	0.78	0.033
+30059	Meagher County	Montana	30045	0.691	0.045
+30061	Mineral County	Montana	30063	0.774	0.018
+30063	Missoula County	Montana	30063	0.774	0.018
+30065	Musselshell County	Montana	30033	0.839	0.029
+30067	Park County	Montana	30095	0.779	0.054
+30069	Petroleum County	Montana	30033	0.839	0.029
+30071	Phillips County	Montana	30033	0.839	0.029
+30073	Pondera County	Montana	30101	0.768	0.039
+30075	Powder River County	Montana	30075	0.827	0.04
+30077	Powell County	Montana	30001	0.78	0.033
+30079	Prairie County	Montana	30033	0.839	0.029
+30081	Ravalli County	Montana	30001	0.78	0.033
+30083	Richland County	Montana	30033	0.839	0.029
+30085	Roosevelt County	Montana	30033	0.839	0.029
+30087	Rosebud County	Montana	30075	0.827	0.04
+30089	Sanders County	Montana	30047	0.711	0.057
+30091	Sheridan County	Montana	30033	0.839	0.029
+30093	Silver Bow County	Montana	30093	0.823	0.03
+30095	Stillwater County	Montana	30095	0.779	0.054
+30097	Sweet Grass County	Montana	30045	0.691	0.045
+30099	Teton County	Montana	30101	0.768	0.039
+30101	Toole County	Montana	30101	0.768	0.039
+30103	Treasure County	Montana	30075	0.827	0.04
+30105	Valley County	Montana	30033	0.839	0.029
+30107	Wheatland County	Montana	30045	0.691	0.045
+30109	Wibaux County	Montana	30033	0.839	0.029
+30111	Yellowstone County	Montana	30111	0.867	0.018
+31001	Adams County	Nebraska	31001	0.793	0.031
+31003	Antelope County	Nebraska	31003	0.769	0.05
+31005	Arthur County	Nebraska	31031	0.677	0.039
+31007	Banner County	Nebraska	31033	0.999	0.068
+31009	Blaine County	Nebraska	31041	0.777	0.036
+31011	Boone County	Nebraska	31003	0.769	0.05
+31013	Box Butte County	Nebraska	31013	0.794	0.037
+31015	Boyd County	Nebraska	31031	0.677	0.039
+31017	Brown County	Nebraska	31031	0.677	0.039
+31019	Buffalo County	Nebraska	31019	0.845	0.023
+31021	Burt County	Nebraska	31039	0.814	0.048
+31023	Butler County	Nebraska	31023	0.729	0.032
+31025	Cass County	Nebraska	31155	0.832	0.051
+31027	Cedar County	Nebraska	31027	0.836	0.04
+31029	Chase County	Nebraska	31135	0.795	0.049
+31031	Cherry County	Nebraska	31031	0.677	0.039
+31033	Cheyenne County	Nebraska	31033	0.999	0.068
+31035	Clay County	Nebraska	31035	0.741	0.035
+31037	Colfax County	Nebraska	31023	0.729	0.032
+31039	Cuming County	Nebraska	31039	0.814	0.048
+31041	Custer County	Nebraska	31041	0.777	0.036
+31043	Dakota County	Nebraska	31027	0.836	0.04
+31045	Dawes County	Nebraska	31013	0.794	0.037
+31047	Dawson County	Nebraska	31041	0.777	0.036
+31049	Deuel County	Nebraska	31135	0.795	0.049
+31051	Dixon County	Nebraska	31027	0.836	0.04
+31053	Dodge County	Nebraska	31053	0.833	0.045
+31055	Douglas County	Nebraska	31055	0.93	0.007
+31057	Dundy County	Nebraska	31135	0.795	0.049
+31059	Fillmore County	Nebraska	31035	0.741	0.035
+31061	Franklin County	Nebraska	31137	0.737	0.038
+31063	Frontier County	Nebraska	31063	0.794	0.043
+31065	Furnas County	Nebraska	31063	0.794	0.043
+31067	Gage County	Nebraska	31067	0.812	0.046
+31069	Garden County	Nebraska	31013	0.794	0.037
+31071	Garfield County	Nebraska	31031	0.677	0.039
+31073	Gosper County	Nebraska	31063	0.794	0.043
+31075	Grant County	Nebraska	31031	0.677	0.039
+31077	Greeley County	Nebraska	31003	0.769	0.05
+31079	Hall County	Nebraska	31079	0.892	0.028
+31081	Hamilton County	Nebraska	31035	0.741	0.035
+31083	Harlan County	Nebraska	31137	0.737	0.038
+31085	Hayes County	Nebraska	31063	0.794	0.043
+31087	Hitchcock County	Nebraska	31063	0.794	0.043
+31089	Holt County	Nebraska	31089	0.79	0.036
+31091	Hooker County	Nebraska	31031	0.677	0.039
+31093	Howard County	Nebraska	31023	0.729	0.032
+31095	Jefferson County	Nebraska	31169	0.805	0.033
+31097	Johnson County	Nebraska	31131	0.732	0.054
+31099	Kearney County	Nebraska	31137	0.737	0.038
+31101	Keith County	Nebraska	31135	0.795	0.049
+31103	Keya Paha County	Nebraska	31031	0.677	0.039
+31105	Kimball County	Nebraska	31033	0.999	0.068
+31107	Knox County	Nebraska	31089	0.79	0.036
+31109	Lancaster County	Nebraska	31109	0.84	0.009
+31111	Lincoln County	Nebraska	31111	0.749	0.04
+31113	Logan County	Nebraska	31041	0.777	0.036
+31115	Loup County	Nebraska	31031	0.677	0.039
+31117	McPherson County	Nebraska	31041	0.777	0.036
+31119	Madison County	Nebraska	31119	0.887	0.03
+31121	Merrick County	Nebraska	31023	0.729	0.032
+31123	Morrill County	Nebraska	31013	0.794	0.037
+31125	Nance County	Nebraska	31023	0.729	0.032
+31127	Nemaha County	Nebraska	31127	0.857	0.031
+31129	Nuckolls County	Nebraska	31035	0.741	0.035
+31131	Otoe County	Nebraska	31131	0.732	0.054
+31133	Pawnee County	Nebraska	31127	0.857	0.031
+31135	Perkins County	Nebraska	31135	0.795	0.049
+31137	Phelps County	Nebraska	31137	0.737	0.038
+31139	Pierce County	Nebraska	31003	0.769	0.05
+31141	Platte County	Nebraska	31141	0.854	0.04
+31143	Polk County	Nebraska	31023	0.729	0.032
+31145	Red Willow County	Nebraska	31063	0.794	0.043
+31147	Richardson County	Nebraska	31127	0.857	0.031
+31149	Rock County	Nebraska	31031	0.677	0.039
+31151	Saline County	Nebraska	31169	0.805	0.033
+31153	Sarpy County	Nebraska	31153	0.888	0.018
+31155	Saunders County	Nebraska	31155	0.832	0.051
+31157	Scotts Bluff County	Nebraska	31157	0.814	0.033
+31159	Seward County	Nebraska	31185	0.816	0.038
+31161	Sheridan County	Nebraska	31031	0.677	0.039
+31163	Sherman County	Nebraska	31041	0.777	0.036
+31165	Sioux County	Nebraska	31013	0.794	0.037
+31167	Stanton County	Nebraska	31039	0.814	0.048
+31169	Thayer County	Nebraska	31169	0.805	0.033
+31171	Thomas County	Nebraska	31031	0.677	0.039
+31173	Thurston County	Nebraska	31027	0.836	0.04
+31175	Valley County	Nebraska	31041	0.777	0.036
+31177	Washington County	Nebraska	31177	0.862	0.052
+31179	Wayne County	Nebraska	31039	0.814	0.048
+31181	Webster County	Nebraska	31035	0.741	0.035
+31183	Wheeler County	Nebraska	31003	0.769	0.05
+31185	York County	Nebraska	31185	0.816	0.038
+32001	Churchill County	Nevada	32011	0.876	0.04
+32003	Clark County	Nevada	32003	1.02	0.009
+32005	Douglas County	Nevada	32005	0.902	0.037
+32007	Elko County	Nevada	32007	0.983	0.051
+32009	Esmeralda County	Nevada	32011	0.876	0.04
+32011	Eureka County	Nevada	32011	0.876	0.04
+32013	Humboldt County	Nevada	32011	0.876	0.04
+32015	Lander County	Nevada	32011	0.876	0.04
+32017	Lincoln County	Nevada	32011	0.876	0.04
+32019	Lyon County	Nevada	32005	0.902	0.037
+32021	Mineral County	Nevada	32011	0.876	0.04
+32023	Nye County	Nevada	32011	0.876	0.04
+32027	Pershing County	Nevada	32011	0.876	0.04
+32029	Storey County	Nevada	32031	0.954	0.013
+32031	Washoe County	Nevada	32031	0.954	0.013
+32033	White Pine County	Nevada	32011	0.876	0.04
+32510	Carson City	Nevada	32510	0.909	0.038
+33001	Belknap County	New Hampshire	33001	0.908	0.037
+33003	Carroll County	New Hampshire	33003	0.786	0.034
+33005	Cheshire County	New Hampshire	33005	0.901	0.021
+33007	Coos County	New Hampshire	33007	0.888	0.038
+33009	Grafton County	New Hampshire	33009	0.955	0.02
+33011	Hillsborough County	New Hampshire	33011	0.982	0.01
+33013	Merrimack County	New Hampshire	33013	0.909	0.018
+33015	Rockingham County	New Hampshire	33015	0.971	0.016
+33017	Strafford County	New Hampshire	33017	0.96	0.024
+33019	Sullivan County	New Hampshire	33005	0.901	0.021
+34001	Atlantic County	New Jersey	34001	1.04	0.018
+34003	Bergen County	New Jersey	34003	1.1	0.011
+34005	Burlington County	New Jersey	34005	1.017	0.013
+34007	Camden County	New Jersey	34007	1.009	0.016
+34009	Cape May County	New Jersey	34009	0.969	0.034
+34011	Cumberland County	New Jersey	34011	0.955	0.029
+34013	Essex County	New Jersey	34013	1.11	0.013
+34015	Gloucester County	New Jersey	34015	1.016	0.02
+34017	Hudson County	New Jersey	34017	1.162	0.012
+34019	Hunterdon County	New Jersey	34019	1.066	0.027
+34021	Mercer County	New Jersey	34021	1.119	0.012
+34023	Middlesex County	New Jersey	34023	1.095	0.008
+34025	Monmouth County	New Jersey	34025	1.021	0.012
+34027	Morris County	New Jersey	34027	1.171	0.01
+34029	Ocean County	New Jersey	34029	0.986	0.018
+34031	Passaic County	New Jersey	34031	1.03	0.018
+34033	Salem County	New Jersey	34033	0.993	0.047
+34035	Somerset County	New Jersey	34035	1.149	0.012
+34037	Sussex County	New Jersey	34037	0.936	0.026
+34039	Union County	New Jersey	34039	1.094	0.015
+34041	Warren County	New Jersey	34041	0.997	0.034
+35001	Bernalillo County	New Mexico	35001	0.941	0.01
+35003	Catron County	New Mexico	35017	0.782	0.046
+35005	Chaves County	New Mexico	35025	0.863	0.042
+35006	Cibola County	New Mexico	35031	0.862	0.069
+35007	Colfax County	New Mexico	35055	0.827	0.084
+35009	Curry County	New Mexico	35009	0.89	0.046
+35011	De Baca County	New Mexico	35037	0.646	0.043
+35013	Doña Ana County	New Mexico	35013	0.843	0.026
+35015	Eddy County	New Mexico	35015	0.851	0.04
+35017	Grant County	New Mexico	35017	0.782	0.046
+35019	Guadalupe County	New Mexico	35037	0.646	0.043
+35021	Harding County	New Mexico	35037	0.646	0.043
+35023	Hidalgo County	New Mexico	35017	0.782	0.046
+35025	Lea County	New Mexico	35025	0.863	0.042
+35027	Lincoln County	New Mexico	35037	0.646	0.043
+35028	Los Alamos County	New Mexico	35028	1.183	0.028
+35029	Luna County	New Mexico	35017	0.782	0.046
+35031	McKinley County	New Mexico	35031	0.862	0.069
+35033	Mora County	New Mexico	35039	0.71	0.044
+35035	Otero County	New Mexico	35035	0.774	0.035
+35037	Quay County	New Mexico	35037	0.646	0.043
+35039	Rio Arriba County	New Mexico	35039	0.71	0.044
+35041	Roosevelt County	New Mexico	35037	0.646	0.043
+35043	Sandoval County	New Mexico	35043	1.022	0.043
+35045	San Juan County	New Mexico	35045	0.841	0.039
+35047	San Miguel County	New Mexico	35039	0.71	0.044
+35049	Santa Fe County	New Mexico	35049	0.932	0.02
+35051	Sierra County	New Mexico	35017	0.782	0.046
+35053	Socorro County	New Mexico	35061	0.802	0.038
+35055	Taos County	New Mexico	35055	0.827	0.084
+35057	Torrance County	New Mexico	35037	0.646	0.043
+35059	Union County	New Mexico	35037	0.646	0.043
+35061	Valencia County	New Mexico	35061	0.802	0.038
+36001	Albany County	New York	36001	0.971	0.009
+36003	Allegany County	New York	36003	0.869	0.031
+36005	Bronx County	New York	36005	1.092	0.017
+36007	Broome County	New York	36007	0.847	0.014
+36009	Cattaraugus County	New York	36009	0.867	0.025
+36011	Cayuga County	New York	36011	0.896	0.037
+36013	Chautauqua County	New York	36013	0.774	0.023
+36015	Chemung County	New York	36015	0.847	0.036
+36017	Chenango County	New York	36017	0.849	0.026
+36019	Clinton County	New York	36019	0.927	0.026
+36021	Columbia County	New York	36021	0.924	0.03
+36023	Cortland County	New York	36023	0.858	0.031
+36025	Delaware County	New York	36025	0.88	0.036
+36027	Dutchess County	New York	36027	1.027	0.018
+36029	Erie County	New York	36029	0.899	0.007
+36031	Essex County	New York	36031	0.83	0.054
+36033	Franklin County	New York	36033	0.882	0.038
+36035	Fulton County	New York	36035	0.898	0.048
+36037	Genesee County	New York	36037	0.846	0.021
+36039	Greene County	New York	36095	0.894	0.032
+36041	Hamilton County	New York	36035	0.898	0.048
+36043	Herkimer County	New York	36043	0.841	0.043
+36045	Jefferson County	New York	36045	0.836	0.022
+36047	Kings County	New York	36047	1.071	0.01
+36049	Lewis County	New York	36043	0.841	0.043
+36051	Livingston County	New York	36051	0.88	0.033
+36053	Madison County	New York	36053	0.911	0.033
+36055	Monroe County	New York	36055	0.901	0.007
+36057	Montgomery County	New York	36057	0.954	0.052
+36059	Nassau County	New York	36059	1.101	0.009
+36061	New York County	New York	36061	1.361	0.005
+36063	Niagara County	New York	36063	0.857	0.023
+36065	Oneida County	New York	36065	0.9	0.015
+36067	Onondaga County	New York	36067	0.917	0.008
+36069	Ontario County	New York	36069	0.897	0.018
+36071	Orange County	New York	36071	0.955	0.019
+36073	Orleans County	New York	36037	0.846	0.021
+36075	Oswego County	New York	36075	0.95	0.028
+36077	Otsego County	New York	36077	0.818	0.024
+36079	Putnam County	New York	36079	0.986	0.036
+36081	Queens County	New York	36081	1.093	0.009
+36083	Rensselaer County	New York	36083	0.927	0.028
+36085	Richmond County	New York	36085	1.015	0.022
+36087	Rockland County	New York	36087	1.084	0.019
+36089	St. Lawrence County	New York	36089	0.867	0.026
+36091	Saratoga County	New York	36091	0.94	0.017
+36093	Schenectady County	New York	36093	0.944	0.021
+36095	Schoharie County	New York	36095	0.894	0.032
+36097	Schuyler County	New York	36123	0.87	0.039
+36099	Seneca County	New York	36099	0.85	0.026
+36101	Steuben County	New York	36101	0.942	0.022
+36103	Suffolk County	New York	36103	1.062	0.008
+36105	Sullivan County	New York	36105	0.907	0.055
+36107	Tioga County	New York	36107	0.917	0.031
+36109	Tompkins County	New York	36109	0.906	0.022
+36111	Ulster County	New York	36111	0.916	0.025
+36113	Warren County	New York	36113	0.841	0.035
+36115	Washington County	New York	36115	0.875	0.059
+36117	Wayne County	New York	36117	0.953	0.038
+36119	Westchester County	New York	36119	1.16	0.01
+36121	Wyoming County	New York	36121	0.866	0.056
+36123	Yates County	New York	36123	0.87	0.039
+37001	Alamance County	North Carolina	37001	0.829	0.02
+37003	Alexander County	North Carolina	37193	0.832	0.026
+37005	Alleghany County	North Carolina	37193	0.832	0.026
+37007	Anson County	North Carolina	37153	0.863	0.035
+37009	Ashe County	North Carolina	37193	0.832	0.026
+37011	Avery County	North Carolina	37111	0.774	0.031
+37013	Beaufort County	North Carolina	37015	0.808	0.042
+37015	Bertie County	North Carolina	37015	0.808	0.042
+37017	Bladen County	North Carolina	37141	0.858	0.038
+37019	Brunswick County	North Carolina	37019	0.913	0.031
+37021	Buncombe County	North Carolina	37021	0.832	0.011
+37023	Burke County	North Carolina	37023	0.826	0.032
+37025	Cabarrus County	North Carolina	37025	0.913	0.027
+37027	Caldwell County	North Carolina	37027	0.82	0.052
+37029	Camden County	North Carolina	37095	0.751	0.045
+37031	Carteret County	North Carolina	37031	0.801	0.027
+37033	Caswell County	North Carolina	37157	0.794	0.051
+37035	Catawba County	North Carolina	37035	0.861	0.024
+37037	Chatham County	North Carolina	37037	0.919	0.044
+37039	Cherokee County	North Carolina	37113	0.795	0.032
+37041	Chowan County	North Carolina	37015	0.808	0.042
+37043	Clay County	North Carolina	37113	0.795	0.032
+37045	Cleveland County	North Carolina	37045	0.856	0.03
+37047	Columbus County	North Carolina	37141	0.858	0.038
+37049	Craven County	North Carolina	37049	0.879	0.031
+37051	Cumberland County	North Carolina	37051	0.881	0.013
+37053	Currituck County	North Carolina	37095	0.751	0.045
+37055	Dare County	North Carolina	37055	0.804	0.036
+37057	Davidson County	North Carolina	37057	0.833	0.032
+37059	Davie County	North Carolina	37193	0.832	0.026
+37061	Duplin County	North Carolina	37163	0.805	0.037
+37063	Durham County	North Carolina	37063	0.977	0.01
+37065	Edgecombe County	North Carolina	37083	0.82	0.029
+37067	Forsyth County	North Carolina	37067	0.891	0.012
+37069	Franklin County	North Carolina	37181	0.893	0.039
+37071	Gaston County	North Carolina	37071	0.865	0.024
+37073	Gates County	North Carolina	37095	0.751	0.045
+37075	Graham County	North Carolina	37113	0.795	0.032
+37077	Granville County	North Carolina	37077	0.861	0.037
+37079	Greene County	North Carolina	37107	0.785	0.028
+37081	Guilford County	North Carolina	37081	0.901	0.01
+37083	Halifax County	North Carolina	37083	0.82	0.029
+37085	Harnett County	North Carolina	37085	0.758	0.03
+37087	Haywood County	North Carolina	37087	0.767	0.029
+37089	Henderson County	North Carolina	37089	0.799	0.026
+37091	Hertford County	North Carolina	37091	0.938	0.057
+37093	Hoke County	North Carolina	37153	0.863	0.035
+37095	Hyde County	North Carolina	37095	0.751	0.045
+37097	Iredell County	North Carolina	37097	1	0.027
+37099	Jackson County	North Carolina	37099	0.795	0.034
+37101	Johnston County	North Carolina	37101	0.835	0.03
+37103	Jones County	North Carolina	37107	0.785	0.028
+37105	Lee County	North Carolina	37105	0.897	0.041
+37107	Lenoir County	North Carolina	37107	0.785	0.028
+37109	Lincoln County	North Carolina	37109	0.831	0.054
+37111	McDowell County	North Carolina	37111	0.774	0.031
+37113	Macon County	North Carolina	37113	0.795	0.032
+37115	Madison County	North Carolina	37121	0.78	0.075
+37117	Martin County	North Carolina	37015	0.808	0.042
+37119	Mecklenburg County	North Carolina	37119	1.017	0.007
+37121	Mitchell County	North Carolina	37121	0.78	0.075
+37123	Montgomery County	North Carolina	37153	0.863	0.035
+37125	Moore County	North Carolina	37125	0.897	0.038
+37127	Nash County	North Carolina	37127	0.906	0.04
+37129	New Hanover County	North Carolina	37129	0.895	0.018
+37131	Northampton County	North Carolina	37083	0.82	0.029
+37133	Onslow County	North Carolina	37133	0.857	0.024
+37135	Orange County	North Carolina	37135	0.926	0.016
+37137	Pamlico County	North Carolina	37095	0.751	0.045
+37139	Pasquotank County	North Carolina	37139	0.911	0.037
+37141	Pender County	North Carolina	37141	0.858	0.038
+37143	Perquimans County	North Carolina	37095	0.751	0.045
+37145	Person County	North Carolina	37077	0.861	0.037
+37147	Pitt County	North Carolina	37147	0.88	0.019
+37149	Polk County	North Carolina	37161	0.807	0.032
+37151	Randolph County	North Carolina	37151	0.848	0.029
+37153	Richmond County	North Carolina	37153	0.863	0.035
+37155	Robeson County	North Carolina	37155	0.847	0.031
+37157	Rockingham County	North Carolina	37157	0.794	0.051
+37159	Rowan County	North Carolina	37159	0.868	0.023
+37161	Rutherford County	North Carolina	37161	0.807	0.032
+37163	Sampson County	North Carolina	37163	0.805	0.037
+37165	Scotland County	North Carolina	37153	0.863	0.035
+37167	Stanly County	North Carolina	37167	0.849	0.041
+37169	Stokes County	North Carolina	37171	0.749	0.024
+37171	Surry County	North Carolina	37171	0.749	0.024
+37173	Swain County	North Carolina	37113	0.795	0.032
+37175	Transylvania County	North Carolina	37087	0.767	0.029
+37177	Tyrrell County	North Carolina	37095	0.751	0.045
+37179	Union County	North Carolina	37179	0.936	0.022
+37181	Vance County	North Carolina	37181	0.893	0.039
+37183	Wake County	North Carolina	37183	0.969	0.006
+37185	Warren County	North Carolina	37181	0.893	0.039
+37187	Washington County	North Carolina	37095	0.751	0.045
+37189	Watauga County	North Carolina	37189	0.843	0.023
+37191	Wayne County	North Carolina	37191	0.798	0.023
+37193	Wilkes County	North Carolina	37193	0.832	0.026
+37195	Wilson County	North Carolina	37195	0.884	0.04
+37197	Yadkin County	North Carolina	37193	0.832	0.026
+37199	Yancey County	North Carolina	37121	0.78	0.075
+38001	Adams County	North Dakota	38085	0.901	0.066
+38003	Barnes County	North Dakota	38045	0.904	0.048
+38005	Benson County	North Dakota	38005	0.834	0.036
+38007	Billings County	North Dakota	38061	0.962	0.057
+38009	Bottineau County	North Dakota	38069	0.836	0.036
+38011	Bowman County	North Dakota	38085	0.901	0.066
+38013	Burke County	North Dakota	38061	0.962	0.057
+38015	Burleigh County	North Dakota	38015	0.904	0.019
+38017	Cass County	North Dakota	38017	0.902	0.011
+38019	Cavalier County	North Dakota	38069	0.836	0.036
+38021	Dickey County	North Dakota	38021	0.827	0.037
+38023	Divide County	North Dakota	38105	0.9	0.047
+38025	Dunn County	North Dakota	38055	0.868	0.049
+38027	Eddy County	North Dakota	38005	0.834	0.036
+38029	Emmons County	North Dakota	38059	0.909	0.042
+38031	Foster County	North Dakota	38063	0.868	0.032
+38033	Golden Valley County	North Dakota	38061	0.962	0.057
+38035	Grand Forks County	North Dakota	38035	0.915	0.019
+38037	Grant County	North Dakota	38059	0.909	0.042
+38039	Griggs County	North Dakota	38063	0.868	0.032
+38041	Hettinger County	North Dakota	38085	0.901	0.066
+38043	Kidder County	North Dakota	38059	0.909	0.042
+38045	LaMoure County	North Dakota	38045	0.904	0.048
+38047	Logan County	North Dakota	38093	0.835	0.038
+38049	McHenry County	North Dakota	38055	0.868	0.049
+38051	McIntosh County	North Dakota	38045	0.904	0.048
+38053	McKenzie County	North Dakota	38061	0.962	0.057
+38055	McLean County	North Dakota	38055	0.868	0.049
+38057	Mercer County	North Dakota	38055	0.868	0.049
+38059	Morton County	North Dakota	38059	0.909	0.042
+38061	Mountrail County	North Dakota	38061	0.962	0.057
+38063	Nelson County	North Dakota	38063	0.868	0.032
+38065	Oliver County	North Dakota	38055	0.868	0.049
+38067	Pembina County	North Dakota	38099	0.899	0.047
+38069	Pierce County	North Dakota	38069	0.836	0.036
+38071	Ramsey County	North Dakota	38005	0.834	0.036
+38073	Ransom County	North Dakota	38045	0.904	0.048
+38075	Renville County	North Dakota	38061	0.962	0.057
+38077	Richland County	North Dakota	38021	0.827	0.037
+38079	Rolette County	North Dakota	38069	0.836	0.036
+38081	Sargent County	North Dakota	38021	0.827	0.037
+38083	Sheridan County	North Dakota	38069	0.836	0.036
+38085	Sioux County	North Dakota	38085	0.901	0.066
+38087	Slope County	North Dakota	38085	0.901	0.066
+38089	Stark County	North Dakota	38089	0.924	0.042
+38091	Steele County	North Dakota	38063	0.868	0.032
+38093	Stutsman County	North Dakota	38093	0.835	0.038
+38095	Towner County	North Dakota	38069	0.836	0.036
+38097	Traill County	North Dakota	38063	0.868	0.032
+38099	Walsh County	North Dakota	38099	0.899	0.047
+38101	Ward County	North Dakota	38101	0.92	0.026
+38103	Wells County	North Dakota	38005	0.834	0.036
+38105	Williams County	North Dakota	38105	0.9	0.047
+39001	Adams County	Ohio	39131	0.812	0.049
+39003	Allen County	Ohio	39003	0.824	0.018
+39005	Ashland County	Ohio	39005	0.797	0.03
+39007	Ashtabula County	Ohio	39007	0.842	0.037
+39009	Athens County	Ohio	39009	0.855	0.039
+39011	Auglaize County	Ohio	39011	0.924	0.033
+39013	Belmont County	Ohio	39013	0.822	0.032
+39015	Brown County	Ohio	39047	0.877	0.033
+39017	Butler County	Ohio	39017	0.924	0.011
+39019	Carroll County	Ohio	39059	0.899	0.063
+39021	Champaign County	Ohio	39097	0.838	0.037
+39023	Clark County	Ohio	39023	0.86	0.022
+39025	Clermont County	Ohio	39025	0.912	0.025
+39027	Clinton County	Ohio	39027	0.855	0.029
+39029	Columbiana County	Ohio	39029	0.817	0.047
+39031	Coshocton County	Ohio	39031	0.77	0.039
+39033	Crawford County	Ohio	39033	0.787	0.042
+39035	Cuyahoga County	Ohio	39035	0.935	0.006
+39037	Darke County	Ohio	39037	0.843	0.03
+39039	Defiance County	Ohio	39039	0.854	0.037
+39041	Delaware County	Ohio	39041	0.988	0.018
+39043	Erie County	Ohio	39043	0.843	0.033
+39045	Fairfield County	Ohio	39045	0.874	0.033
+39047	Fayette County	Ohio	39047	0.877	0.033
+39049	Franklin County	Ohio	39049	0.959	0.006
+39051	Fulton County	Ohio	39051	0.887	0.042
+39053	Gallia County	Ohio	39053	0.808	0.036
+39055	Geauga County	Ohio	39055	0.889	0.03
+39057	Greene County	Ohio	39057	0.938	0.012
+39059	Guernsey County	Ohio	39059	0.899	0.063
+39061	Hamilton County	Ohio	39061	0.976	0.006
+39063	Hancock County	Ohio	39063	0.886	0.024
+39065	Hardin County	Ohio	39065	0.762	0.046
+39067	Harrison County	Ohio	39059	0.899	0.063
+39069	Henry County	Ohio	39069	0.826	0.029
+39071	Highland County	Ohio	39047	0.877	0.033
+39073	Hocking County	Ohio	39073	0.789	0.037
+39075	Holmes County	Ohio	39031	0.77	0.039
+39077	Huron County	Ohio	39077	0.777	0.049
+39079	Jackson County	Ohio	39131	0.812	0.049
+39081	Jefferson County	Ohio	39081	0.764	0.046
+39083	Knox County	Ohio	39083	0.838	0.033
+39085	Lake County	Ohio	39085	0.869	0.016
+39087	Lawrence County	Ohio	39053	0.808	0.036
+39089	Licking County	Ohio	39089	0.917	0.024
+39091	Logan County	Ohio	39091	0.907	0.031
+39093	Lorain County	Ohio	39093	0.899	0.019
+39095	Lucas County	Ohio	39095	0.894	0.012
+39097	Madison County	Ohio	39097	0.838	0.037
+39099	Mahoning County	Ohio	39099	0.813	0.015
+39101	Marion County	Ohio	39101	0.894	0.035
+39103	Medina County	Ohio	39103	0.877	0.022
+39105	Meigs County	Ohio	39053	0.808	0.036
+39107	Mercer County	Ohio	39107	0.752	0.024
+39109	Miami County	Ohio	39109	0.829	0.027
+39111	Monroe County	Ohio	39013	0.822	0.032
+39113	Montgomery County	Ohio	39113	0.881	0.009
+39115	Morgan County	Ohio	39073	0.789	0.037
+39117	Morrow County	Ohio	39033	0.787	0.042
+39119	Muskingum County	Ohio	39119	0.798	0.037
+39121	Noble County	Ohio	39073	0.789	0.037
+39123	Ottawa County	Ohio	39143	0.847	0.029
+39125	Paulding County	Ohio	39039	0.854	0.037
+39127	Perry County	Ohio	39073	0.789	0.037
+39129	Pickaway County	Ohio	39073	0.789	0.037
+39131	Pike County	Ohio	39131	0.812	0.049
+39133	Portage County	Ohio	39133	0.855	0.018
+39135	Preble County	Ohio	39037	0.843	0.03
+39137	Putnam County	Ohio	39069	0.826	0.029
+39139	Richland County	Ohio	39139	0.784	0.017
+39141	Ross County	Ohio	39141	0.872	0.034
+39143	Sandusky County	Ohio	39143	0.847	0.029
+39145	Scioto County	Ohio	39145	0.883	0.048
+39147	Seneca County	Ohio	39147	0.739	0.039
+39149	Shelby County	Ohio	39149	0.834	0.03
+39151	Stark County	Ohio	39151	0.862	0.015
+39153	Summit County	Ohio	39153	0.882	0.009
+39155	Trumbull County	Ohio	39155	0.812	0.017
+39157	Tuscarawas County	Ohio	39157	0.828	0.032
+39159	Union County	Ohio	39159	0.924	0.023
+39161	Van Wert County	Ohio	39107	0.752	0.024
+39163	Vinton County	Ohio	39073	0.789	0.037
+39165	Warren County	Ohio	39165	0.978	0.017
+39167	Washington County	Ohio	39167	0.87	0.033
+39169	Wayne County	Ohio	39169	0.815	0.017
+39171	Williams County	Ohio	39171	0.84	0.052
+39173	Wood County	Ohio	39173	0.848	0.02
+39175	Wyandot County	Ohio	39065	0.762	0.046
+40001	Adair County	Oklahoma	40041	0.753	0.033
+40003	Alfalfa County	Oklahoma	40073	0.815	0.044
+40005	Atoka County	Oklahoma	40023	0.807	0.039
+40007	Beaver County	Oklahoma	40153	0.789	0.043
+40009	Beckham County	Oklahoma	40009	0.77	0.035
+40011	Blaine County	Oklahoma	40073	0.815	0.044
+40013	Bryan County	Oklahoma	40013	0.903	0.06
+40015	Caddo County	Oklahoma	40085	0.832	0.052
+40017	Canadian County	Oklahoma	40017	0.932	0.031
+40019	Carter County	Oklahoma	40019	0.806	0.035
+40021	Cherokee County	Oklahoma	40021	0.721	0.025
+40023	Choctaw County	Oklahoma	40023	0.807	0.039
+40025	Cimarron County	Oklahoma	40153	0.789	0.043
+40027	Cleveland County	Oklahoma	40027	0.85	0.021
+40029	Coal County	Oklahoma	40023	0.807	0.039
+40031	Comanche County	Oklahoma	40031	0.834	0.026
+40033	Cotton County	Oklahoma	40085	0.832	0.052
+40035	Craig County	Oklahoma	40041	0.753	0.033
+40037	Creek County	Oklahoma	40037	0.884	0.045
+40039	Custer County	Oklahoma	40039	0.819	0.045
+40041	Delaware County	Oklahoma	40041	0.753	0.033
+40043	Dewey County	Oklahoma	40073	0.815	0.044
+40045	Ellis County	Oklahoma	40153	0.789	0.043
+40047	Garfield County	Oklahoma	40047	0.753	0.027
+40049	Garvin County	Oklahoma	40049	0.732	0.031
+40051	Grady County	Oklahoma	40051	0.8	0.06
+40053	Grant County	Oklahoma	40071	0.827	0.03
+40055	Greer County	Oklahoma	40009	0.77	0.035
+40057	Harmon County	Oklahoma	40009	0.77	0.035
+40059	Harper County	Oklahoma	40153	0.789	0.043
+40061	Haskell County	Oklahoma	40091	0.787	0.032
+40063	Hughes County	Oklahoma	40091	0.787	0.032
+40065	Jackson County	Oklahoma	40009	0.77	0.035
+40067	Jefferson County	Oklahoma	40085	0.832	0.052
+40069	Johnston County	Oklahoma	40049	0.732	0.031
+40071	Kay County	Oklahoma	40071	0.827	0.03
+40073	Kingfisher County	Oklahoma	40073	0.815	0.044
+40075	Kiowa County	Oklahoma	40085	0.832	0.052
+40077	Latimer County	Oklahoma	40023	0.807	0.039
+40079	Le Flore County	Oklahoma	40079	0.775	0.037
+40081	Lincoln County	Oklahoma	40037	0.884	0.045
+40083	Logan County	Oklahoma	40103	0.829	0.038
+40085	Love County	Oklahoma	40085	0.832	0.052
+40087	McClain County	Oklahoma	40051	0.8	0.06
+40089	McCurtain County	Oklahoma	40079	0.775	0.037
+40091	McIntosh County	Oklahoma	40091	0.787	0.032
+40093	Major County	Oklahoma	40073	0.815	0.044
+40095	Marshall County	Oklahoma	40085	0.832	0.052
+40097	Mayes County	Oklahoma	40097	0.826	0.048
+40099	Murray County	Oklahoma	40049	0.732	0.031
+40101	Muskogee County	Oklahoma	40101	0.867	0.025
+40103	Noble County	Oklahoma	40103	0.829	0.038
+40105	Nowata County	Oklahoma	40131	0.889	0.03
+40107	Okfuskee County	Oklahoma	40091	0.787	0.032
+40109	Oklahoma County	Oklahoma	40109	0.913	0.007
+40111	Okmulgee County	Oklahoma	40145	0.937	0.035
+40113	Osage County	Oklahoma	40103	0.829	0.038
+40115	Ottawa County	Oklahoma	40115	0.752	0.037
+40117	Pawnee County	Oklahoma	40103	0.829	0.038
+40119	Payne County	Oklahoma	40119	0.806	0.028
+40121	Pittsburg County	Oklahoma	40121	0.73	0.035
+40123	Pontotoc County	Oklahoma	40123	0.85	0.033
+40125	Pottawatomie County	Oklahoma	40125	0.818	0.027
+40127	Pushmataha County	Oklahoma	40023	0.807	0.039
+40129	Roger Mills County	Oklahoma	40009	0.77	0.035
+40131	Rogers County	Oklahoma	40131	0.889	0.03
+40133	Seminole County	Oklahoma	40091	0.787	0.032
+40135	Sequoyah County	Oklahoma	40021	0.721	0.025
+40137	Stephens County	Oklahoma	40137	0.753	0.049
+40139	Texas County	Oklahoma	40153	0.789	0.043
+40141	Tillman County	Oklahoma	40085	0.832	0.052
+40143	Tulsa County	Oklahoma	40143	0.907	0.007
+40145	Wagoner County	Oklahoma	40145	0.937	0.035
+40147	Washington County	Oklahoma	40147	0.933	0.028
+40149	Washita County	Oklahoma	40085	0.832	0.052
+40151	Woods County	Oklahoma	40073	0.815	0.044
+40153	Woodward County	Oklahoma	40153	0.789	0.043
+41001	Baker County	Oregon	41001	0.891	0.048
+41003	Benton County	Oregon	41003	0.875	0.018
+41005	Clackamas County	Oregon	41005	0.972	0.018
+41007	Clatsop County	Oregon	41007	0.872	0.032
+41009	Columbia County	Oregon	41007	0.872	0.032
+41011	Coos County	Oregon	41011	0.835	0.048
+41013	Crook County	Oregon	41023	0.81	0.045
+41015	Curry County	Oregon	41033	0.836	0.03
+41017	Deschutes County	Oregon	41017	0.917	0.025
+41019	Douglas County	Oregon	41019	0.884	0.039
+41021	Gilliam County	Oregon	41065	0.88	0.032
+41023	Grant County	Oregon	41023	0.81	0.045
+41025	Harney County	Oregon	41023	0.81	0.045
+41027	Hood River County	Oregon	41065	0.88	0.032
+41029	Jackson County	Oregon	41029	0.886	0.019
+41031	Jefferson County	Oregon	41065	0.88	0.032
+41033	Josephine County	Oregon	41033	0.836	0.03
+41035	Klamath County	Oregon	41035	0.85	0.033
+41037	Lake County	Oregon	41023	0.81	0.045
+41039	Lane County	Oregon	41039	0.88	0.013
+41041	Lincoln County	Oregon	41041	0.737	0.033
+41043	Linn County	Oregon	41043	0.936	0.035
+41045	Malheur County	Oregon	41001	0.891	0.048
+41047	Marion County	Oregon	41047	0.914	0.012
+41049	Morrow County	Oregon	41023	0.81	0.045
+41051	Multnomah County	Oregon	41051	1	0.006
+41053	Polk County	Oregon	41053	0.827	0.034
+41055	Sherman County	Oregon	41065	0.88	0.032
+41057	Tillamook County	Oregon	41053	0.827	0.034
+41059	Umatilla County	Oregon	41059	0.912	0.038
+41061	Union County	Oregon	41061	0.826	0.052
+41063	Wallowa County	Oregon	41001	0.891	0.048
+41065	Wasco County	Oregon	41065	0.88	0.032
+41067	Washington County	Oregon	41067	1.053	0.01
+41069	Wheeler County	Oregon	41065	0.88	0.032
+41071	Yamhill County	Oregon	41071	0.972	0.033
+42001	Adams County	Pennsylvania	42001	0.845	0.031
+42003	Allegheny County	Pennsylvania	42003	0.917	0.005
+42005	Armstrong County	Pennsylvania	42005	0.784	0.036
+42007	Beaver County	Pennsylvania	42007	0.893	0.018
+42009	Bedford County	Pennsylvania	42009	0.825	0.035
+42011	Berks County	Pennsylvania	42011	0.943	0.014
+42013	Blair County	Pennsylvania	42013	0.831	0.021
+42015	Bradford County	Pennsylvania	42015	0.908	0.034
+42017	Bucks County	Pennsylvania	42017	0.967	0.012
+42019	Butler County	Pennsylvania	42019	0.92	0.013
+42021	Cambria County	Pennsylvania	42021	0.782	0.02
+42023	Cameron County	Pennsylvania	42105	0.785	0.029
+42025	Carbon County	Pennsylvania	42025	0.799	0.041
+42027	Centre County	Pennsylvania	42027	0.896	0.016
+42029	Chester County	Pennsylvania	42029	1.027	0.01
+42031	Clarion County	Pennsylvania	42031	0.813	0.031
+42033	Clearfield County	Pennsylvania	42033	0.759	0.027
+42035	Clinton County	Pennsylvania	42035	0.793	0.045
+42037	Columbia County	Pennsylvania	42037	0.845	0.028
+42039	Crawford County	Pennsylvania	42039	0.781	0.027
+42041	Cumberland County	Pennsylvania	42041	0.951	0.012
+42043	Dauphin County	Pennsylvania	42043	0.922	0.01
+42045	Delaware County	Pennsylvania	42045	1.045	0.013
+42047	Elk County	Pennsylvania	42047	0.722	0.046
+42049	Erie County	Pennsylvania	42049	0.825	0.014
+42051	Fayette County	Pennsylvania	42051	0.807	0.022
+42053	Forest County	Pennsylvania	42047	0.722	0.046
+42055	Franklin County	Pennsylvania	42055	0.921	0.02
+42057	Fulton County	Pennsylvania	42009	0.825	0.035
+42059	Greene County	Pennsylvania	42059	0.808	0.069
+42061	Huntingdon County	Pennsylvania	42061	0.802	0.041
+42063	Indiana County	Pennsylvania	42063	0.816	0.025
+42065	Jefferson County	Pennsylvania	42065	0.743	0.031
+42067	Juniata County	Pennsylvania	42099	0.873	0.054
+42069	Lackawanna County	Pennsylvania	42069	0.801	0.014
+42071	Lancaster County	Pennsylvania	42071	0.912	0.012
+42073	Lawrence County	Pennsylvania	42073	0.856	0.026
+42075	Lebanon County	Pennsylvania	42075	0.868	0.017
+42077	Lehigh County	Pennsylvania	42077	0.934	0.01
+42079	Luzerne County	Pennsylvania	42079	0.839	0.015
+42081	Lycoming County	Pennsylvania	42081	0.824	0.018
+42083	McKean County	Pennsylvania	42083	0.774	0.03
+42085	Mercer County	Pennsylvania	42085	0.818	0.016
+42087	Mifflin County	Pennsylvania	42087	0.856	0.033
+42089	Monroe County	Pennsylvania	42089	0.865	0.021
+42091	Montgomery County	Pennsylvania	42091	1.034	0.007
+42093	Montour County	Pennsylvania	42093	0.907	0.034
+42095	Northampton County	Pennsylvania	42095	0.925	0.019
+42097	Northumberland County	Pennsylvania	42097	0.861	0.028
+42099	Perry County	Pennsylvania	42099	0.873	0.054
+42101	Philadelphia County	Pennsylvania	42101	1.064	0.008
+42103	Pike County	Pennsylvania	42127	0.765	0.041
+42105	Potter County	Pennsylvania	42105	0.785	0.029
+42107	Schuylkill County	Pennsylvania	42107	0.887	0.024
+42109	Snyder County	Pennsylvania	42109	0.834	0.036
+42111	Somerset County	Pennsylvania	42111	0.781	0.026
+42113	Sullivan County	Pennsylvania	42131	0.825	0.051
+42115	Susquehanna County	Pennsylvania	42115	0.825	0.041
+42117	Tioga County	Pennsylvania	42117	0.796	0.035
+42119	Union County	Pennsylvania	42119	0.955	0.031
+42121	Venango County	Pennsylvania	42121	0.806	0.032
+42123	Warren County	Pennsylvania	42123	0.772	0.029
+42125	Washington County	Pennsylvania	42125	0.903	0.017
+42127	Wayne County	Pennsylvania	42127	0.765	0.041
+42129	Westmoreland County	Pennsylvania	42129	0.847	0.013
+42131	Wyoming County	Pennsylvania	42131	0.825	0.051
+42133	York County	Pennsylvania	42133	0.911	0.014
+44001	Bristol County	Rhode Island	44001	0.937	0.044
+44003	Kent County	Rhode Island	44003	0.955	0.021
+44005	Newport County	Rhode Island	44005	0.949	0.025
+44007	Providence County	Rhode Island	44007	1.031	0.01
+44009	Washington County	Rhode Island	44009	0.975	0.027
+45001	Abbeville County	South Carolina	45059	0.8	0.039
+45003	Aiken County	South Carolina	45003	0.952	0.024
+45005	Allendale County	South Carolina	45029	0.825	0.041
+45007	Anderson County	South Carolina	45007	0.824	0.025
+45009	Bamberg County	South Carolina	45029	0.825	0.041
+45011	Barnwell County	South Carolina	45029	0.825	0.041
+45013	Beaufort County	South Carolina	45013	0.853	0.024
+45015	Berkeley County	South Carolina	45015	0.929	0.02
+45017	Calhoun County	South Carolina	45027	0.687	0.043
+45019	Charleston County	South Carolina	45019	0.927	0.012
+45021	Cherokee County	South Carolina	45087	0.827	0.041
+45023	Chester County	South Carolina	45087	0.827	0.041
+45025	Chesterfield County	South Carolina	45025	0.792	0.031
+45027	Clarendon County	South Carolina	45027	0.687	0.043
+45029	Colleton County	South Carolina	45029	0.825	0.041
+45031	Darlington County	South Carolina	45031	0.801	0.04
+45033	Dillon County	South Carolina	45025	0.792	0.031
+45035	Dorchester County	South Carolina	45035	0.844	0.034
+45037	Edgefield County	South Carolina	45047	0.838	0.03
+45039	Fairfield County	South Carolina	45071	0.892	0.038
+45041	Florence County	South Carolina	45041	0.808	0.017
+45043	Georgetown County	South Carolina	45043	0.865	0.054
+45045	Greenville County	South Carolina	45045	0.886	0.011
+45047	Greenwood County	South Carolina	45047	0.838	0.03
+45049	Hampton County	South Carolina	45029	0.825	0.041
+45051	Horry County	South Carolina	45051	0.815	0.017
+45053	Jasper County	South Carolina	45013	0.853	0.024
+45055	Kershaw County	South Carolina	45025	0.792	0.031
+45057	Lancaster County	South Carolina	45057	0.894	0.042
+45059	Laurens County	South Carolina	45059	0.8	0.039
+45061	Lee County	South Carolina	45031	0.801	0.04
+45063	Lexington County	South Carolina	45063	0.885	0.017
+45065	McCormick County	South Carolina	45047	0.838	0.03
+45067	Marion County	South Carolina	45027	0.687	0.043
+45069	Marlboro County	South Carolina	45025	0.792	0.031
+45071	Newberry County	South Carolina	45071	0.892	0.038
+45073	Oconee County	South Carolina	45073	0.873	0.043
+45075	Orangeburg County	South Carolina	45075	0.835	0.04
+45077	Pickens County	South Carolina	45077	0.863	0.027
+45079	Richland County	South Carolina	45079	0.872	0.01
+45081	Saluda County	South Carolina	45071	0.892	0.038
+45083	Spartanburg County	South Carolina	45083	0.861	0.014
+45085	Sumter County	South Carolina	45085	0.82	0.021
+45087	Union County	South Carolina	45087	0.827	0.041
+45089	Williamsburg County	South Carolina	45027	0.687	0.043
+45091	York County	South Carolina	45091	0.92	0.023
+46003	Aurora County	South Dakota	46005	0.807	0.034
+46005	Beadle County	South Dakota	46005	0.807	0.034
+46007	Bennett County	South Dakota	46102	0.71	0.028
+46009	Bon Homme County	South Dakota	46125	0.764	0.034
+46011	Brookings County	South Dakota	46011	0.808	0.024
+46013	Brown County	South Dakota	46013	0.831	0.029
+46015	Brule County	South Dakota	46015	0.773	0.025
+46017	Buffalo County	South Dakota	46015	0.773	0.025
+46019	Butte County	South Dakota	46081	0.743	0.034
+46021	Campbell County	South Dakota	46041	0.796	0.035
+46023	Charles Mix County	South Dakota	46005	0.807	0.034
+46025	Clark County	South Dakota	46037	0.811	0.03
+46027	Clay County	South Dakota	46027	0.854	0.037
+46029	Codington County	South Dakota	46029	0.872	0.05
+46031	Corson County	South Dakota	46041	0.796	0.035
+46033	Custer County	South Dakota	46102	0.71	0.028
+46035	Davison County	South Dakota	46035	0.819	0.053
+46037	Day County	South Dakota	46037	0.811	0.03
+46039	Deuel County	South Dakota	46077	0.766	0.057
+46041	Dewey County	South Dakota	46041	0.796	0.035
+46043	Douglas County	South Dakota	46125	0.764	0.034
+46045	Edmunds County	South Dakota	46041	0.796	0.035
+46047	Fall River County	South Dakota	46102	0.71	0.028
+46049	Faulk County	South Dakota	46041	0.796	0.035
+46051	Grant County	South Dakota	46077	0.766	0.057
+46053	Gregory County	South Dakota	46015	0.773	0.025
+46055	Haakon County	South Dakota	46015	0.773	0.025
+46057	Hamlin County	South Dakota	46077	0.766	0.057
+46059	Hand County	South Dakota	46015	0.773	0.025
+46061	Hanson County	South Dakota	46077	0.766	0.057
+46063	Harding County	South Dakota	46041	0.796	0.035
+46065	Hughes County	South Dakota	46065	0.809	0.021
+46067	Hutchinson County	South Dakota	46125	0.764	0.034
+46069	Hyde County	South Dakota	46065	0.809	0.021
+46071	Jackson County	South Dakota	46015	0.773	0.025
+46073	Jerauld County	South Dakota	46015	0.773	0.025
+46075	Jones County	South Dakota	46015	0.773	0.025
+46077	Kingsbury County	South Dakota	46077	0.766	0.057
+46079	Lake County	South Dakota	46079	0.795	0.063
+46081	Lawrence County	South Dakota	46081	0.743	0.034
+46083	Lincoln County	South Dakota	46083	0.903	0.033
+46085	Lyman County	South Dakota	46015	0.773	0.025
+46087	McCook County	South Dakota	46079	0.795	0.063
+46089	McPherson County	South Dakota	46013	0.831	0.029
+46091	Marshall County	South Dakota	46037	0.811	0.03
+46093	Meade County	South Dakota	46081	0.743	0.034
+46095	Mellette County	South Dakota	46015	0.773	0.025
+46097	Miner County	South Dakota	46077	0.766	0.057
+46099	Minnehaha County	South Dakota	46099	0.848	0.012
+46101	Moody County	South Dakota	46079	0.795	0.063
+46102	Oglala Lakota County	South Dakota	46102	0.71	0.028
+46103	Pennington County	South Dakota	46103	0.815	0.02
+46105	Perkins County	South Dakota	46041	0.796	0.035
+46107	Potter County	South Dakota	46041	0.796	0.035
+46109	Roberts County	South Dakota	46037	0.811	0.03
+46111	Sanborn County	South Dakota	46005	0.807	0.034
+46115	Spink County	South Dakota	46037	0.811	0.03
+46117	Stanley County	South Dakota	46041	0.796	0.035
+46119	Sully County	South Dakota	46041	0.796	0.035
+46121	Todd County	South Dakota	46102	0.71	0.028
+46123	Tripp County	South Dakota	46015	0.773	0.025
+46125	Turner County	South Dakota	46125	0.764	0.034
+46127	Union County	South Dakota	46027	0.854	0.037
+46129	Walworth County	South Dakota	46041	0.796	0.035
+46135	Yankton County	South Dakota	46135	0.765	0.043
+46137	Ziebach County	South Dakota	46041	0.796	0.035
+47001	Anderson County	Tennessee	47001	0.991	0.024
+47003	Bedford County	Tennessee	47055	0.782	0.025
+47005	Benton County	Tennessee	47005	0.791	0.039
+47007	Bledsoe County	Tennessee	47153	0.717	0.036
+47009	Blount County	Tennessee	47009	0.822	0.023
+47011	Bradley County	Tennessee	47011	0.798	0.023
+47013	Campbell County	Tennessee	47013	0.787	0.034
+47015	Cannon County	Tennessee	47159	0.863	0.038
+47017	Carroll County	Tennessee	47079	0.783	0.04
+47019	Carter County	Tennessee	47019	0.778	0.039
+47021	Cheatham County	Tennessee	47043	0.819	0.022
+47023	Chester County	Tennessee	47071	0.811	0.043
+47025	Claiborne County	Tennessee	47013	0.787	0.034
+47027	Clay County	Tennessee	47159	0.863	0.038
+47029	Cocke County	Tennessee	47089	0.811	0.038
+47031	Coffee County	Tennessee	47031	0.803	0.032
+47033	Crockett County	Tennessee	47053	0.81	0.025
+47035	Cumberland County	Tennessee	47035	0.79	0.044
+47037	Davidson County	Tennessee	47037	0.948	0.008
+47039	Decatur County	Tennessee	47005	0.791	0.039
+47041	DeKalb County	Tennessee	47159	0.863	0.038
+47043	Dickson County	Tennessee	47043	0.819	0.022
+47045	Dyer County	Tennessee	47131	0.794	0.029
+47047	Fayette County	Tennessee	47047	0.814	0.053
+47049	Fentress County	Tennessee	47035	0.79	0.044
+47051	Franklin County	Tennessee	47051	0.821	0.04
+47053	Gibson County	Tennessee	47053	0.81	0.025
+47055	Giles County	Tennessee	47055	0.782	0.025
+47057	Grainger County	Tennessee	47089	0.811	0.038
+47059	Greene County	Tennessee	47059	0.85	0.073
+47061	Grundy County	Tennessee	47153	0.717	0.036
+47063	Hamblen County	Tennessee	47063	0.731	0.032
+47065	Hamilton County	Tennessee	47065	0.854	0.009
+47067	Hancock County	Tennessee	47013	0.787	0.034
+47069	Hardeman County	Tennessee	47047	0.814	0.053
+47071	Hardin County	Tennessee	47071	0.811	0.043
+47073	Hawkins County	Tennessee	47013	0.787	0.034
+47075	Haywood County	Tennessee	47167	0.727	0.049
+47077	Henderson County	Tennessee	47071	0.811	0.043
+47079	Henry County	Tennessee	47079	0.783	0.04
+47081	Hickman County	Tennessee	47043	0.819	0.022
+47083	Houston County	Tennessee	47079	0.783	0.04
+47085	Humphreys County	Tennessee	47005	0.791	0.039
+47087	Jackson County	Tennessee	47159	0.863	0.038
+47089	Jefferson County	Tennessee	47089	0.811	0.038
+47091	Johnson County	Tennessee	47019	0.778	0.039
+47093	Knox County	Tennessee	47093	0.849	0.009
+47095	Lake County	Tennessee	47131	0.794	0.029
+47097	Lauderdale County	Tennessee	47167	0.727	0.049
+47099	Lawrence County	Tennessee	47005	0.791	0.039
+47101	Lewis County	Tennessee	47005	0.791	0.039
+47103	Lincoln County	Tennessee	47051	0.821	0.04
+47105	Loudon County	Tennessee	47105	0.759	0.041
+47107	McMinn County	Tennessee	47107	0.797	0.036
+47109	McNairy County	Tennessee	47047	0.814	0.053
+47111	Macon County	Tennessee	47159	0.863	0.038
+47113	Madison County	Tennessee	47113	0.875	0.028
+47115	Marion County	Tennessee	47153	0.717	0.036
+47117	Marshall County	Tennessee	47055	0.782	0.025
+47119	Maury County	Tennessee	47119	0.854	0.034
+47121	Meigs County	Tennessee	47145	0.869	0.041
+47123	Monroe County	Tennessee	47105	0.759	0.041
+47125	Montgomery County	Tennessee	47125	0.822	0.025
+47127	Moore County	Tennessee	47051	0.821	0.04
+47129	Morgan County	Tennessee	47035	0.79	0.044
+47131	Obion County	Tennessee	47131	0.794	0.029
+47133	Overton County	Tennessee	47159	0.863	0.038
+47135	Perry County	Tennessee	47005	0.791	0.039
+47137	Pickett County	Tennessee	47159	0.863	0.038
+47139	Polk County	Tennessee	47107	0.797	0.036
+47141	Putnam County	Tennessee	47141	0.765	0.017
+47143	Rhea County	Tennessee	47145	0.869	0.041
+47145	Roane County	Tennessee	47145	0.869	0.041
+47147	Robertson County	Tennessee	47043	0.819	0.022
+47149	Rutherford County	Tennessee	47149	0.908	0.018
+47151	Scott County	Tennessee	47159	0.863	0.038
+47153	Sequatchie County	Tennessee	47153	0.717	0.036
+47155	Sevier County	Tennessee	47155	0.781	0.042
+47157	Shelby County	Tennessee	47157	0.958	0.007
+47159	Smith County	Tennessee	47159	0.863	0.038
+47161	Stewart County	Tennessee	47079	0.783	0.04
+47163	Sullivan County	Tennessee	47163	0.798	0.019
+47165	Sumner County	Tennessee	47165	0.873	0.027
+47167	Tipton County	Tennessee	47167	0.727	0.049
+47169	Trousdale County	Tennessee	47159	0.863	0.038
+47171	Unicoi County	Tennessee	47019	0.778	0.039
+47173	Union County	Tennessee	47013	0.787	0.034
+47175	Van Buren County	Tennessee	47153	0.717	0.036
+47177	Warren County	Tennessee	47153	0.717	0.036
+47179	Washington County	Tennessee	47179	0.753	0.025
+47181	Wayne County	Tennessee	47005	0.791	0.039
+47183	Weakley County	Tennessee	47053	0.81	0.025
+47185	White County	Tennessee	47153	0.717	0.036
+47187	Williamson County	Tennessee	47187	1.014	0.016
+47189	Wilson County	Tennessee	47189	0.877	0.03
+48001	Anderson County	Texas	48001	0.748	0.046
+48003	Andrews County	Texas	48371	0.798	0.04
+48005	Angelina County	Texas	48005	0.831	0.041
+48007	Aransas County	Texas	48057	1.008	0.024
+48009	Archer County	Texas	48363	0.867	0.036
+48011	Armstrong County	Texas	48437	0.915	0.043
+48013	Atascosa County	Texas	48013	0.789	0.064
+48015	Austin County	Texas	48477	0.938	0.039
+48017	Bailey County	Texas	48305	0.77	0.044
+48019	Bandera County	Texas	48435	0.764	0.046
+48021	Bastrop County	Texas	48021	0.869	0.045
+48023	Baylor County	Texas	48191	0.796	0.029
+48025	Bee County	Texas	48025	0.936	0.039
+48027	Bell County	Texas	48027	0.845	0.017
+48029	Bexar County	Texas	48029	0.937	0.006
+48031	Blanco County	Texas	48299	0.766	0.052
+48033	Borden County	Texas	48305	0.77	0.044
+48035	Bosque County	Texas	48193	0.794	0.027
+48037	Bowie County	Texas	48037	0.899	0.033
+48039	Brazoria County	Texas	48039	0.997	0.029
+48041	Brazos County	Texas	48041	0.888	0.018
+48043	Brewster County	Texas	48371	0.798	0.04
+48045	Briscoe County	Texas	48437	0.915	0.043
+48047	Brooks County	Texas	48013	0.789	0.064
+48049	Brown County	Texas	48049	0.768	0.056
+48051	Burleson County	Texas	48287	0.811	0.044
+48053	Burnet County	Texas	48299	0.766	0.052
+48055	Caldwell County	Texas	48021	0.869	0.045
+48057	Calhoun County	Texas	48057	1.008	0.024
+48059	Callahan County	Texas	48253	0.742	0.046
+48061	Cameron County	Texas	48061	0.87	0.036
+48063	Camp County	Texas	48499	0.772	0.066
+48065	Carson County	Texas	48437	0.915	0.043
+48067	Cass County	Texas	48067	0.704	0.059
+48069	Castro County	Texas	48437	0.915	0.043
+48071	Chambers County	Texas	48225	0.848	0.053
+48073	Cherokee County	Texas	48213	0.765	0.057
+48075	Childress County	Texas	48191	0.796	0.029
+48077	Clay County	Texas	48485	0.833	0.023
+48079	Cochran County	Texas	48305	0.77	0.044
+48081	Coke County	Texas	48431	0.876	0.05
+48083	Coleman County	Texas	48253	0.742	0.046
+48085	Collin County	Texas	48085	1.043	0.008
+48087	Collingsworth County	Texas	48191	0.796	0.029
+48089	Colorado County	Texas	48285	0.886	0.04
+48091	Comal County	Texas	48091	0.885	0.037
+48093	Comanche County	Texas	48253	0.742	0.046
+48095	Concho County	Texas	48253	0.742	0.046
+48097	Cooke County	Texas	48097	0.9	0.039
+48099	Coryell County	Texas	48193	0.794	0.027
+48101	Cottle County	Texas	48191	0.796	0.029
+48103	Crane County	Texas	48371	0.798	0.04
+48105	Crockett County	Texas	48435	0.764	0.046
+48107	Crosby County	Texas	48305	0.77	0.044
+48109	Culberson County	Texas	48141	0.825	0.011
+48111	Dallam County	Texas	48359	0.861	0.044
+48113	Dallas County	Texas	48113	1.059	0.006
+48115	Dawson County	Texas	48431	0.876	0.05
+48117	Deaf Smith County	Texas	48437	0.915	0.043
+48119	Delta County	Texas	48223	0.857	0.033
+48121	Denton County	Texas	48121	0.978	0.011
+48123	DeWitt County	Texas	48255	0.891	0.058
+48125	Dickens County	Texas	48191	0.796	0.029
+48127	Dimmit County	Texas	48013	0.789	0.064
+48129	Donley County	Texas	48437	0.915	0.043
+48131	Duval County	Texas	48013	0.789	0.064
+48133	Eastland County	Texas	48253	0.742	0.046
+48135	Ector County	Texas	48135	0.947	0.04
+48137	Edwards County	Texas	48435	0.764	0.046
+48139	Ellis County	Texas	48139	0.858	0.044
+48141	El Paso County	Texas	48141	0.825	0.011
+48143	Erath County	Texas	48143	0.82	0.039
+48145	Falls County	Texas	48287	0.811	0.044
+48147	Fannin County	Texas	48223	0.857	0.033
+48149	Fayette County	Texas	48285	0.886	0.04
+48151	Fisher County	Texas	48305	0.77	0.044
+48153	Floyd County	Texas	48191	0.796	0.029
+48155	Foard County	Texas	48191	0.796	0.029
+48157	Fort Bend County	Texas	48157	1.002	0.021
+48159	Franklin County	Texas	48499	0.772	0.066
+48161	Freestone County	Texas	48349	0.81	0.043
+48163	Frio County	Texas	48463	0.992	0.046
+48165	Gaines County	Texas	48305	0.77	0.044
+48167	Galveston County	Texas	48167	0.94	0.025
+48169	Garza County	Texas	48305	0.77	0.044
+48171	Gillespie County	Texas	48435	0.764	0.046
+48173	Glasscock County	Texas	48431	0.876	0.05
+48175	Goliad County	Texas	48255	0.891	0.058
+48177	Gonzales County	Texas	48021	0.869	0.045
+48179	Gray County	Texas	48437	0.915	0.043
+48181	Grayson County	Texas	48181	0.874	0.03
+48183	Gregg County	Texas	48183	0.798	0.027
+48185	Grimes County	Texas	48001	0.748	0.046
+48187	Guadalupe County	Texas	48187	0.881	0.034
+48189	Hale County	Texas	48191	0.796	0.029
+48191	Hall County	Texas	48191	0.796	0.029
+48193	Hamilton County	Texas	48193	0.794	0.027
+48195	Hansford County	Texas	48359	0.861	0.044
+48197	Hardeman County	Texas	48191	0.796	0.029
+48199	Hardin County	Texas	48199	0.873	0.05
+48201	Harris County	Texas	48201	1.084	0.005
+48203	Harrison County	Texas	48203	0.844	0.043
+48205	Hartley County	Texas	48359	0.861	0.044
+48207	Haskell County	Texas	48253	0.742	0.046
+48209	Hays County	Texas	48209	0.905	0.023
+48211	Hemphill County	Texas	48191	0.796	0.029
+48213	Henderson County	Texas	48213	0.765	0.057
+48215	Hidalgo County	Texas	48215	0.892	0.023
+48217	Hill County	Texas	48349	0.81	0.043
+48219	Hockley County	Texas	48305	0.77	0.044
+48221	Hood County	Texas	48363	0.867	0.036
+48223	Hopkins County	Texas	48223	0.857	0.033
+48225	Houston County	Texas	48225	0.848	0.053
+48227	Howard County	Texas	48431	0.876	0.05
+48229	Hudspeth County	Texas	48141	0.825	0.011
+48231	Hunt County	Texas	48231	0.852	0.025
+48233	Hutchinson County	Texas	48359	0.861	0.044
+48235	Irion County	Texas	48435	0.764	0.046
+48237	Jack County	Texas	48363	0.867	0.036
+48239	Jackson County	Texas	48057	1.008	0.024
+48241	Jasper County	Texas	48199	0.873	0.05
+48243	Jeff Davis County	Texas	48371	0.798	0.04
+48245	Jefferson County	Texas	48245	1.002	0.025
+48247	Jim Hogg County	Texas	48479	0.889	0.026
+48249	Jim Wells County	Texas	48025	0.936	0.039
+48251	Johnson County	Texas	48251	0.902	0.039
+48253	Jones County	Texas	48253	0.742	0.046
+48255	Karnes County	Texas	48255	0.891	0.058
+48257	Kaufman County	Texas	48257	0.875	0.054
+48259	Kendall County	Texas	48265	0.94	0.034
+48261	Kenedy County	Texas	48025	0.936	0.039
+48263	Kent County	Texas	48305	0.77	0.044
+48265	Kerr County	Texas	48265	0.94	0.034
+48267	Kimble County	Texas	48265	0.94	0.034
+48269	King County	Texas	48305	0.77	0.044
+48271	Kinney County	Texas	48463	0.992	0.046
+48273	Kleberg County	Texas	48025	0.936	0.039
+48275	Knox County	Texas	48191	0.796	0.029
+48277	Lamar County	Texas	48223	0.857	0.033
+48279	Lamb County	Texas	48305	0.77	0.044
+48281	Lampasas County	Texas	48193	0.794	0.027
+48283	La Salle County	Texas	48013	0.789	0.064
+48285	Lavaca County	Texas	48285	0.886	0.04
+48287	Lee County	Texas	48287	0.811	0.044
+48289	Leon County	Texas	48001	0.748	0.046
+48291	Liberty County	Texas	48225	0.848	0.053
+48293	Limestone County	Texas	48287	0.811	0.044
+48295	Lipscomb County	Texas	48359	0.861	0.044
+48297	Live Oak County	Texas	48025	0.936	0.039
+48299	Llano County	Texas	48299	0.766	0.052
+48301	Loving County	Texas	48371	0.798	0.04
+48303	Lubbock County	Texas	48303	0.86	0.018
+48305	Lynn County	Texas	48305	0.77	0.044
+48307	McCulloch County	Texas	48049	0.768	0.056
+48309	McLennan County	Texas	48309	0.906	0.018
+48311	McMullen County	Texas	48013	0.789	0.064
+48313	Madison County	Texas	48001	0.748	0.046
+48315	Marion County	Texas	48067	0.704	0.059
+48317	Martin County	Texas	48431	0.876	0.05
+48319	Mason County	Texas	48435	0.764	0.046
+48321	Matagorda County	Texas	48057	1.008	0.024
+48323	Maverick County	Texas	48013	0.789	0.064
+48325	Medina County	Texas	48463	0.992	0.046
+48327	Menard County	Texas	48435	0.764	0.046
+48329	Midland County	Texas	48329	1.022	0.03
+48331	Milam County	Texas	48287	0.811	0.044
+48333	Mills County	Texas	48253	0.742	0.046
+48335	Mitchell County	Texas	48431	0.876	0.05
+48337	Montague County	Texas	48097	0.9	0.039
+48339	Montgomery County	Texas	48339	1.036	0.024
+48341	Moore County	Texas	48359	0.861	0.044
+48343	Morris County	Texas	48067	0.704	0.059
+48345	Motley County	Texas	48191	0.796	0.029
+48347	Nacogdoches County	Texas	48347	0.861	0.043
+48349	Navarro County	Texas	48349	0.81	0.043
+48351	Newton County	Texas	48199	0.873	0.05
+48353	Nolan County	Texas	48431	0.876	0.05
+48355	Nueces County	Texas	48355	0.912	0.023
+48357	Ochiltree County	Texas	48359	0.861	0.044
+48359	Oldham County	Texas	48359	0.861	0.044
+48361	Orange County	Texas	48199	0.873	0.05
+48363	Palo Pinto County	Texas	48363	0.867	0.036
+48365	Panola County	Texas	48401	0.832	0.039
+48367	Parker County	Texas	48367	0.902	0.046
+48369	Parmer County	Texas	48437	0.915	0.043
+48371	Pecos County	Texas	48371	0.798	0.04
+48373	Polk County	Texas	48199	0.873	0.05
+48375	Potter County	Texas	48375	0.919	0.029
+48377	Presidio County	Texas	48371	0.798	0.04
+48379	Rains County	Texas	48499	0.772	0.066
+48381	Randall County	Texas	48381	0.86	0.041
+48383	Reagan County	Texas	48371	0.798	0.04
+48385	Real County	Texas	48435	0.764	0.046
+48387	Red River County	Texas	48499	0.772	0.066
+48389	Reeves County	Texas	48371	0.798	0.04
+48391	Refugio County	Texas	48255	0.891	0.058
+48393	Roberts County	Texas	48437	0.915	0.043
+48395	Robertson County	Texas	48287	0.811	0.044
+48397	Rockwall County	Texas	48397	1.025	0.038
+48399	Runnels County	Texas	48253	0.742	0.046
+48401	Rusk County	Texas	48401	0.832	0.039
+48403	Sabine County	Texas	48401	0.832	0.039
+48405	San Augustine County	Texas	48401	0.832	0.039
+48407	San Jacinto County	Texas	48225	0.848	0.053
+48409	San Patricio County	Texas	48057	1.008	0.024
+48411	San Saba County	Texas	48299	0.766	0.052
+48413	Schleicher County	Texas	48435	0.764	0.046
+48415	Scurry County	Texas	48431	0.876	0.05
+48417	Shackelford County	Texas	48253	0.742	0.046
+48419	Shelby County	Texas	48401	0.832	0.039
+48421	Sherman County	Texas	48359	0.861	0.044
+48423	Smith County	Texas	48423	0.916	0.02
+48425	Somervell County	Texas	48193	0.794	0.027
+48427	Starr County	Texas	48479	0.889	0.026
+48429	Stephens County	Texas	48363	0.867	0.036
+48431	Sterling County	Texas	48431	0.876	0.05
+48433	Stonewall County	Texas	48305	0.77	0.044
+48435	Sutton County	Texas	48435	0.764	0.046
+48437	Swisher County	Texas	48437	0.915	0.043
+48439	Tarrant County	Texas	48439	1.002	0.006
+48441	Taylor County	Texas	48441	0.82	0.025
+48443	Terrell County	Texas	48371	0.798	0.04
+48445	Terry County	Texas	48305	0.77	0.044
+48447	Throckmorton County	Texas	48363	0.867	0.036
+48449	Titus County	Texas	48067	0.704	0.059
+48451	Tom Green County	Texas	48451	0.879	0.032
+48453	Travis County	Texas	48453	1.01	0.006
+48455	Trinity County	Texas	48225	0.848	0.053
+48457	Tyler County	Texas	48199	0.873	0.05
+48459	Upshur County	Texas	48203	0.844	0.043
+48461	Upton County	Texas	48371	0.798	0.04
+48463	Uvalde County	Texas	48463	0.992	0.046
+48465	Val Verde County	Texas	48463	0.992	0.046
+48467	Van Zandt County	Texas	48499	0.772	0.066
+48469	Victoria County	Texas	48469	0.921	0.037
+48471	Walker County	Texas	48471	0.89	0.043
+48473	Waller County	Texas	48477	0.938	0.039
+48475	Ward County	Texas	48371	0.798	0.04
+48477	Washington County	Texas	48477	0.938	0.039
+48479	Webb County	Texas	48479	0.889	0.026
+48481	Wharton County	Texas	48285	0.886	0.04
+48483	Wheeler County	Texas	48191	0.796	0.029
+48485	Wichita County	Texas	48485	0.833	0.023
+48487	Wilbarger County	Texas	48191	0.796	0.029
+48489	Willacy County	Texas	48061	0.87	0.036
+48491	Williamson County	Texas	48491	0.997	0.016
+48493	Wilson County	Texas	48255	0.891	0.058
+48495	Winkler County	Texas	48371	0.798	0.04
+48497	Wise County	Texas	48097	0.9	0.039
+48499	Wood County	Texas	48499	0.772	0.066
+48501	Yoakum County	Texas	48305	0.77	0.044
+48503	Young County	Texas	48363	0.867	0.036
+48505	Zapata County	Texas	48479	0.889	0.026
+48507	Zavala County	Texas	48463	0.992	0.046
+49001	Beaver County	Utah	49017	0.904	0.044
+49003	Box Elder County	Utah	49003	0.861	0.029
+49005	Cache County	Utah	49005	0.769	0.017
+49007	Carbon County	Utah	49047	0.911	0.033
+49009	Daggett County	Utah	49047	0.911	0.033
+49011	Davis County	Utah	49011	0.904	0.016
+49013	Duchesne County	Utah	49047	0.911	0.033
+49015	Emery County	Utah	49039	0.798	0.041
+49017	Garfield County	Utah	49017	0.904	0.044
+49019	Grand County	Utah	49039	0.798	0.041
+49021	Iron County	Utah	49021	0.734	0.038
+49023	Juab County	Utah	49027	0.896	0.041
+49025	Kane County	Utah	49017	0.904	0.044
+49027	Millard County	Utah	49027	0.896	0.041
+49029	Morgan County	Utah	49043	0.994	0.021
+49031	Piute County	Utah	49017	0.904	0.044
+49033	Rich County	Utah	49043	0.994	0.021
+49035	Salt Lake County	Utah	49035	0.941	0.006
+49037	San Juan County	Utah	49017	0.904	0.044
+49039	Sanpete County	Utah	49039	0.798	0.041
+49041	Sevier County	Utah	49027	0.896	0.041
+49043	Summit County	Utah	49043	0.994	0.021
+49045	Tooele County	Utah	49027	0.896	0.041
+49047	Uintah County	Utah	49047	0.911	0.033
+49049	Utah County	Utah	49049	0.912	0.01
+49051	Wasatch County	Utah	49043	0.994	0.021
+49053	Washington County	Utah	49053	0.827	0.028
+49055	Wayne County	Utah	49017	0.904	0.044
+49057	Weber County	Utah	49057	0.844	0.018
+50001	Addison County	Vermont	50001	0.889	0.033
+50003	Bennington County	Vermont	50003	0.859	0.046
+50005	Caledonia County	Vermont	50005	0.824	0.043
+50007	Chittenden County	Vermont	50007	0.896	0.014
+50009	Essex County	Vermont	50019	0.825	0.037
+50011	Franklin County	Vermont	50011	0.945	0.032
+50013	Grand Isle County	Vermont	50011	0.945	0.032
+50015	Lamoille County	Vermont	50015	0.804	0.038
+50017	Orange County	Vermont	50017	0.877	0.038
+50019	Orleans County	Vermont	50019	0.825	0.037
+50021	Rutland County	Vermont	50021	0.836	0.025
+50023	Washington County	Vermont	50023	0.865	0.02
+50025	Windham County	Vermont	50025	0.888	0.026
+50027	Windsor County	Vermont	50027	0.886	0.021
+51001	Accomack County	Virginia	51001	0.86	0.036
+51003	Albemarle County	Virginia	51003	0.987	0.02
+51005	Alleghany County	Virginia	51005	0.877	0.035
+51007	Amelia County	Virginia	51029	0.835	0.038
+51009	Amherst County	Virginia	51031	0.874	0.042
+51011	Appomattox County	Virginia	51125	0.821	0.047
+51013	Arlington County	Virginia	51013	1.241	0.01
+51015	Augusta County	Virginia	51015	0.813	0.031
+51017	Bath County	Virginia	51005	0.877	0.035
+51019	Bedford County	Virginia	51019	0.809	0.038
+51021	Bland County	Virginia	51173	0.804	0.03
+51023	Botetourt County	Virginia	51005	0.877	0.035
+51025	Brunswick County	Virginia	51025	0.817	0.029
+51027	Buchanan County	Virginia	51167	0.72	0.041
+51029	Buckingham County	Virginia	51029	0.835	0.038
+51031	Campbell County	Virginia	51031	0.874	0.042
+51033	Caroline County	Virginia	51119	0.81	0.064
+51035	Carroll County	Virginia	51063	0.755	0.039
+51036	Charles City County	Virginia	51119	0.81	0.064
+51037	Charlotte County	Virginia	51025	0.817	0.029
+51041	Chesterfield County	Virginia	51041	0.938	0.016
+51043	Clarke County	Virginia	51187	1.037	0.052
+51045	Craig County	Virginia	51005	0.877	0.035
+51047	Culpeper County	Virginia	51047	0.964	0.044
+51049	Cumberland County	Virginia	51029	0.835	0.038
+51051	Dickenson County	Virginia	51167	0.72	0.041
+51053	Dinwiddie County	Virginia	51730	0.872	0.046
+51057	Essex County	Virginia	51119	0.81	0.064
+51059	Fairfax County	Virginia	51059	1.212	0.005
+51061	Fauquier County	Virginia	51061	1.01	0.042
+51063	Floyd County	Virginia	51063	0.755	0.039
+51065	Fluvanna County	Virginia	51029	0.835	0.038
+51067	Franklin County	Virginia	51143	0.825	0.044
+51069	Frederick County	Virginia	51069	0.935	0.028
+51071	Giles County	Virginia	51155	0.835	0.025
+51073	Gloucester County	Virginia	51119	0.81	0.064
+51075	Goochland County	Virginia	51075	1.151	0.041
+51077	Grayson County	Virginia	51063	0.755	0.039
+51079	Greene County	Virginia	51109	0.831	0.055
+51081	Greensville County	Virginia	51081	0.894	0.035
+51083	Halifax County	Virginia	51025	0.817	0.029
+51085	Hanover County	Virginia	51085	0.955	0.029
+51087	Henrico County	Virginia	51087	0.974	0.013
+51089	Henry County	Virginia	51690	0.877	0.047
+51091	Highland County	Virginia	51015	0.813	0.031
+51093	Isle of Wight County	Virginia	51081	0.894	0.035
+51095	James City County	Virginia	51095	0.841	0.03
+51097	King and Queen County	Virginia	51119	0.81	0.064
+51099	King George County	Virginia	51099	1.127	0.032
+51101	King William County	Virginia	51119	0.81	0.064
+51103	Lancaster County	Virginia	51001	0.86	0.036
+51105	Lee County	Virginia	51195	0.806	0.055
+51107	Loudoun County	Virginia	51107	1.097	0.015
+51109	Louisa County	Virginia	51109	0.831	0.055
+51111	Lunenburg County	Virginia	51025	0.817	0.029
+51113	Madison County	Virginia	51047	0.964	0.044
+51115	Mathews County	Virginia	51119	0.81	0.064
+51117	Mecklenburg County	Virginia	51025	0.817	0.029
+51119	Middlesex County	Virginia	51119	0.81	0.064
+51121	Montgomery County	Virginia	51121	0.872	0.016
+51125	Nelson County	Virginia	51125	0.821	0.047
+51127	New Kent County	Virginia	51119	0.81	0.064
+51131	Northampton County	Virginia	51001	0.86	0.036
+51133	Northumberland County	Virginia	51001	0.86	0.036
+51135	Nottoway County	Virginia	51029	0.835	0.038
+51137	Orange County	Virginia	51109	0.831	0.055
+51139	Page County	Virginia	51171	0.832	0.043
+51141	Patrick County	Virginia	51063	0.755	0.039
+51143	Pittsylvania County	Virginia	51143	0.825	0.044
+51145	Powhatan County	Virginia	51029	0.835	0.038
+51147	Prince Edward County	Virginia	51029	0.835	0.038
+51149	Prince George County	Virginia	51149	0.938	0.041
+51153	Prince William County	Virginia	51153	1.082	0.016
+51155	Pulaski County	Virginia	51155	0.835	0.025
+51157	Rappahannock County	Virginia	51187	1.037	0.052
+51159	Richmond County	Virginia	51001	0.86	0.036
+51161	Roanoke County	Virginia	51161	0.775	0.039
+51163	Rockbridge County	Virginia	51125	0.821	0.047
+51165	Rockingham County	Virginia	51165	0.951	0.036
+51167	Russell County	Virginia	51167	0.72	0.041
+51169	Scott County	Virginia	51167	0.72	0.041
+51171	Shenandoah County	Virginia	51171	0.832	0.043
+51173	Smyth County	Virginia	51173	0.804	0.03
+51175	Southampton County	Virginia	51081	0.894	0.035
+51177	Spotsylvania County	Virginia	51177	0.89	0.034
+51179	Stafford County	Virginia	51179	1.059	0.025
+51181	Surry County	Virginia	51081	0.894	0.035
+51183	Sussex County	Virginia	51081	0.894	0.035
+51185	Tazewell County	Virginia	51167	0.72	0.041
+51187	Warren County	Virginia	51187	1.037	0.052
+51191	Washington County	Virginia	51191	0.781	0.027
+51193	Westmoreland County	Virginia	51119	0.81	0.064
+51195	Wise County	Virginia	51195	0.806	0.055
+51197	Wythe County	Virginia	51173	0.804	0.03
+51199	York County	Virginia	51199	0.901	0.039
+51510	Alexandria city	Virginia	51510	1.196	0.014
+51520	Bristol city	Virginia	51191	0.781	0.027
+51530	Buena Vista city	Virginia	51125	0.821	0.047
+51540	Charlottesville city	Virginia	51540	0.911	0.021
+51550	Chesapeake city	Virginia	51550	0.885	0.02
+51570	Colonial Heights city	Virginia	51041	0.938	0.016
+51580	Covington city	Virginia	51005	0.877	0.035
+51590	Danville city	Virginia	51590	0.798	0.043
+51595	Emporia city	Virginia	51081	0.894	0.035
+51600	Fairfax city	Virginia	51600	1.045	0.039
+51610	Falls Church city	Virginia	51610	1.018	0.068
+51620	Franklin city	Virginia	51081	0.894	0.035
+51630	Fredericksburg city	Virginia	51630	0.951	0.037
+51640	Galax city	Virginia	51063	0.755	0.039
+51650	Hampton city	Virginia	51650	0.932	0.017
+51660	Harrisonburg city	Virginia	51660	0.83	0.022
+51670	Hopewell city	Virginia	51149	0.938	0.041
+51678	Lexington city	Virginia	51125	0.821	0.047
+51680	Lynchburg city	Virginia	51680	0.882	0.017
+51683	Manassas city	Virginia	51683	1.049	0.039
+51685	Manassas Park city	Virginia	51683	1.049	0.039
+51690	Martinsville city	Virginia	51690	0.877	0.047
+51700	Newport News city	Virginia	51700	0.933	0.016
+51710	Norfolk city	Virginia	51710	0.924	0.012
+51720	Norton city	Virginia	51195	0.806	0.055
+51730	Petersburg city	Virginia	51730	0.872	0.046
+51735	Poquoson city	Virginia	51199	0.901	0.039
+51740	Portsmouth city	Virginia	51740	0.916	0.021
+51750	Radford city	Virginia	51155	0.835	0.025
+51760	Richmond city	Virginia	51760	0.97	0.01
+51770	Roanoke city	Virginia	51770	0.876	0.02
+51775	Salem city	Virginia	51775	0.913	0.053
+51790	Staunton city	Virginia	51015	0.813	0.031
+51800	Suffolk city	Virginia	51800	0.929	0.027
+51810	Virginia Beach city	Virginia	51810	0.915	0.013
+51820	Waynesboro city	Virginia	51015	0.813	0.031
+51830	Williamsburg city	Virginia	51830	0.872	0.041
+51840	Winchester city	Virginia	51840	0.866	0.036
+53001	Adams County	Washington	53021	0.945	0.038
+53003	Asotin County	Washington	53075	0.833	0.024
+53005	Benton County	Washington	53005	1.068	0.019
+53007	Chelan County	Washington	53007	0.948	0.036
+53009	Clallam County	Washington	53009	0.915	0.043
+53011	Clark County	Washington	53011	1.013	0.014
+53013	Columbia County	Washington	53071	0.919	0.031
+53015	Cowlitz County	Washington	53015	0.944	0.033
+53017	Douglas County	Washington	53047	0.927	0.038
+53019	Ferry County	Washington	53047	0.927	0.038
+53021	Franklin County	Washington	53021	0.945	0.038
+53023	Garfield County	Washington	53075	0.833	0.024
+53025	Grant County	Washington	53025	0.931	0.036
+53027	Grays Harbor County	Washington	53027	0.92	0.039
+53029	Island County	Washington	53029	0.845	0.032
+53031	Jefferson County	Washington	53045	0.938	0.035
+53033	King County	Washington	53033	1.176	0.005
+53035	Kitsap County	Washington	53035	0.921	0.015
+53037	Kittitas County	Washington	53037	0.938	0.043
+53039	Klickitat County	Washington	53077	0.93	0.027
+53041	Lewis County	Washington	53041	0.852	0.059
+53043	Lincoln County	Washington	53065	0.881	0.038
+53045	Mason County	Washington	53045	0.938	0.035
+53047	Okanogan County	Washington	53047	0.927	0.038
+53049	Pacific County	Washington	53027	0.92	0.039
+53051	Pend Oreille County	Washington	53065	0.881	0.038
+53053	Pierce County	Washington	53053	0.988	0.01
+53055	San Juan County	Washington	53055	0.959	0.043
+53057	Skagit County	Washington	53057	0.911	0.023
+53059	Skamania County	Washington	53041	0.852	0.059
+53061	Snohomish County	Washington	53061	1.036	0.01
+53063	Spokane County	Washington	53063	0.894	0.012
+53065	Stevens County	Washington	53065	0.881	0.038
+53067	Thurston County	Washington	53067	0.945	0.012
+53069	Wahkiakum County	Washington	53041	0.852	0.059
+53071	Walla Walla County	Washington	53071	0.919	0.031
+53073	Whatcom County	Washington	53073	0.938	0.017
+53075	Whitman County	Washington	53075	0.833	0.024
+53077	Yakima County	Washington	53077	0.93	0.027
+54001	Barbour County	West Virginia	54001	0.781	0.025
+54003	Berkeley County	West Virginia	54003	0.933	0.028
+54005	Boone County	West Virginia	54059	0.839	0.039
+54007	Braxton County	West Virginia	54075	0.772	0.034
+54009	Brooke County	West Virginia	54029	0.739	0.045
+54011	Cabell County	West Virginia	54011	0.824	0.021
+54013	Calhoun County	West Virginia	54013	0.791	0.049
+54015	Clay County	West Virginia	54013	0.791	0.049
+54017	Doddridge County	West Virginia	54013	0.791	0.049
+54019	Fayette County	West Virginia	54019	0.743	0.042
+54021	Gilmer County	West Virginia	54013	0.791	0.049
+54023	Grant County	West Virginia	54031	0.787	0.029
+54025	Greenbrier County	West Virginia	54075	0.772	0.034
+54027	Hampshire County	West Virginia	54031	0.787	0.029
+54029	Hancock County	West Virginia	54029	0.739	0.045
+54031	Hardy County	West Virginia	54031	0.787	0.029
+54033	Harrison County	West Virginia	54033	0.83	0.03
+54035	Jackson County	West Virginia	54013	0.791	0.049
+54037	Jefferson County	West Virginia	54037	0.945	0.051
+54039	Kanawha County	West Virginia	54039	0.847	0.016
+54041	Lewis County	West Virginia	54075	0.772	0.034
+54043	Lincoln County	West Virginia	54059	0.839	0.039
+54045	Logan County	West Virginia	54059	0.839	0.039
+54047	McDowell County	West Virginia	54059	0.839	0.039
+54049	Marion County	West Virginia	54049	0.802	0.035
+54051	Marshall County	West Virginia	54051	0.781	0.049
+54053	Mason County	West Virginia	54079	0.881	0.04
+54055	Mercer County	West Virginia	54055	0.804	0.037
+54057	Mineral County	West Virginia	54031	0.787	0.029
+54059	Mingo County	West Virginia	54059	0.839	0.039
+54061	Monongalia County	West Virginia	54061	0.838	0.016
+54063	Monroe County	West Virginia	54019	0.743	0.042
+54065	Morgan County	West Virginia	54003	0.933	0.028
+54067	Nicholas County	West Virginia	54019	0.743	0.042
+54069	Ohio County	West Virginia	54069	0.817	0.03
+54071	Pendleton County	West Virginia	54031	0.787	0.029
+54073	Pleasants County	West Virginia	54013	0.791	0.049
+54075	Pocahontas County	West Virginia	54075	0.772	0.034
+54077	Preston County	West Virginia	54001	0.781	0.025
+54079	Putnam County	West Virginia	54079	0.881	0.04
+54081	Raleigh County	West Virginia	54081	0.769	0.029
+54083	Randolph County	West Virginia	54031	0.787	0.029
+54085	Ritchie County	West Virginia	54013	0.791	0.049
+54087	Roane County	West Virginia	54013	0.791	0.049
+54089	Summers County	West Virginia	54019	0.743	0.042
+54091	Taylor County	West Virginia	54001	0.781	0.025
+54093	Tucker County	West Virginia	54001	0.781	0.025
+54095	Tyler County	West Virginia	54013	0.791	0.049
+54097	Upshur County	West Virginia	54001	0.781	0.025
+54099	Wayne County	West Virginia	54059	0.839	0.039
+54101	Webster County	West Virginia	54075	0.772	0.034
+54103	Wetzel County	West Virginia	54051	0.781	0.049
+54105	Wirt County	West Virginia	54013	0.791	0.049
+54107	Wood County	West Virginia	54107	0.814	0.026
+54109	Wyoming County	West Virginia	54055	0.804	0.037
+55001	Adams County	Wisconsin	55001	0.882	0.038
+55003	Ashland County	Wisconsin	55003	0.803	0.028
+55005	Barron County	Wisconsin	55005	0.893	0.033
+55007	Bayfield County	Wisconsin	55007	0.824	0.05
+55009	Brown County	Wisconsin	55009	0.895	0.012
+55011	Buffalo County	Wisconsin	55121	0.8	0.033
+55013	Burnett County	Wisconsin	55129	0.825	0.035
+55015	Calumet County	Wisconsin	55015	0.84	0.034
+55017	Chippewa County	Wisconsin	55017	0.817	0.024
+55019	Clark County	Wisconsin	55019	0.817	0.033
+55021	Columbia County	Wisconsin	55021	0.844	0.033
+55023	Crawford County	Wisconsin	55023	0.821	0.041
+55025	Dane County	Wisconsin	55025	0.935	0.006
+55027	Dodge County	Wisconsin	55027	0.854	0.019
+55029	Door County	Wisconsin	55029	0.83	0.034
+55031	Douglas County	Wisconsin	55031	0.924	0.035
+55033	Dunn County	Wisconsin	55033	0.828	0.025
+55035	Eau Claire County	Wisconsin	55035	0.846	0.017
+55037	Florence County	Wisconsin	55075	0.756	0.032
+55039	Fond du Lac County	Wisconsin	55039	0.894	0.02
+55041	Forest County	Wisconsin	55067	0.848	0.026
+55043	Grant County	Wisconsin	55043	0.828	0.022
+55045	Green County	Wisconsin	55045	0.862	0.031
+55047	Green Lake County	Wisconsin	55001	0.882	0.038
+55049	Iowa County	Wisconsin	55049	0.926	0.031
+55051	Iron County	Wisconsin	55125	0.778	0.046
+55053	Jackson County	Wisconsin	55053	0.82	0.038
+55055	Jefferson County	Wisconsin	55055	0.847	0.03
+55057	Juneau County	Wisconsin	55057	0.894	0.034
+55059	Kenosha County	Wisconsin	55059	0.926	0.021
+55061	Kewaunee County	Wisconsin	55029	0.83	0.034
+55063	La Crosse County	Wisconsin	55063	0.869	0.014
+55065	Lafayette County	Wisconsin	55045	0.862	0.031
+55067	Langlade County	Wisconsin	55067	0.848	0.026
+55069	Lincoln County	Wisconsin	55069	0.852	0.049
+55071	Manitowoc County	Wisconsin	55071	0.839	0.023
+55073	Marathon County	Wisconsin	55073	0.898	0.02
+55075	Marinette County	Wisconsin	55075	0.756	0.032
+55077	Marquette County	Wisconsin	55001	0.882	0.038
+55078	Menominee County	Wisconsin	55083	0.857	0.056
+55079	Milwaukee County	Wisconsin	55079	0.956	0.006
+55081	Monroe County	Wisconsin	55081	0.886	0.03
+55083	Oconto County	Wisconsin	55083	0.857	0.056
+55085	Oneida County	Wisconsin	55085	0.896	0.039
+55087	Outagamie County	Wisconsin	55087	0.882	0.015
+55089	Ozaukee County	Wisconsin	55089	0.906	0.023
+55091	Pepin County	Wisconsin	55093	0.917	0.036
+55093	Pierce County	Wisconsin	55093	0.917	0.036
+55095	Polk County	Wisconsin	55095	0.842	0.024
+55097	Portage County	Wisconsin	55097	0.862	0.021
+55099	Price County	Wisconsin	55099	0.754	0.023
+55101	Racine County	Wisconsin	55101	0.948	0.019
+55103	Richland County	Wisconsin	55103	0.817	0.029
+55105	Rock County	Wisconsin	55105	0.866	0.021
+55107	Rusk County	Wisconsin	55119	0.777	0.025
+55109	St. Croix County	Wisconsin	55109	0.957	0.041
+55111	Sauk County	Wisconsin	55111	0.857	0.024
+55113	Sawyer County	Wisconsin	55113	0.792	0.04
+55115	Shawano County	Wisconsin	55115	0.776	0.033
+55117	Sheboygan County	Wisconsin	55117	0.91	0.02
+55119	Taylor County	Wisconsin	55119	0.777	0.025
+55121	Trempealeau County	Wisconsin	55121	0.8	0.033
+55123	Vernon County	Wisconsin	55123	0.78	0.036
+55125	Vilas County	Wisconsin	55125	0.778	0.046
+55127	Walworth County	Wisconsin	55127	0.878	0.023
+55129	Washburn County	Wisconsin	55129	0.825	0.035
+55131	Washington County	Wisconsin	55131	0.879	0.018
+55133	Waukesha County	Wisconsin	55133	0.954	0.009
+55135	Waupaca County	Wisconsin	55135	0.838	0.038
+55137	Waushara County	Wisconsin	55001	0.882	0.038
+55139	Winnebago County	Wisconsin	55139	0.891	0.016
+55141	Wood County	Wisconsin	55141	0.94	0.023
+56001	Albany County	Wyoming	56001	0.824	0.025
+56003	Big Horn County	Wyoming	56033	0.832	0.03
+56005	Campbell County	Wyoming	56005	0.862	0.046
+56007	Carbon County	Wyoming	56013	0.873	0.026
+56009	Converse County	Wyoming	56009	0.877	0.044
+56011	Crook County	Wyoming	56005	0.862	0.046
+56013	Fremont County	Wyoming	56013	0.873	0.026
+56015	Goshen County	Wyoming	56009	0.877	0.044
+56017	Hot Springs County	Wyoming	56029	0.877	0.046
+56019	Johnson County	Wyoming	56009	0.877	0.044
+56021	Laramie County	Wyoming	56021	0.901	0.024
+56023	Lincoln County	Wyoming	56023	0.787	0.039
+56025	Natrona County	Wyoming	56025	0.92	0.03
+56027	Niobrara County	Wyoming	56009	0.877	0.044
+56029	Park County	Wyoming	56029	0.877	0.046
+56031	Platte County	Wyoming	56009	0.877	0.044
+56033	Sheridan County	Wyoming	56033	0.832	0.03
+56035	Sublette County	Wyoming	56023	0.787	0.039
+56037	Sweetwater County	Wyoming	56037	0.897	0.069
+56039	Teton County	Wyoming	56039	0.956	0.052
+56041	Uinta County	Wyoming	56023	0.787	0.039
+56043	Washakie County	Wyoming	56029	0.877	0.046
+56045	Weston County	Wyoming	56009	0.877	0.044
