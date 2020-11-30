@@ -23,6 +23,8 @@ substrRight <- function(x, n){
 ```{r}
 library(rio)
 
+# Common Core Data from NCES
+## includes locale, school population (n), FRL counts, and Pupil/Teacher Ratio
 elsi <- import(path(git, "/data/elsi_3.csv")) %>% 
   select(3:12)
 
@@ -80,6 +82,8 @@ bonus <- elsi %>%
 
 
 ``` {r prof}
+# Oregon State Assessment Results by school and grade for 2017-18 school year
+## https://www.oregon.gov/ode/educator-resources/assessment/Pages/Assessment-Group-Reports.aspx
 or <- import(path(git, "/data/or_prof.xlsx"))
 
 or <- or %>% 
@@ -96,6 +100,8 @@ or <- or %>%
          percent_level_2 = as.numeric(percent_level_2),
          percent_level_1 = as.numeric(percent_level_1))
 
+# Oregon State Assessment Results aggregated by school for 2017-18 school year
+## https://www.oregon.gov/ode/educator-resources/assessment/Pages/Assessment-Group-Reports.aspx
 school_prof <- import(path(git, "/data/school_prof.xlsx")) %>% 
     janitor::clean_names() %>% 
   filter(student_group =="Total Population (All Students)") %>% 
@@ -116,6 +122,8 @@ bonus <- bonus %>%
 ```
 
 ```{r income}
+# IRS Income Data by Zip Code for 2018
+## https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-zip-code-data-soi
 income <- import(path(git, "income.xlsx")) %>% 
     mutate(agi = case_when(!is.na(zip) & is.na(agi) ~ "Total", TRUE ~ agi)) %>% 
   pivot_wider(id_cols = zip, names_from = agi, values_from = individuals) %>% 
