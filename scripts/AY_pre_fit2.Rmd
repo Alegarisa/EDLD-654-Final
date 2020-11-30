@@ -1,0 +1,389 @@
+---
+title: "AY_prelfit2"
+author: "Asha Yadav"
+date: "11/30/2020"
+output:
+  word_document:
+    toc: yes
+  pdf_document:
+    toc: yes
+  html_document:
+    css: website-custom.css
+    theme: journal
+    toc: yes
+    toc_float: yes
+subtitle: Prelim fit2
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message = FALSE,
+                      warning = FALSE,
+                      cache = TRUE)
+
+library(tidyverse)
+library(tidymodels)
+library(baguette)
+library(future)
+library(here)
+library(rio)
+library(vip)
+library(rpart.plot)
+#install.packages("rpart")
+library(tictoc)
+
+theme_set(theme_minimal())
+```
+
+```{r}
+# Reading 'train.csv' dataset
+set.seed(3000)
+
+d <- read_csv(here::here("data", "train.csv")) %>%
+select(-classification) %>%
+sample_frac(.01)
+
+sheets <- readxl::excel_sheets(here::here("data",
+"fallmembershipreport_20192020.xlsx"))
+
+ode_schools <- readxl::read_xlsx(here::here("data",
+"fallmembershipreport_20192020.xlsx"), sheet = sheets[4])
+
+ethnicities <- ode_schools %>%
+select(attnd_schl_inst_id = `Attending School ID`,
+sch_name = `School Name`,
+contains("%")) %>%
+  janitor::clean_names()
+
+names(ethnicities) <- gsub("x2019_20_percent", "p", names(ethnicities))
+
+# Joining the math and ethnicities dataset
+d <- left_join(d, ethnicities)
+
+# Reading nces dataset and stu_counts dataset and joinging them followed by joining with math dataset to get the final dataset (math) to run models
+
+# nces_frl is free lunch dataset from nces website
+frl<- import("https://nces.ed.gov/ccd/Data/zip/ccd_sch_033_1718_l_1a_083118.zip",
+            setclass = "tbl_df")  %>% 
+  janitor::clean_names()  %>% 
+  filter(st == "OR")  %>%
+  select(ncessch, lunch_program, student_count)  %>% 
+  mutate(student_count = replace_na(student_count, 0))  %>% 
+  pivot_wider(names_from = lunch_program,
+              values_from = student_count)  %>% 
+  janitor::clean_names()  %>% 
+  mutate(ncessch = as.double(ncessch))
+
+# stu_count data
+stu_counts <- import("https://github.com/datalorax/ach-gap-variability/raw/master/data/achievement-gaps-geocoded.csv",
+                     setclass = "tbl_df")  %>% 
+  filter(state == "OR" & year == 1718)  %>% 
+  count(ncessch, wt = n)  %>% 
+  mutate(ncessch = as.double(ncessch))
+
+# Joining hte nces data and stu_counts dataset
+frl <- left_join(frl, stu_counts)
+
+# Calculating proprottion on frl dataset
+
+frl_props <- frl %>%
+mutate(prop_fl = free_lunch_qualified/n,
+      prop_rl = reduced_price_lunch_qualified/n) %>%
+select(ncessch, prop_fl, prop_rl)
+
+d <- left_join(d, frl_props)
+
+```
+## Split and Resample
+
+```{r}
+set.seed(100)
+
+d_split <- initial_split(d, strata = "score")  # Initial split of the full dataset
+
+d_train <- training(d_split) # Training dataset
+d_test <- testing(d_split)   # Testing dataset
+
+
+cv <- vfold_cv(d_train, strata = "score")  # k-fold cross validation
+
+```
+
+# Preprocess
+
+```{r}
+rec <- recipe(score ~ ., d_train) %>% 
+  step_mutate(tst_dt = as.numeric(lubridate::
+                                    mdy_hms(tst_dt))) %>% # convert `test date` variable to a date 
+  update_role(contains("id"), ncessch, new_role = "id vars") %>% # declare ID variables
+  step_nzv(all_predictors(), freq_cut = 0, unique_cut = 0) %>% # remove variables with zero variances
+  step_novel(all_nominal()) %>% # prepares test data to handle previously unseen factor levels 
+  step_unknown(all_nominal()) %>% # categorizes missing categorical data (NA's) as `unknown`
+  step_medianimpute(all_numeric(), -all_outcomes(), -has_role("id vars"))  %>% # replaces missing numeric observations with the median
+  step_dummy(all_nominal(), -has_role("id vars")) %>% # dummy codes categorical variables
+  step_nzv(all_predictors(), -starts_with("lang_cd"))
+```
+
+# Decision Tree
+
+```{r}
+# Creating a parsnip CART model to specifying decision tree model
+
+mod_decisiontree <- decision_tree() %>%
+  set_mode("regression") %>%
+  set_engine("rpart") %>%
+  set_args(cost_complexity = tune(), min_n = tune())
+
+```
+
+```{r}
+# Workflow object combining recipe and parsnip object.
+
+dectree_wf <- workflow() %>%
+  add_model(mod_decisiontree) %>%
+  add_recipe(rec)
+
+```
+
+```{r}
+
+# Tune the model
+set.seed(100)
+
+tic()
+metric_eval <- metric_set(rmse,
+                          rsq,
+                          huber_loss)
+
+tune_dec_tree <- tune_grid(dectree_wf,
+                           cv,
+                           grid = 10,
+                           metrics = metric_eval)
+
+
+toc()       # Time elapsed 70.61 sec  RMSE = 103.46
+```
+
+```{r}
+# Retrieve best rmse
+
+show_best(tune_dec_tree, metric = "rmse") # show top 5. 
+select_best(tune_dec_tree, metric = "rmse")
+
+```
+
+# Bagged Tree
+
+```{r}
+# As decision trees can be highly variable, bagging can help reduce the variance of these models and lead to more stable model predictions.
+bag_model <- bag_tree() %>%
+  set_mode("regression") %>%
+  set_engine("rpart", times = 10) %>% # 10 bootstrap resamples
+  set_args(cost_complexity = tune(), min_n = tune())
+
+```
+
+```{r}
+# bagged tree workflow
+tic()
+
+bagtree_wf <- workflow() %>%
+  add_model(bag_model) %>%
+  add_recipe(rec)
+
+toc()
+```
+
+```{r}
+ #Fit and tune the bagged tree model (parameters; grid = 10, meteric = rmse, rsq, huber_loss, control = extract = function(x) extract_model(x) to extract the model from each fit. )
+# Using `{future}` to speed up processing time 
+
+set.seed(100)
+
+library(future)
+plan(multisession)
+
+start_rf <- Sys.time()
+metric_eval <- metric_set(rmse,
+                          rsq,
+                          huber_loss)
+
+tune_bag_tree <- tune_grid(bagtree_wf,
+                           cv,
+                           grid = 10,
+                           metrics = metric_eval,
+                           control = control_resamples( verbose =
+                                                          TRUE,
+                                                        save_pred = TRUE,
+                                                        extract =
+                                                          function(x)
+                                                            extract_model(x)))
+end_rf <- Sys.time()
+end_rf - start_rf
+
+plan(sequential)  # Time elapsed 2.92454 mins  RMSE = 100.40
+
+```
+
+```{r}
+#rmse
+show_best(tune_bag_tree, metric = "rmse")
+select_best(tune_bag_tree, metric = "rmse")
+```
+
+```{r}
+# Visualize: The plot below shows the root nodes from a bagged tree made of 100 trees (10 folds x 10 bootstrapped resamples). Root nodes are the 1st node in a decision tree, and they are determined by which variable best optimizes a loss function (e.g., minimizes mean square error [MSE] for continuous outcomes or Gini Index for categorical outcomes). Put roughly, the most common root nodes can be thought of as the most “important” predictors.
+
+# Extract roots
+
+bag_roots <-  function(x){
+  x %>% 
+  select(.extracts) %>% 
+  unnest(cols = c(.extracts)) %>% 
+  mutate(models = map(.extracts,
+                  ~.x$model_df)) %>% 
+  select(-.extracts) %>% 
+  unnest(cols = c(models)) %>% 
+  mutate(root = map_chr(model,
+                     ~as.character(.x$fit$frame[1, 1]))) %>%
+  select(root)  
+}
+
+# Prep for the plot
+bag_roots(tune_bag_tree)
+
+feature <- bag_roots(tune_bag_tree) %>%
+  group_by(root) %>%
+  count()
+
+```
+
+```{r, fig.width=7, fig.height=5}
+
+# Plot : Bagged tree root node.
+
+feature$root <- factor(feature$root, levels = 
+                             feature$root[order(feature$n)])
+
+ggplot(feature, aes(x=root, y=n, fill=root)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = n), vjust = 0.5) +
+  xlab(label = "Features") +
+  ylab(label = "Frequency") +
+  theme(legend.position = "none") +
+  coord_flip() +
+  ggtitle(label ="Number of features at the root node(Bagged Tree)")
+
+```
+
+# Random Forest
+
+```{r}
+
+# Specify random forest model and tune the model
+
+set.seed(100)
+mod_rf <-rand_forest() %>%
+  set_engine("ranger",
+             num.threads = parallel::detectCores(), # ranger package has built in parallel processing. This is code is telling number of cores we have on this machine.
+             importance = "permutation", 
+             verbose = TRUE) %>% 
+  set_mode("regression") %>% 
+  set_args(mtry = tune(),
+           trees = 1000, # default number of trees is 500 so we are spedifying it, not tuning it.
+           min_n = tune() # default for regression is 5
+  )
+
+
+```
+
+```{r}
+# workflow
+
+tic()
+
+ran_for_wf <- workflow() %>%
+  add_model(mod_rf) %>%
+  add_recipe(rec)
+
+toc()
+
+```
+
+```{r}
+# Fit random forest model
+set.seed(100)
+
+plan(multisession)
+start_rf <- Sys.time()
+
+metric_eval <- metric_set(rmse,
+                          rsq,
+                          huber_loss)
+
+ran_for_tree <- tune_grid(ran_for_wf,
+                          cv,
+                          grid = 10,
+                          metrics = metric_eval,
+                          control = control_resamples( verbose = TRUE,
+                                                    save_pred = TRUE,
+                                                    extract = function(x) x))
+end_rf <- Sys.time()
+end_rf - start_rf
+
+plan(sequential) # Time elapsed 3,110523 mins RMSE= 98.96
+```
+```{r}
+show_best(ran_for_tree, metric = "rmse")
+
+select_best(ran_for_tree, metric = "rmse")
+```
+```{r}
+# Visualize : Root nodes with 1000 trees.
+
+# Extract roots
+
+rf_tree_roots <- function(x){
+  map_chr(1:1000, 
+           ~ranger::treeInfo(x, tree = .)[1, "splitvarName"])
+}
+
+rf_roots <- function(x){
+  x %>% 
+  select(.extracts) %>% 
+  unnest(cols = c(.extracts)) %>% 
+  mutate(fit = map(.extracts,
+                   ~.x$fit$fit$fit),
+         oob_rmse = map_dbl(fit,
+                         ~sqrt(.x$prediction.error)),
+         roots = map(fit, 
+                        ~rf_tree_roots(.))
+         ) %>% 
+  select(roots) %>% 
+  unnest(cols = c(roots))
+}
+
+```
+
+
+```{r}
+# Plot: random forest with 1000 root nodes
+
+features_rf <- rf_roots(ran_for_tree) %>%
+  group_by(roots) %>%
+  count()
+
+features_rf$roots <- factor(features_rf$roots, levels = 
+                             features_rf$roots[order(features_rf$n)])
+
+ggplot(features_rf, aes(x=roots, y=n, fill=roots)) +
+  geom_bar(stat = "identity") +
+  xlab(label = "Features") +
+  ylab(label = "Frequency") +
+  theme(legend.position = "none") +
+  coord_flip() +
+  ggtitle(label ="Number of features at the root node (Random Forest)")
+
+
+```
+

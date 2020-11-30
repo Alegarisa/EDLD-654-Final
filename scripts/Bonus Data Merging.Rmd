@@ -1,0 +1,222 @@
+---
+title: "Data Gather"
+author: "Chris Ives"
+date: "11/2/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(tidymodels)
+needs(rio, fs, janitor)
+git <- "~/GitHub/machinelearning"
+
+substrRight <- function(x, n){
+  substr(x, nchar(x)-n+1, nchar(x))
+}
+
+```
+
+
+```{r}
+library(rio)
+
+elsi <- import(path(git, "/data/elsi_3.csv")) %>% 
+  select(3:12)
+
+## gather state ids
+leaids <- import("https://nces.ed.gov/ccd/Data/zip/ccd_sch_033_1718_l_1a_083118.zip",
+              setclass = "tbl_df")  %>% 
+  janitor::clean_names()  %>% 
+  filter(st == "OR")  %>%
+  mutate(st_schid = as.numeric(substrRight(st_schid, 4))) %>%
+  distinct(ncessch, leaid, st_schid)
+
+# import school neighborhood poverty indexes
+## https://nces.ed.gov/programs/edge/Economic/NeighborhoodPoverty
+edge <- import(path(git, "/data/edge_ipr.csv")) %>% 
+  janitor::clean_names() %>% 
+  select(-name, -ipr_se)
+
+# import teacher comparable wage index for counties
+## https://nces.ed.gov/programs/edge/Economic/TeacherWage
+edge_acs <- import(path(git, "/data/edge_acs_county.txt")) %>% 
+  janitor::clean_names() %>% 
+  select(-cnty_fips, -st_name, -mkt2015) %>% 
+  rename(county = cnty_name)
+
+# import teacher comparable wage index for LEAs
+## https://nces.ed.gov/programs/edge/Economic/TeacherWage
+edge_lea <- import(path(git, "/data/edge_acs_leaid.txt")) %>% 
+  janitor::clean_names() %>% 
+  select(-st_name, -lea_cwiftse) 
+
+# import demographic percentages data
+race <- readxl::read_xlsx(path(git, "/data/fallmembershipreport_20192020.xlsx"), 4) %>% 
+  select(st_schid = `Attending School ID`,
+         sch_name = `School Name`,
+         contains("%")) %>% 
+    clean_names()
+
+names(race) <- gsub("x2019_20_percent", "p", names(race))
+
+## join data
+bonus <- elsi %>% 
+  left_join(edge) %>% 
+  left_join(leaids) %>% 
+  left_join(edge_lea) %>% 
+  left_join(race) %>% 
+  mutate(fr_lnch_n = as.numeric(fr_lnch_n),
+         red_lnch_n = as.numeric(red_lnch_n),
+         total_n = as.numeric(total_n)) %>% 
+  mutate(fr_lnch_prop = fr_lnch_n/total_n,
+         red_lnch_prop = red_lnch_n/total_n) %>% 
+  mutate(lea_name = gsub("(District).*", "\\1", lea_name)) %>% 
+  filter(ncessch != 0)
+
+```
+
+
+``` {r prof}
+or <- import(path(git, "/data/or_prof.xlsx"))
+
+or <- or %>% 
+  janitor::clean_names() %>% 
+  filter(student_group =="Total Population (All Students)") %>% 
+  mutate(grade_level = as.numeric(str_replace(grade_level, "Grade ", ""))) %>% 
+  drop_na(grade_level) %>% 
+  select(school_id, grade_level, contains("percent")) %>% 
+  rename(st_schid = school_id,
+         enrl_grd = grade_level) %>% 
+  select(-percent_proficient_level_3_or_4) %>% 
+  mutate(percent_level_4 = as.numeric(percent_level_4),
+         percent_level_3 = as.numeric(percent_level_3),
+         percent_level_2 = as.numeric(percent_level_2),
+         percent_level_1 = as.numeric(percent_level_1))
+
+school_prof <- import(path(git, "/data/school_prof.xlsx")) %>% 
+    janitor::clean_names() %>% 
+  filter(student_group =="Total Population (All Students)") %>% 
+  select(school_id, contains("percent")) %>% 
+  rename(st_schid = school_id) %>% 
+  select(-percent_proficient_level_3_or_4) %>% 
+  mutate(sch_percent_level_4 = as.numeric(percent_level_4),
+         sch_percent_level_3 = as.numeric(percent_level_3),
+        sch_percent_level_2 = as.numeric(percent_level_2),
+         sch_percent_level_1 = as.numeric(percent_level_1)) %>% 
+  select(st_schid, contains("sch"))
+
+
+bonus <- bonus %>% 
+  left_join(or) %>% 
+  left_join(school_prof)
+
+```
+
+```{r income}
+income <- import(path(git, "income.xlsx")) %>% 
+    mutate(agi = case_when(!is.na(zip) & is.na(agi) ~ "Total", TRUE ~ agi)) %>% 
+  pivot_wider(id_cols = zip, names_from = agi, values_from = individuals) %>% 
+  select(-2) %>%
+  drop_na(zip) %>% 
+  rename(over_200 = "$200,000 or more") %>% 
+  rename(under_25 = "$1 under $25,000") %>% 
+  rename(under_50 = "$25,000 under $50,000",
+         under_75 = "$50,000 under $75,000",
+         under_100 = "$75,000 under $100,000",
+         under_200 =  "$100,000 under $200,000")
+
+over_200 <- as.numeric(income$over_200)
+under_25 <- as.numeric(income$under_25)
+under_50 <- as.numeric(income$under_50)
+under_75 <- as.numeric(income$under_75)
+under_100 <- as.numeric(income$under_100)
+under_200 <- as.numeric(income$under_200)
+zip <- as.double(income$zip)
+total <- as.numeric(income$Total)
+
+income <- tibble(under_25, under_50, under_75, under_100, under_200,
+                 "zip" = zip, 
+                 "total" = total) %>% 
+  mutate(under_25 = under_25/total,
+         under_50 = under_50/total,
+         under_75 = under_75/total,
+         under_100 = under_100/total,
+         under_200 = under_200/total,
+         over_200 = over_200/total) %>% 
+  select(-total) %>% 
+  mutate(zip = as.double(zip))
+
+bonus <- bonus %>% 
+  left_join(income)
+```
+
+
+``` {r odn}
+
+odn <- import(path(git, "odn.csv")) %>% 
+  filter(type == "zip_code") %>% 
+  select(-id, -type) %>% 
+  mutate(name = str_remove(name, " ZIP Code"),
+         name = str_remove(name, "ZCTA5 "),
+         name = as.double(name)) %>% 
+  rename(zip = name)
+
+odn_clean <- odn %>% 
+  arrange(zip, desc(year)) %>% 
+  distinct(zip, variable, .keep_all = TRUE) %>% 
+  pivot_wider(id_cols = zip, names_from = variable, values_from = value) %>% 
+  select(-contains("male")) %>% 
+  select(!contains("rank"), -population)
+
+# 
+# odn_short <- odn %>% 
+#   select(zip, percent_bachelors_degree, percent_high_school_graduate, percent_9th_to_12th_grade_no_diploma, percent_graduate_or_professional_degree) %>% 
+#   rename(bachelors_pct = percent_bachelors_degree,
+#          no_diploma_pct = percent_9th_to_12th_grade_no_diploma,
+#          high_ed = percent_graduate_or_professional_degree,
+#          high_school = percent_high_school_graduate) %>% 
+#   mutate(zip = as.factor(zip))
+# 
+# odn_ranks <- odn %>% 
+#   select(zip, contains("rank"), percent_9th_to_12th_grade_no_diploma )
+
+
+bonus <- bonus %>% 
+  left_join(odn_clean)
+```
+
+
+``` {r skim}
+## gather median rent and income data for counties
+library(tidycensus)
+v17 <- load_variables(2010, "sf", cache = TRUE)
+
+vars_acs5 <-
+  c(
+    median_income = "B06011_001",
+    median_rent = "B25064_001")
+
+df_acs <-
+  get_acs(
+    geography = "county", 
+    variables = vars_acs5, 
+    year = 2017
+  )
+
+acs <- df_acs %>% 
+  rename(county = NAME) %>% 
+  pivot_wider(id_cols = county, names_from = variable, values_from = estimate) %>% 
+  filter(str_detect(county, ", Oregon")) %>% 
+  mutate(county = str_replace(county, ", Oregon", ""))
+
+# join acs data
+bonus <- bonus %>% 
+  left_join(acs)
+
+
+write_csv(bonus, "bonus_data.csv")
+
+```
