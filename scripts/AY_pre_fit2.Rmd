@@ -123,6 +123,53 @@ rec <- recipe(score ~ ., d_train) %>%
   step_dummy(all_nominal(), -has_role("id vars")) %>% # dummy codes categorical variables
   step_nzv(all_predictors(), -starts_with("lang_cd"))
 ```
+# Linear model
+
+```{r}
+
+set.seed(100)
+# Specify the model with parsnip package
+mod_linear <- linear_reg() %>%
+  set_engine("lm") %>%  # engine for linear regression
+  set_mode("regression")  
+
+```
+
+```{r}
+# workflow
+lm_wf <- workflow() %>% # set the workflow
+  add_recipe(rec) %>% # add recipe
+  add_model(mod_linear) # add model
+  
+```
+
+```{r}
+set.seed(100)
+
+# fitting the linear model
+mod_linear<- tune::fit_resamples(
+  lm_wf,        # workflow
+  resamples = cv,
+  metrics = yardstick::metric_set(rmse),
+  control = tune::control_resamples(verbose = TRUE,
+                                    save_pred = TRUE))
+
+# RMSE = 101.56
+```
+
+```{r}
+# collect metric
+set.seed(100)
+
+mod_linear %>%
+  collect_metrics() %>%
+  filter(.metric == "rmse") 
+
+
+```
+```{r}
+show_best(mod_linear, metric = "rmse")
+```
 
 # Decision Tree
 
