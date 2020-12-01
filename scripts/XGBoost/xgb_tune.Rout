@@ -56,10 +56,13 @@ The following object is masked from ‘package:dplyr’:
 > #   select(-classification) %>%
 > #   mutate_if(is.character, factor) %>%
 > #   mutate(ncessch = as.double(ncessch)) %>%
-> #   sample_frac(.10)
-> # 
+> #   sample_frac(.70)
+> # # 
 > # bonus <- import(path(git, "data/bonus_data.csv")) %>%
 > #   mutate(pupil_tch_ratio = as.numeric(pupil_tch_ratio)) %>%
+> #   mutate(ncessch = as.double(ncessch))
+> 
+> # bonus <- import(path(git, "data/bonus_data_v2.csv")) %>%
 > #   mutate(ncessch = as.double(ncessch))
 > 
 > ## talapas
@@ -85,25 +88,34 @@ cols(
 )
 See spec(...) for full column specifications.
 > 
-> bonus <- read_csv("data/bonus_data.csv") %>% 
-+   mutate(pupil_tch_ratio = as.numeric(pupil_tch_ratio)) %>% 
+> # bonus <- import(path(git, "data/bonus_data.csv")) %>%
+> #   mutate(ncessch = as.double(ncessch),
+> #          pupil_tch_ratio = as.numeric(pupil_tch_ratio),
+> #          pupil_tch_ratio = as.factor(case_when(pupil_tch_ratio < 18 ~ 1,
+> #                                                pupil_tch_ratio < 25 ~ 2,
+> #                                                pupil_tch_ratio < 30 ~ 3,
+> #                                                TRUE ~ 4))) %>%
+> #   mutate(locale = gsub("^.{0,3}", "", locale)) %>%
+> #   separate(col = locale, into = c("locale", "sublocale"), sep = ": ") %>%
+> #   select(-moms, -dads, -families, -households, -no_internet) %>%
+> #   left_join(fin) %>% 
+> #   mutate(hpi = as.numeric(hpi))
+> # 
+> # write_csv(bonus, "bonus_data_v2.csv")
+> 
+> bonus <- read_csv("data/bonus_data_v2.csv") %>% 
 +   mutate(ncessch = as.double(ncessch))
 Parsed with column specification:
 cols(
   .default = col_double(),
   county = col_character(),
   locale = col_character(),
+  sublocale = col_character(),
   title1_status = col_character(),
-  pupil_tch_ratio = col_character(),
   lea_name = col_character(),
   sch_name = col_character()
 )
 See spec(...) for full column specifications.
-Warning messages:
-1: Problem with `mutate()` input `pupil_tch_ratio`.
-ℹ NAs introduced by coercion
-ℹ Input `pupil_tch_ratio` is `as.numeric(pupil_tch_ratio)`. 
-2: In mask$eval_all_mutate(dots[[i]]) : NAs introduced by coercion
 > 
 > ## join data
 > data <- data %>% 
@@ -123,112 +135,666 @@ Joining, by = c("enrl_grd", "ncessch")
 +   step_mutate(tst_dt = as.numeric(lubridate::mdy_hms(tst_dt)),
 +               lang_cd = case_when(lang_cd == "S" ~ "S", TRUE ~ "E"),
 +               pupil_tch_ratio = as.numeric(pupil_tch_ratio)) %>% 
-+   step_rm(contains("id"), ncessch, ncesag, lea_name, sch_name) %>%
++   step_rm(contains("id"), ncessch, ncesag, lea_name, sch_name, total_n, fr_lnch_n, red_lnch_n) %>%
++   step_mutate(hpi = as.numeric(hpi),
++               lat = round(lat, 2),
++               lon = round(lon, 2),
++               median_income = log(median_income),
++               median_rent = log(median_rent),
++               frl_prop = fr_lnch_prop + red_lnch_prop) %>% 
++   step_rm(fr_lnch_prop, red_lnch_prop) %>% 
++   step_interact(terms = ~ lat:lon) %>% 
++   step_string2factor(all_nominal()) %>% 
 +   step_zv(all_predictors()) %>%
 +   step_unknown(all_nominal()) %>% 
-+   step_medianimpute(all_numeric()) %>% 
-+   step_dummy(all_nominal())
++   step_medianimpute(all_numeric()) %>%
++   step_dummy(all_nominal(), one_hot = TRUE) %>% 
++   step_nzv(all_predictors(), freq_cut = 995/5)
 > 
 > # bake recipe
 > baked_train <- prep(rec) %>% 
 +   bake(train)
 > 
-> baked_test <- prep(rec) %>% 
+> baked_test <- prep(rec) %>%
 +   bake(test)
 > 
 > ## organize in to matrices
-> train_x = data.matrix(baked_train[, -46])
-> train_y = data.matrix(baked_train[, 46])
-> test_x = data.matrix(baked_test[, -46])
-> test_y = data.matrix(baked_test[, 46])
+> train_x = data.matrix(baked_train[, -67])
+> train_y = data.matrix(baked_train[, 67])
+> test_x = data.matrix(baked_test[, -67])
+> test_y = data.matrix(baked_test[, 67])
 > 
 > ## set xgb matrices
-> xgb_train = xgb.DMatrix(data = train_x, label = train_y)
-> xgb_test = xgb.DMatrix(data = test_x, label = test_y)
+> # xgb_train = xgb.DMatrix(data = train_x, label = train_y)
+> # xgb_test = xgb.DMatrix(data = test_x, label = test_y)
 > 
 > ## first xgb model
 > 
-> def_mod <- xgb.cv(
-+   data = train_x,
-+   label = train_y,
-+   nrounds = 5000,
-+   objective = "reg:squarederror",
-+   early_stopping_rounds = 20, 
-+   nfold = 10,
-+   verbose = 0,
-+   nthread = 20
-+ ) 
+> # def_mod <- xgb.cv(
+> #   data = train_x,
+> #   label = train_y,
+> #   nrounds = 5000,
+> #   objective = "reg:squarederror",
+> #   early_stopping_rounds = 50, 
+> #   nfold = 10,
+> #   verbose = 1,
+> #   nthread = 24,
+> #   params = list(
+> #     eta = .08,
+> #     max_depth = 12,
+> #     min_child_weight = 9,
+> #     colsample_bytree = .67,
+> #     subsample = .80,
+> #     gamma = 30)
+> #   )
 > 
-> def_mod$evaluation_log[def_mod$best_iteration, ]
-   iter train_rmse_mean train_rmse_std test_rmse_mean test_rmse_std
-1:  102          78.553      0.0890455       83.13628     0.4571459
-> 
-> saveRDS(def_mod, "def_mod.Rds")
-> 
-> pull_eval <- function(m) {
-+   m[["evaluation_log"]] %>% 
-+     pivot_longer(-iter,
-+                  names_to = c("set", NA, "stat"),
-+                  names_sep = "_",
-+                  values_to = "val") %>% 
-+     pivot_wider(names_from = "stat", 
-+                 values_from = "val") 
-+ }
-> 
-> # def_mod %>% 
-> #   pull_eval() %>% 
-> #   filter(iter > 7) %>% 
-> #   ggplot(aes(iter, mean, color = set)) +
-> #   geom_line() +
-> #   geom_point()
-> 
-> ######### Train learning rate 
-> lr <- seq(0.0001, 0.3, length.out = 30)
-> 
-> lr_mods <- map(lr, function(learn_rate) {
-+   xgb.cv(
-+     data = train_x,
-+     label = train_y,
-+     nrounds = 5000,
-+     objective = "reg:squarederror",
-+     early_stopping_rounds = 50, 
-+     nfold = 10,
-+     verbose = 0,
-+     params = list( 
-+       eta = learn_rate,
-+       nthread = 20
-+     ) 
-+   )  
-+ }) 
-> 
-> saveRDS(lr_mods, "lr_mods.Rds")
-> 
-> names(lr_mods) <- lr
-> evals_lr <- map_df(lr_mods, pull_eval, .id = "learning_rate")
-> 
-> rmse_lr <- evals_lr %>% 
-+   group_by(learning_rate, set) %>% 
-+   summarize(min = min(mean)) %>% 
-+   pivot_wider(names_from = set, values_from = min) %>% 
-+   arrange(test)
-`summarise()` regrouping output by 'learning_rate' (override with `.groups` argument)
-> 
-> rmse_lr %>% 
-+   ungroup() %>% 
-+   mutate(learning_rate = as.numeric(learning_rate)) %>% 
-+   filter(test < 120) %>% 
-+   ggplot(aes(learning_rate, test)) +
-+   geom_point()
-> 
-> # Check learning curves
-> lr_mods[[rmse_lr$learning_rate[1]]] %>% 
-+   pull_eval() %>% 
-+   filter(mean < 120) %>% 
-+   ggplot(aes(iter, mean, color = set)) +
-+   geom_line() +
-+   geom_point()
-> 
-> 
-> proc.time()
-      user     system    elapsed 
-278471.698    921.717  14381.821 
+> bst <- xgboost(data = train_x,
++                  label = train_y,
++                  nrounds = 1294,
++                  verbose = 1,
++                  params = list(
++                    eta = .08,
++                    max_depth = 12,
++                    min_child_weight = 9,
++                    colsample_bytree = .67,
++                    subsample = .80,
++                    gamma = 30)
++ )
+[1]	train-rmse:2301.191650 
+[2]	train-rmse:2117.416016 
+[3]	train-rmse:1948.357300 
+[4]	train-rmse:1792.843628 
+[5]	train-rmse:1649.795654 
+[6]	train-rmse:1518.243774 
+[7]	train-rmse:1397.229248 
+[8]	train-rmse:1285.935791 
+[9]	train-rmse:1183.590942 
+[10]	train-rmse:1089.466431 
+[11]	train-rmse:1002.895630 
+[12]	train-rmse:923.297363 
+[13]	train-rmse:850.109680 
+[14]	train-rmse:782.832031 
+[15]	train-rmse:721.006287 
+[16]	train-rmse:664.202087 
+[17]	train-rmse:611.999817 
+[18]	train-rmse:564.036255 
+[19]	train-rmse:519.988464 
+[20]	train-rmse:479.546417 
+[21]	train-rmse:442.437378 
+[22]	train-rmse:408.392853 
+[23]	train-rmse:377.172943 
+[24]	train-rmse:348.556396 
+[25]	train-rmse:322.349518 
+[26]	train-rmse:298.362396 
+[27]	train-rmse:276.413940 
+[28]	train-rmse:256.372528 
+[29]	train-rmse:238.082062 
+[30]	train-rmse:221.394272 
+[31]	train-rmse:206.191391 
+[32]	train-rmse:192.376648 
+[33]	train-rmse:179.860107 
+[34]	train-rmse:168.471436 
+[35]	train-rmse:158.181488 
+[36]	train-rmse:148.914215 
+[37]	train-rmse:140.560928 
+[38]	train-rmse:133.057861 
+[39]	train-rmse:126.356308 
+[40]	train-rmse:120.347946 
+[41]	train-rmse:115.023560 
+[42]	train-rmse:110.283379 
+[43]	train-rmse:106.098450 
+[44]	train-rmse:102.369522 
+[45]	train-rmse:99.147491 
+[46]	train-rmse:96.321419 
+[47]	train-rmse:93.838409 
+[48]	train-rmse:91.651627 
+[49]	train-rmse:89.772575 
+[50]	train-rmse:88.121384 
+[51]	train-rmse:86.669891 
+[52]	train-rmse:85.408028 
+[53]	train-rmse:84.294083 
+[54]	train-rmse:83.324677 
+[55]	train-rmse:82.504143 
+[56]	train-rmse:81.739265 
+[57]	train-rmse:81.068169 
+[58]	train-rmse:80.550949 
+[59]	train-rmse:80.052696 
+[60]	train-rmse:79.647369 
+[61]	train-rmse:79.274246 
+[62]	train-rmse:78.957138 
+[63]	train-rmse:78.657059 
+[64]	train-rmse:78.377121 
+[65]	train-rmse:78.092651 
+[66]	train-rmse:77.880119 
+[67]	train-rmse:77.658493 
+[68]	train-rmse:77.463684 
+[69]	train-rmse:77.280304 
+[70]	train-rmse:77.151253 
+[71]	train-rmse:77.016693 
+[72]	train-rmse:76.921326 
+[73]	train-rmse:76.765266 
+[74]	train-rmse:76.670998 
+[75]	train-rmse:76.545189 
+[76]	train-rmse:76.437447 
+[77]	train-rmse:76.340378 
+[78]	train-rmse:76.236458 
+[79]	train-rmse:76.164322 
+[80]	train-rmse:76.098381 
+[81]	train-rmse:76.024269 
+[82]	train-rmse:75.956879 
+[83]	train-rmse:75.866768 
+[84]	train-rmse:75.781830 
+[85]	train-rmse:75.679054 
+[86]	train-rmse:75.616676 
+[87]	train-rmse:75.560303 
+[88]	train-rmse:75.484940 
+[89]	train-rmse:75.424919 
+[90]	train-rmse:75.300331 
+[91]	train-rmse:75.236366 
+[92]	train-rmse:75.177910 
+[93]	train-rmse:75.140404 
+[94]	train-rmse:75.085876 
+[95]	train-rmse:75.016884 
+[96]	train-rmse:74.949463 
+[97]	train-rmse:74.900421 
+[98]	train-rmse:74.842651 
+[99]	train-rmse:74.796928 
+[100]	train-rmse:74.710258 
+[101]	train-rmse:74.638138 
+[102]	train-rmse:74.572731 
+[103]	train-rmse:74.504807 
+[104]	train-rmse:74.426125 
+[105]	train-rmse:74.395554 
+[106]	train-rmse:74.336876 
+[107]	train-rmse:74.295624 
+[108]	train-rmse:74.195778 
+[109]	train-rmse:74.103363 
+[110]	train-rmse:74.068596 
+[111]	train-rmse:74.009155 
+[112]	train-rmse:73.943703 
+[113]	train-rmse:73.894440 
+[114]	train-rmse:73.850006 
+[115]	train-rmse:73.783989 
+[116]	train-rmse:73.723770 
+[117]	train-rmse:73.622932 
+[118]	train-rmse:73.554428 
+[119]	train-rmse:73.518097 
+[120]	train-rmse:73.478928 
+[121]	train-rmse:73.431366 
+[122]	train-rmse:73.391068 
+[123]	train-rmse:73.363205 
+[124]	train-rmse:73.339066 
+[125]	train-rmse:73.284966 
+[126]	train-rmse:73.259285 
+[127]	train-rmse:73.216415 
+[128]	train-rmse:73.188255 
+[129]	train-rmse:73.084984 
+[130]	train-rmse:73.061874 
+[131]	train-rmse:72.997246 
+[132]	train-rmse:72.922379 
+[133]	train-rmse:72.867348 
+[134]	train-rmse:72.836624 
+[135]	train-rmse:72.802177 
+[136]	train-rmse:72.762024 
+[137]	train-rmse:72.707062 
+[138]	train-rmse:72.684433 
+[139]	train-rmse:72.643524 
+[140]	train-rmse:72.607346 
+[141]	train-rmse:72.565102 
+[142]	train-rmse:72.545815 
+[143]	train-rmse:72.509003 
+[144]	train-rmse:72.473793 
+[145]	train-rmse:72.440651 
+[146]	train-rmse:72.412056 
+[147]	train-rmse:72.337433 
+[148]	train-rmse:72.311501 
+[149]	train-rmse:72.283730 
+[150]	train-rmse:72.218468 
+[151]	train-rmse:72.165695 
+[152]	train-rmse:72.149574 
+[153]	train-rmse:72.127632 
+[154]	train-rmse:72.077271 
+[155]	train-rmse:72.053123 
+[156]	train-rmse:72.001251 
+[157]	train-rmse:71.952843 
+[158]	train-rmse:71.940361 
+[159]	train-rmse:71.899849 
+[160]	train-rmse:71.847878 
+[161]	train-rmse:71.794510 
+[162]	train-rmse:71.775482 
+[163]	train-rmse:71.714569 
+[164]	train-rmse:71.672981 
+[165]	train-rmse:71.642082 
+[166]	train-rmse:71.600441 
+[167]	train-rmse:71.556313 
+[168]	train-rmse:71.518333 
+[169]	train-rmse:71.488632 
+[170]	train-rmse:71.455772 
+[171]	train-rmse:71.421097 
+[172]	train-rmse:71.390930 
+[173]	train-rmse:71.361305 
+[174]	train-rmse:71.327393 
+[175]	train-rmse:71.265594 
+[176]	train-rmse:71.244438 
+[177]	train-rmse:71.189919 
+[178]	train-rmse:71.174316 
+[179]	train-rmse:71.143646 
+[180]	train-rmse:71.107056 
+[181]	train-rmse:71.054794 
+[182]	train-rmse:71.015656 
+[183]	train-rmse:70.986443 
+[184]	train-rmse:70.932465 
+[185]	train-rmse:70.900574 
+[186]	train-rmse:70.837517 
+[187]	train-rmse:70.817795 
+[188]	train-rmse:70.790565 
+[189]	train-rmse:70.749374 
+[190]	train-rmse:70.700020 
+[191]	train-rmse:70.681831 
+[192]	train-rmse:70.633354 
+[193]	train-rmse:70.611938 
+[194]	train-rmse:70.573090 
+[195]	train-rmse:70.544449 
+[196]	train-rmse:70.504013 
+[197]	train-rmse:70.469795 
+[198]	train-rmse:70.407433 
+[199]	train-rmse:70.380692 
+[200]	train-rmse:70.330666 
+[201]	train-rmse:70.311836 
+[202]	train-rmse:70.261452 
+[203]	train-rmse:70.209526 
+[204]	train-rmse:70.174332 
+[205]	train-rmse:70.159210 
+[206]	train-rmse:70.150383 
+[207]	train-rmse:70.092148 
+[208]	train-rmse:70.060570 
+[209]	train-rmse:70.028313 
+[210]	train-rmse:69.971298 
+[211]	train-rmse:69.943100 
+[212]	train-rmse:69.904991 
+[213]	train-rmse:69.889862 
+[214]	train-rmse:69.849625 
+[215]	train-rmse:69.825058 
+[216]	train-rmse:69.800842 
+[217]	train-rmse:69.777863 
+[218]	train-rmse:69.740059 
+[219]	train-rmse:69.691658 
+[220]	train-rmse:69.670387 
+[221]	train-rmse:69.643456 
+[222]	train-rmse:69.594772 
+[223]	train-rmse:69.565598 
+[224]	train-rmse:69.525681 
+[225]	train-rmse:69.477425 
+[226]	train-rmse:69.457825 
+[227]	train-rmse:69.432343 
+[228]	train-rmse:69.403572 
+[229]	train-rmse:69.370834 
+[230]	train-rmse:69.349503 
+[231]	train-rmse:69.330338 
+[232]	train-rmse:69.295914 
+[233]	train-rmse:69.272591 
+[234]	train-rmse:69.240524 
+[235]	train-rmse:69.209114 
+[236]	train-rmse:69.177948 
+[237]	train-rmse:69.156052 
+[238]	train-rmse:69.111282 
+[239]	train-rmse:69.086510 
+[240]	train-rmse:69.070457 
+[241]	train-rmse:69.027420 
+[242]	train-rmse:69.002602 
+[243]	train-rmse:68.977661 
+[244]	train-rmse:68.955765 
+[245]	train-rmse:68.930885 
+[246]	train-rmse:68.915977 
+[247]	train-rmse:68.868317 
+[248]	train-rmse:68.842712 
+[249]	train-rmse:68.812881 
+[250]	train-rmse:68.775169 
+[251]	train-rmse:68.742638 
+[252]	train-rmse:68.699516 
+[253]	train-rmse:68.659012 
+[254]	train-rmse:68.614769 
+[255]	train-rmse:68.591743 
+[256]	train-rmse:68.570595 
+[257]	train-rmse:68.558685 
+[258]	train-rmse:68.533646 
+[259]	train-rmse:68.499596 
+[260]	train-rmse:68.468880 
+[261]	train-rmse:68.462433 
+[262]	train-rmse:68.447395 
+[263]	train-rmse:68.437813 
+[264]	train-rmse:68.413147 
+[265]	train-rmse:68.391502 
+[266]	train-rmse:68.363609 
+[267]	train-rmse:68.331032 
+[268]	train-rmse:68.295311 
+[269]	train-rmse:68.258118 
+[270]	train-rmse:68.249161 
+[271]	train-rmse:68.233391 
+[272]	train-rmse:68.192993 
+[273]	train-rmse:68.164116 
+[274]	train-rmse:68.138054 
+[275]	train-rmse:68.122108 
+[276]	train-rmse:68.092522 
+[277]	train-rmse:68.056694 
+[278]	train-rmse:68.023964 
+[279]	train-rmse:67.998344 
+[280]	train-rmse:67.954453 
+[281]	train-rmse:67.941429 
+[282]	train-rmse:67.928551 
+[283]	train-rmse:67.901550 
+[284]	train-rmse:67.874443 
+[285]	train-rmse:67.855598 
+[286]	train-rmse:67.821831 
+[287]	train-rmse:67.799828 
+[288]	train-rmse:67.784538 
+[289]	train-rmse:67.770256 
+[290]	train-rmse:67.747643 
+[291]	train-rmse:67.733017 
+[292]	train-rmse:67.691231 
+[293]	train-rmse:67.680580 
+[294]	train-rmse:67.656395 
+[295]	train-rmse:67.640511 
+[296]	train-rmse:67.601997 
+[297]	train-rmse:67.579239 
+[298]	train-rmse:67.549507 
+[299]	train-rmse:67.524040 
+[300]	train-rmse:67.477356 
+[301]	train-rmse:67.419388 
+[302]	train-rmse:67.393501 
+[303]	train-rmse:67.378586 
+[304]	train-rmse:67.341560 
+[305]	train-rmse:67.327133 
+[306]	train-rmse:67.310524 
+[307]	train-rmse:67.293312 
+[308]	train-rmse:67.273430 
+[309]	train-rmse:67.258606 
+[310]	train-rmse:67.223488 
+[311]	train-rmse:67.200272 
+[312]	train-rmse:67.173119 
+[313]	train-rmse:67.153145 
+[314]	train-rmse:67.123215 
+[315]	train-rmse:67.103386 
+[316]	train-rmse:67.064934 
+[317]	train-rmse:67.029022 
+[318]	train-rmse:67.000816 
+[319]	train-rmse:66.989510 
+[320]	train-rmse:66.947052 
+[321]	train-rmse:66.936859 
+[322]	train-rmse:66.908714 
+[323]	train-rmse:66.884712 
+[324]	train-rmse:66.854973 
+[325]	train-rmse:66.835129 
+[326]	train-rmse:66.821701 
+[327]	train-rmse:66.809692 
+[328]	train-rmse:66.782173 
+[329]	train-rmse:66.774139 
+[330]	train-rmse:66.755692 
+[331]	train-rmse:66.737045 
+[332]	train-rmse:66.715195 
+[333]	train-rmse:66.699455 
+[334]	train-rmse:66.674149 
+[335]	train-rmse:66.657677 
+[336]	train-rmse:66.643417 
+[337]	train-rmse:66.617813 
+[338]	train-rmse:66.600204 
+[339]	train-rmse:66.592110 
+[340]	train-rmse:66.577942 
+[341]	train-rmse:66.561790 
+[342]	train-rmse:66.542297 
+[343]	train-rmse:66.527023 
+[344]	train-rmse:66.495560 
+[345]	train-rmse:66.478615 
+[346]	train-rmse:66.459236 
+[347]	train-rmse:66.438766 
+[348]	train-rmse:66.418327 
+[349]	train-rmse:66.391754 
+[350]	train-rmse:66.383156 
+[351]	train-rmse:66.361588 
+[352]	train-rmse:66.352905 
+[353]	train-rmse:66.333221 
+[354]	train-rmse:66.299675 
+[355]	train-rmse:66.266701 
+[356]	train-rmse:66.250359 
+[357]	train-rmse:66.240540 
+[358]	train-rmse:66.233086 
+[359]	train-rmse:66.220673 
+[360]	train-rmse:66.203201 
+[361]	train-rmse:66.175262 
+[362]	train-rmse:66.140755 
+[363]	train-rmse:66.125618 
+[364]	train-rmse:66.112457 
+[365]	train-rmse:66.077477 
+[366]	train-rmse:66.062828 
+[367]	train-rmse:66.046097 
+[368]	train-rmse:66.024887 
+[369]	train-rmse:66.012428 
+[370]	train-rmse:66.002419 
+[371]	train-rmse:65.993774 
+[372]	train-rmse:65.981110 
+[373]	train-rmse:65.966377 
+[374]	train-rmse:65.956123 
+[375]	train-rmse:65.937775 
+[376]	train-rmse:65.921082 
+[377]	train-rmse:65.908813 
+[378]	train-rmse:65.880829 
+[379]	train-rmse:65.846199 
+[380]	train-rmse:65.832321 
+[381]	train-rmse:65.813438 
+[382]	train-rmse:65.773071 
+[383]	train-rmse:65.749413 
+[384]	train-rmse:65.737862 
+[385]	train-rmse:65.705383 
+[386]	train-rmse:65.688591 
+[387]	train-rmse:65.670837 
+[388]	train-rmse:65.653610 
+[389]	train-rmse:65.636131 
+[390]	train-rmse:65.609352 
+[391]	train-rmse:65.586914 
+[392]	train-rmse:65.557404 
+[393]	train-rmse:65.534584 
+[394]	train-rmse:65.527260 
+[395]	train-rmse:65.518822 
+[396]	train-rmse:65.494453 
+[397]	train-rmse:65.475372 
+[398]	train-rmse:65.458481 
+[399]	train-rmse:65.439255 
+[400]	train-rmse:65.431885 
+[401]	train-rmse:65.396301 
+[402]	train-rmse:65.369858 
+[403]	train-rmse:65.324409 
+[404]	train-rmse:65.309570 
+[405]	train-rmse:65.293808 
+[406]	train-rmse:65.284149 
+[407]	train-rmse:65.260345 
+[408]	train-rmse:65.250839 
+[409]	train-rmse:65.237732 
+[410]	train-rmse:65.204605 
+[411]	train-rmse:65.174614 
+[412]	train-rmse:65.153358 
+[413]	train-rmse:65.144493 
+[414]	train-rmse:65.115990 
+[415]	train-rmse:65.101479 
+[416]	train-rmse:65.085121 
+[417]	train-rmse:65.061859 
+[418]	train-rmse:65.047638 
+[419]	train-rmse:65.027267 
+[420]	train-rmse:65.010452 
+[421]	train-rmse:64.989784 
+[422]	train-rmse:64.975296 
+[423]	train-rmse:64.951790 
+[424]	train-rmse:64.934288 
+[425]	train-rmse:64.916565 
+[426]	train-rmse:64.903557 
+[427]	train-rmse:64.883995 
+[428]	train-rmse:64.845451 
+[429]	train-rmse:64.827034 
+[430]	train-rmse:64.812546 
+[431]	train-rmse:64.785950 
+[432]	train-rmse:64.775620 
+[433]	train-rmse:64.754684 
+[434]	train-rmse:64.735718 
+[435]	train-rmse:64.727890 
+[436]	train-rmse:64.714256 
+[437]	train-rmse:64.702591 
+[438]	train-rmse:64.693810 
+[439]	train-rmse:64.682007 
+[440]	train-rmse:64.658539 
+[441]	train-rmse:64.641022 
+[442]	train-rmse:64.626442 
+[443]	train-rmse:64.610382 
+[444]	train-rmse:64.582916 
+[445]	train-rmse:64.574394 
+[446]	train-rmse:64.554146 
+[447]	train-rmse:64.532494 
+[448]	train-rmse:64.511154 
+[449]	train-rmse:64.492325 
+[450]	train-rmse:64.465302 
+[451]	train-rmse:64.445457 
+[452]	train-rmse:64.437080 
+[453]	train-rmse:64.414482 
+[454]	train-rmse:64.404083 
+[455]	train-rmse:64.388161 
+[456]	train-rmse:64.372459 
+[457]	train-rmse:64.356483 
+[458]	train-rmse:64.346039 
+[459]	train-rmse:64.325371 
+[460]	train-rmse:64.319794 
+[461]	train-rmse:64.310898 
+[462]	train-rmse:64.293091 
+[463]	train-rmse:64.272491 
+[464]	train-rmse:64.246765 
+[465]	train-rmse:64.241287 
+[466]	train-rmse:64.219994 
+[467]	train-rmse:64.207207 
+[468]	train-rmse:64.199654 
+[469]	train-rmse:64.183723 
+[470]	train-rmse:64.169685 
+[471]	train-rmse:64.151627 
+[472]	train-rmse:64.148384 
+[473]	train-rmse:64.135910 
+[474]	train-rmse:64.126732 
+[475]	train-rmse:64.120819 
+[476]	train-rmse:64.100037 
+[477]	train-rmse:64.088066 
+[478]	train-rmse:64.069519 
+[479]	train-rmse:64.054306 
+[480]	train-rmse:64.042488 
+[481]	train-rmse:64.029846 
+[482]	train-rmse:64.008018 
+[483]	train-rmse:63.991367 
+[484]	train-rmse:63.981018 
+[485]	train-rmse:63.972958 
+[486]	train-rmse:63.947067 
+[487]	train-rmse:63.939148 
+[488]	train-rmse:63.924252 
+[489]	train-rmse:63.918388 
+[490]	train-rmse:63.904072 
+[491]	train-rmse:63.893829 
+[492]	train-rmse:63.882248 
+[493]	train-rmse:63.871536 
+[494]	train-rmse:63.859833 
+[495]	train-rmse:63.846745 
+[496]	train-rmse:63.838047 
+[497]	train-rmse:63.824734 
+[498]	train-rmse:63.802692 
+[499]	train-rmse:63.793941 
+[500]	train-rmse:63.776611 
+[501]	train-rmse:63.759762 
+[502]	train-rmse:63.751781 
+[503]	train-rmse:63.741428 
+[504]	train-rmse:63.727077 
+[505]	train-rmse:63.715176 
+[506]	train-rmse:63.707733 
+[507]	train-rmse:63.684582 
+[508]	train-rmse:63.673130 
+[509]	train-rmse:63.667839 
+[510]	train-rmse:63.652962 
+[511]	train-rmse:63.646275 
+[512]	train-rmse:63.630650 
+[513]	train-rmse:63.617027 
+[514]	train-rmse:63.603851 
+[515]	train-rmse:63.591667 
+[516]	train-rmse:63.576717 
+[517]	train-rmse:63.555920 
+[518]	train-rmse:63.546776 
+[519]	train-rmse:63.522049 
+[520]	train-rmse:63.508278 
+[521]	train-rmse:63.490925 
+[522]	train-rmse:63.472584 
+[523]	train-rmse:63.457218 
+[524]	train-rmse:63.451378 
+[525]	train-rmse:63.428288 
+[526]	train-rmse:63.422840 
+[527]	train-rmse:63.411144 
+[528]	train-rmse:63.405193 
+[529]	train-rmse:63.395275 
+[530]	train-rmse:63.378868 
+[531]	train-rmse:63.367916 
+[532]	train-rmse:63.354549 
+[533]	train-rmse:63.343552 
+[534]	train-rmse:63.333530 
+[535]	train-rmse:63.315914 
+[536]	train-rmse:63.290089 
+[537]	train-rmse:63.283054 
+[538]	train-rmse:63.258877 
+[539]	train-rmse:63.254784 
+[540]	train-rmse:63.238712 
+[541]	train-rmse:63.228092 
+[542]	train-rmse:63.223331 
+[543]	train-rmse:63.193851 
+[544]	train-rmse:63.181866 
+[545]	train-rmse:63.164909 
+[546]	train-rmse:63.150738 
+[547]	train-rmse:63.137741 
+[548]	train-rmse:63.121361 
+[549]	train-rmse:63.111702 
+[550]	train-rmse:63.095787 
+[551]	train-rmse:63.083241 
+[552]	train-rmse:63.066910 
+[553]	train-rmse:63.047302 
+[554]	train-rmse:63.036625 
+[555]	train-rmse:63.025745 
+[556]	train-rmse:63.011009 
+[557]	train-rmse:62.997734 
+[558]	train-rmse:62.991539 
+[559]	train-rmse:62.985001 
+[560]	train-rmse:62.964798 
+[561]	train-rmse:62.955418 
+[562]	train-rmse:62.941856 
+[563]	train-rmse:62.935543 
+[564]	train-rmse:62.920807 
+[565]	train-rmse:62.907940 
+[566]	train-rmse:62.896210 
+[567]	train-rmse:62.886330 
+[568]	train-rmse:62.855495 
+[569]	train-rmse:62.850163 
+[570]	train-rmse:62.838322 
+[571]	train-rmse:62.826984 
+[572]	train-rmse:62.813091 
+[573]	train-rmse:62.810299 
+[574]	train-rmse:62.799686 
+[575]	train-rmse:62.790321 
+[576]	train-rmse:62.775261 
+[577]	train-rmse:62.755276 
+[578]	train-rmse:62.743954 
+[579]	train-rmse:62.727818 
+[580]	train-rmse:62.719822 
+[581]	train-rmse:62.707130 
+[582]	train-rmse:62.700550 
+[583]	train-rmse:62.686703 
+[584]	train-rmse:62.669525 
+[585]	train-rmse:62.663349 
+[586]	train-rmse:62.657982 
+[587]	train-rmse:62.648991 
+[588]	train-rmse:62.637978 
+[589]	train-rmse:62.628342 
+[590]	train-rmse:62.604935 
+[591]	train-rmse:62.596199 
+[592]	train-rmse:62.574974 
+[593]	train-rmse:62.569157 
+[594]	train-rmse:62.552601 
+[595]	train-rmse:62.539635 
+[596]	train-rmse:62.528225 
+[597]	train-rmse:62.523666 
+[598]	train-rmse:62.502934 
