@@ -2,17 +2,18 @@ library(tidyverse)
 library(tidymodels)
 library(xgboost)
 
-## local
-git <- "~/Documents/GitHub/EDLD-654-Final"
-
-data <- import(path(git, "data/train.csv")) %>%
-  select(-classification) %>%
-  mutate_if(is.character, factor) %>%
-  mutate(ncessch = as.double(ncessch))
-
-bonus <- import(path(git, "data/bonus_data.csv")) %>%
-  mutate(pupil_tch_ratio = as.numeric(pupil_tch_ratio)) %>%
-  mutate(ncessch = as.double(ncessch))
+# ## local
+# git <- "~/Documents/GitHub/EDLD-654-Final"
+# 
+# data <- import(path(git, "data/train.csv")) %>%
+#   select(-classification) %>%
+#   mutate_if(is.character, factor) %>%
+#   mutate(ncessch = as.double(ncessch)) %>%
+#   sample_frac(.10)
+# 
+# bonus <- import(path(git, "data/bonus_data.csv")) %>%
+#   mutate(pupil_tch_ratio = as.numeric(pupil_tch_ratio)) %>%
+#   mutate(ncessch = as.double(ncessch))
 
 ## talapas
 data <- read_csv("data/train.csv") %>% 
@@ -41,14 +42,11 @@ rec <- recipe(score ~ ., train) %>%
   step_mutate(tst_dt = as.numeric(lubridate::mdy_hms(tst_dt)),
               lang_cd = case_when(lang_cd == "S" ~ "S", TRUE ~ "E"),
               pupil_tch_ratio = as.numeric(pupil_tch_ratio)) %>% 
-  step_rm(contains("id"), ncessch, ncesag, lea_name, sch_name, zip) %>%
-  step_string2factor(all_nominal()) %>% 
+  step_rm(contains("id"), ncessch, ncesag, lea_name, sch_name) %>%
   step_zv(all_predictors()) %>%
-  step_novel(all_nominal()) %>% 
-  step_unknown(all_nominal()) %>% 
   step_medianimpute(all_numeric()) %>% 
-  step_dummy(all_nominal(), one_hot = TRUE) %>% 
-  step_nzv(all_predictors(), freq_cut = 995/5)
+  step_unknown(all_nominal()) %>% 
+  step_dummy(all_nominal())
 
 
 # bake recipe
@@ -59,10 +57,10 @@ baked_test <- prep(rec) %>%
   bake(test)
 
 ## organize in to matrices
-train_x = data.matrix(baked_train[, -45])
-train_y = data.matrix(baked_train[, 45])
-test_x = data.matrix(baked_test[, -45])
-test_y = data.matrix(baked_test[, 45])
+train_x = data.matrix(baked_train[, -46])
+train_y = data.matrix(baked_train[, 46])
+test_x = data.matrix(baked_test[, -46])
+test_y = data.matrix(baked_test[, 46])
 
 ## set xgb matrices
 xgb_train = xgb.DMatrix(data = train_x, label = train_y)
@@ -89,14 +87,14 @@ tree_mods <- map2(grid$min_n, grid$tree_depth, ~{
     label = train_y,
     nrounds = 5000,
     objective = "reg:squarederror",
-    early_stopping_rounds = 0, 
+    early_stopping_rounds = 50, 
     nfold = 10,
     verbose = 0,
     params = list( 
-      eta = 0.1,
+      eta = 0.0414655172413793,
       max_depth = .x,
       min_child_weight = .y,
-      nthread = 24
+      nthread = 16
     ) 
   )  
 }) 

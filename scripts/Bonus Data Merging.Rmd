@@ -36,7 +36,7 @@ leaids <- import("https://nces.ed.gov/ccd/Data/zip/ccd_sch_033_1718_l_1a_083118.
   mutate(st_schid = as.numeric(substrRight(st_schid, 4))) %>%
   distinct(ncessch, leaid, st_schid)
 
-# import school neighborhood poverty indexes (2017-2018 data)
+# import school neighborhood poverty indexes
 ## https://nces.ed.gov/programs/edge/Economic/NeighborhoodPoverty
 edge <- import(path(git, "/data/edge_ipr.csv")) %>% 
   janitor::clean_names() %>% 
@@ -205,26 +205,7 @@ v17 <- load_variables(2010, "sf", cache = TRUE)
 vars_acs5 <-
   c(
     median_income = "B06011_001",
-    median_rent = "B25064_001",
-    households = "B25115_001",
-    internet = "B28011_001",
-    no_internet = "B28011_008",
-    moms = "B09002_009",
-    dads = "B09002_015",
-    families = "B09002_001")
-
-dist_acs5 <- 
-  c(
-    emp = "CDP03.1"
-  )
-
-dist_acs <-
-  get_acs(
-    geography = "school district", 
-    variables = dist_acs5, 
-    year = 2010
-  )
-
+    median_rent = "B25064_001")
 
 df_acs <-
   get_acs(
@@ -237,34 +218,13 @@ acs <- df_acs %>%
   rename(county = NAME) %>% 
   pivot_wider(id_cols = county, names_from = variable, values_from = estimate) %>% 
   filter(str_detect(county, ", Oregon")) %>% 
-  mutate(county = str_replace(county, ", Oregon", "")) %>% 
-  mutate(internet = 100*(no_internet/internet),
-         single = (moms+dads)/families)
-
-hp <- hpi %>% 
-  filter(year == 2018) %>% 
-  select(-annual_change) %>% 
-  mutate(zip = as.double(zip)) %>% 
-  select(zip, hpi)
+  mutate(county = str_replace(county, ", Oregon", ""))
 
 # join acs data
 bonus <- bonus %>% 
-  left_join(acs) %>% 
-  left_join(hp)
+  left_join(acs)
+
 
 write_csv(bonus, "bonus_data.csv")
 
-
-data <- import(path(git, "data/train.csv")) %>%
-  select(-classification) %>%
-  mutate_if(is.character, factor) %>%
-  mutate(ncessch = as.double(ncessch)) %>%
-  sample_frac(.15)
-
-bonus <- import(path(git, "data/bonus_data.csv")) %>%
-  mutate(pupil_tch_ratio = as.numeric(pupil_tch_ratio)) %>%
-  mutate(ncessch = as.double(ncessch))
-
-data <- data %>% 
-  left_join(bonus)
 ```
