@@ -56,8 +56,8 @@ rec <- recipe(score ~ ., data_train) %>%
   step_dummy(all_nominal()) %>%
   step_nzv(all_predictors(), -starts_with("lang_cd"))
 
-prepped_rec <- prep(rec)
-prepped_rec
+# prepped_rec <- prep(rec)
+# prepped_rec
  
 # not used:
 # step_rm(contains("id"), ncessch, ncesag, lea_name, sch_name) %>% why removing the id vars?
@@ -417,15 +417,17 @@ final_wkfl <-  workflow() %>%
   add_model(final_mod) %>%
   add_recipe(rec)
 
+# this is needd fo Kaggle
 tictoc::tic()
-check_fit <- fit(final_wkfl,
-                 data = data_train)
+check_fit <- final_wkfl %>%
+                 fit(data)
 tictoc::toc()
 
-extract_rmse(check_fit) 
+
+# extract_rmse(check_fit) 
 # rmse = 90.86 (with data_train, 5% of data)
 
-
+# this is to report to the blog
 tictoc::tic()
 final_fit <- last_fit(final_wkfl,
                  split = data_split)
@@ -451,7 +453,7 @@ processed_test <- rec %>%
   bake(all_test)
 
 # make predictions
-preds <- predict(check_fit, new_data = processed_test)
+preds <- predict(check_fit, all_test)
 
 # a tibble
 pred_frame <- tibble(Id = all_test$id, Predicted = preds$.pred)
