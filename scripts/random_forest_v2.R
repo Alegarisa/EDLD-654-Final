@@ -56,8 +56,8 @@ rec <- recipe(score ~ ., data_train) %>%
   step_dummy(all_nominal()) %>%
   step_nzv(all_predictors(), -starts_with("lang_cd"))
 
-# prepped_rec <- prep(rec)
-#prepped_rec
+prepped_rec <- prep(rec)
+prepped_rec
  
 # not used:
 # step_rm(contains("id"), ncessch, ncesag, lea_name, sch_name) %>% why removing the id vars?
@@ -98,6 +98,7 @@ rf_def_wkflw <- workflow() %>%
 #   rf_def_wkflw, 
 #   data_train)
 # tictoc::toc()
+# this took 147.967 sec ---> less than 3 minutes
 
 ### Best estimate of Random Forest default model ###
 
@@ -149,6 +150,7 @@ extract_rmse <- function(wf_fit) {
 # tictoc::tic()
 # mtry_results_1 <- map2_df(grd$Var1, grd$Var2, ~hyp_rf_search(.x, .y, rf_def_wkflw))
 # tictoc::toc()
+# this took 6392.721 sec ----> around an hour and 40 minutes
 # 
 # saveRDS(mtry_results_1, "mtry_results_1.Rds")
 
@@ -173,54 +175,57 @@ extract_rmse <- function(wf_fit) {
 # ##### TUNING 2 #####
 # # "However, Segal (2004) showed that if your data has many noisy predictors and higher mtry values are performing best, then performance may improve by increasing node size (i.e., decreasing tree depth and complexity)."
 # 
-mtry_search <- seq(14, 26, 3)
-min_n_search <- seq(7, 15, 2)
-
-grd <- expand.grid(mtry_search, min_n_search)
-
-hyp_rf_search <- function(mtry_val, min_n_val, wf) {
-  mod <- rand_forest() %>%
-    set_engine("ranger",
-               num.threads = 8,
-               importance = "permutation",
-               verbose = TRUE) %>%
-    set_mode("regression") %>%
-    set_args(mtry = {{mtry_val}},
-             min_n = {{min_n_val}},
-             trees = 1000)
-
-  wf <- wf %>%
-    update_model(mod)
-
-  rmse <- fit(wf, data_train) %>%
-    extract_rmse()
-
-  tibble(mtry = mtry_val, min_n = min_n_val, rmse = rmse, workflow = list(wf))
-}
-
-tictoc::tic()
-mtry_results_2 <- map2_df(grd$Var1, grd$Var2, ~hyp_rf_search(.x, .y, rf_def_wkflw))
-tictoc::toc()
-
-saveRDS(mtry_results_2, "mtry_results_2.Rds")
-
-# mtry_results_2 %>% 
-#   arrange(rmse) 
+# mtry_search <- seq(14, 26, 3)
+# min_n_search <- seq(7, 15, 2)
 # 
+# grd <- expand.grid(mtry_search, min_n_search)
+# 
+# hyp_rf_search <- function(mtry_val, min_n_val, wf) {
+#   mod <- rand_forest() %>%
+#     set_engine("ranger",
+#                num.threads = 8,
+#                importance = "permutation",
+#                verbose = TRUE) %>%
+#     set_mode("regression") %>%
+#     set_args(mtry = {{mtry_val}},
+#              min_n = {{min_n_val}},
+#              trees = 1000)
+# 
+#   wf <- wf %>%
+#     update_model(mod)
+# 
+#   rmse <- fit(wf, data_train) %>%
+#     extract_rmse()
+# 
+#   tibble(mtry = mtry_val, min_n = min_n_val, rmse = rmse, workflow = list(wf))
+# }
+
+# tictoc::tic()
+# mtry_results_2 <- map2_df(grd$Var1, grd$Var2, ~hyp_rf_search(.x, .y, rf_def_wkflw))
+# tictoc::toc() 
+# this took 6862.319 sec ---> almost 2 hours to run
+
+# saveRDS(mtry_results_2, "mtry_results_2.Rds")
+
+# mtry_results_2 <- readRDS("scripts/mtry_results_2.Rds")
+# 
+# mtry_results_2 %>%
+#   arrange(rmse)
+
 # rmse = 92.4 (5% of data) with mtry = 20 - 26 & min_n = 19 for an rmse of
-# 
-# # this tells me that mtry is getting stable, but rmse appears to get better as min_n  gets higher. 
-# 
-# ### plot 2 ###
-# mtry_results_2 %>% 
+# rmse = 88.2 (50% of data) with mtry = 14, min_n = 15, trees = 1000
+
+
+### plot 2 ###
+# mtry_results_2 %>%
 #   ggplot(aes(mtry, rmse)) +
 #   geom_line() +
 #   geom_point() +
 #   facet_wrap(~min_n)
-# 
-# #################
-# #################
-# 
+
+#################
+#################
+
 # ##### TUNING 3 #####
 # 
 # mtry_search <- seq(20, 26, 2)
@@ -384,34 +389,72 @@ saveRDS(mtry_results_2, "mtry_results_2.Rds")
 # # --> not worth it: It took over 45 minutes to run. the plot shows that around 50 it's 90.5 and around 100 is 90. After a hundred it levels out. 
 # ##############################################
 # 
-# 
-# ##### final fit #####
-# 
-# final_mod <- rand_forest() %>% 
-#   set_engine("ranger",
-#              num.threads = 8,
-#              importance = "permutation",
-#              verbose = TRUE) %>% 
-#   set_mode("regression") %>% 
-#   set_args(mtry = 24,
-#            min_n = 50,
-#            trees = 1000)
-# 
-# final_wkfl <-  workflow() %>% # do I need to use finalize_workflow ?
-#   add_model(final_mod) %>% 
-#   add_recipe(rec)
-#   
-#   
-# final_fit <- fit(final_wkfl,
-#                  data = data_train)
-# 
-# extract_rmse(final_fit) # rmse = 90.86 (with data_train)
-# 
-# tictoc::tic()
-# last_fit <- last_fit(final_wkfl, 
-#                  split = data_split)
-# tictoc::toc()
-# 
-# final_fit$.metrics[[1]] # rmse = 93.0 (with data_split)
-# 
-# ##### final fit #####
+
+
+### summary of models ###
+
+# rmse = 88.8 (50% of data) with mtry = 26, min_n = 5, trees = 500
+
+# rmse = 88.5 (50% of data) with mtry = 14, min_n = 10, trees = 1000
+
+# rmse = 88.2 (50% of data) with mtry = 14, min_n = 15, trees = 1000
+
+# because the gain is not much, I will hard code mtry = 14 and min_n = 15 in final model.
+
+##### final fit #####
+
+final_mod <- rand_forest() %>%
+  set_engine("ranger",
+             num.threads = 8,
+             importance = "permutation",
+             verbose = TRUE) %>%
+  set_mode("regression") %>%
+  set_args(mtry = 14,
+           min_n = 15,
+           trees = 1000)
+
+final_wkfl <-  workflow() %>%
+  add_model(final_mod) %>%
+  add_recipe(rec)
+
+tictoc::tic()
+check_fit <- fit(final_wkfl,
+                 data = data_train)
+tictoc::toc()
+
+extract_rmse(check_fit) 
+# rmse = 90.86 (with data_train, 5% of data)
+
+
+tictoc::tic()
+final_fit <- last_fit(final_wkfl,
+                 split = data_split)
+tictoc::toc()
+
+final_fit$.metrics[[1]] 
+# rmse = 93.0 (with data_split, 5% of data)
+
+
+##### final fit #####
+
+### to submit to Kaggle ####
+full_test <- import("data/test.csv", setclass = "tbl_df") %>%
+  mutate_if(is.character, factor) %>%
+  mutate(ncessch = as.double(ncessch))
+
+## joining data
+all_test <- left_join(full_test, bonus)
+
+# baking the recipe
+processed_test <- rec %>%
+  prep() %>% 
+  bake(all_test)
+
+# make predictions
+preds <- predict(check_fit, new_data = processed_test)
+
+# a tibble
+pred_frame <- tibble(Id = all_test$id, Predicted = preds$.pred)
+
+# create file for upload 
+write_csv(pred_frame, "prelim_fit_2.csv")
