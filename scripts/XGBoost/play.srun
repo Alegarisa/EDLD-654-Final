@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH --partition=short        ### Partition see https://hpcrcf.atlassian.net/wiki/spaces/TCP/pages/7285967/Partition+List
+#SBATCH --job-name=tuning_play  ### Job Name
+#SBATCH --output=play.out        ### File in which to store job output
+#SBATCH --error=play.err         ### File in which to store job error messages
+#SBATCH --time=0-04:00:00        ### Wall clock time limit in Days-HH:MM:SS
+#SBATCH --nodes=1                ### Number of nodes needed for the job
+#SBATCH --ntasks-per-node=1      ### Number of tasks to be launched per Node
+#SBATCH --cpus-per-task=24				 ### Number of cores for each task (if parallel computation can be utilized)
+#STCH --mem-per-cpu=8GB       ### RAM (memory) per CPU
+#SBATCH --account=edld654   ### Account used for job submission
+ 
+R CMD BATCH --no-save --no-restore xgb_play.R   # run your script

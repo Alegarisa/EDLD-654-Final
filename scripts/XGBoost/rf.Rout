@@ -1,0 +1,164 @@
+
+R version 4.0.2 (2020-06-22) -- "Taking Off Again"
+Copyright (C) 2020 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> 
+> library(tidyverse)
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
+✔ ggplot2 3.3.2     ✔ purrr   0.3.4
+✔ tibble  3.0.4     ✔ dplyr   1.0.2
+✔ tidyr   1.1.2     ✔ stringr 1.4.0
+✔ readr   1.3.1     ✔ forcats 0.5.0
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+> library(tidymodels)
+── Attaching packages ────────────────────────────────────── tidymodels 0.1.2 ──
+✔ broom     0.7.2      ✔ recipes   0.1.15
+✔ dials     0.0.9      ✔ rsample   0.0.8 
+✔ infer     0.5.3      ✔ tune      0.1.2 
+✔ modeldata 0.1.0      ✔ workflows 0.2.1 
+✔ parsnip   0.1.4      ✔ yardstick 0.0.7 
+── Conflicts ───────────────────────────────────────── tidymodels_conflicts() ──
+✖ scales::discard() masks purrr::discard()
+✖ dplyr::filter()   masks stats::filter()
+✖ recipes::fixed()  masks stringr::fixed()
+✖ dplyr::lag()      masks stats::lag()
+✖ yardstick::spec() masks readr::spec()
+✖ recipes::step()   masks stats::step()
+> library(xgboost)
+
+Attaching package: ‘xgboost’
+
+The following object is masked from ‘package:dplyr’:
+
+    slice
+
+> # 
+> ## local
+> # git <- "~/Documents/GitHub/EDLD-654-Final"
+> # 
+> # data <- import(path(git, "data/train.csv")) %>%
+> #   select(-classification) %>%
+> #   mutate_if(is.character, factor) %>%
+> #   mutate(ncessch = as.double(ncessch))
+> # 
+> # bonus <- import(path(git, "data/bonus_data_v2.csv")) %>%
+> #   mutate(ncessch = as.double(ncessch)) %>% 
+> #   mutate(locale = gsub("^.{0,3}", "", locale)) %>%
+> #   separate(col = locale, into = c("locale", "sublocale"), sep = ": ")
+> 
+> # 
+> # disc <- read.csv("data/bonus source files/disc_drop.csv")
+> 
+> ## talapas
+> data <- read.csv("data/train.csv") %>%
++   select(-classification) %>%
++   mutate_if(is.character, factor) %>%
++   mutate(ncessch = as.numeric(ncessch))
+> 
+> 
+> bonus <- read.csv("data/bonus_data_v2.csv") %>%
++   mutate(ncessch = as.numeric(ncessch)) %>%
++   mutate(locale = gsub("^.{0,3}", "", locale)) %>%
++   separate(col = locale, into = c("locale", "sublocale"), sep = ": ")
+> 
+> disc <- read_csv("data/disc_drop.csv") %>%
++   mutate(attnd_dist_inst_id = as.double(attnd_dist_inst_id))
+Parsed with column specification:
+cols(
+  attnd_dist_inst_id = col_double(),
+  out_susp = col_double(),
+  dropout_rate = col_double()
+)
+> 
+> ## join data
+> data <- data %>% 
++   left_join(bonus) %>% 
++   left_join(disc)
+Joining, by = c("enrl_grd", "ncessch")
+Joining, by = "attnd_dist_inst_id"
+> 
+> set.seed(3000)
+> 
+> 
+> # Initial Splits
+> data_split <- initial_split(data) 
+> 
+> train <- training(data_split)
+> test <- testing(data_split)
+> 
+> 
+> 
+> # CV split
+> cv_split <- vfold_cv(train)
+> 
+> ## basic recipe
+> rec <- recipe(score ~ ., train) %>%
++   step_mutate(tst_dt = as.numeric(lubridate::mdy_hms(tst_dt)),
++               lang_cd = case_when(lang_cd == "S" ~ "S", TRUE ~ "E"),
++               pupil_tch_ratio = as.numeric(pupil_tch_ratio),
++               pupil_tch_ratio = as.numeric(pupil_tch_ratio),
++               pupil_tch_rate = case_when(pupil_tch_ratio < 18 ~ 1,
++                                          pupil_tch_ratio < 25 ~ 2,
++                                          pupil_tch_ratio < 30 ~ 3, 
++                                          TRUE ~ 4),
++               pupil_tch_rate = as.factor(pupil_tch_rate)) %>% 
++   step_rm(contains("id"), ncessch, ncesag, lea_name, sch_name) %>%
++   step_mutate(hpi = as.numeric(hpi),
++               lat = round(lat, 2),
++               lon = round(lon, 2),
++               median_income = log(median_income),
++               median_rent = log(median_rent),
++               frl_prop = fr_lnch_prop + red_lnch_prop,
++               schl_perf = case_when(sch_percent_level_1 + sch_percent_level_2 > sch_percent_level_3 + sch_percent_level_4 ~ 1,
++                                     TRUE ~ 0),
++               over_100 = under_200 + over_200) %>% 
++   step_interact(terms = ~ lat:lon) %>% 
++   step_rm(fr_lnch_prop, red_lnch_prop) %>% 
++   step_string2factor(all_nominal()) %>% 
++   step_zv(all_predictors()) %>%
++   step_unknown(all_nominal()) %>% 
++   step_other(all_nominal(), threshold = .01) %>% 
++   step_medianimpute(all_numeric()) %>%
++   step_dummy(all_nominal(), one_hot = TRUE) %>% 
++   step_interact(~ exp_current_supp_serve_total.x:sp_ed_fg_Y) %>% 
++   step_interact(~ lang_cd_S:p_hispanic_latino) %>% 
++   step_nzv(all_predictors(), freq_cut = 995/5)
+> 
+> 
+> rfrst_tune <- rand_forest(
++   mtry = tune(),
++   trees = 1000,
++   min_n = tune()) %>%
++   set_mode("regression") %>%
++   set_engine("ranger",
++              nthreads = 10)
+> 
+> 
+> rfrst_wflow <-workflow() %>% 
++   add_recipe(rec) %>% 
++   add_model(rfrst_tune)
+> 
+> set.seed(345)
+> tune_res <- tune_grid(
++   rfrst_wflow,
++   resamples = cv_split,
++   grid = 20
++ )
+i Creating pre-processing data to finalize unknown parameter: mtry
